@@ -6,5 +6,6 @@ class IndexController extends HomebaseController{
 	
 	function index(){
 		echo "hello";
+        $this->display();
 	}
 }
