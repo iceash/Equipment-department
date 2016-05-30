@@ -1,3 +1,4 @@
 data/runtime/
 data/runtime/Logs/
 *.log
+data/conf/db.php
