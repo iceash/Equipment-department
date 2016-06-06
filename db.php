@@ -14,4 +14,5 @@ return array(
     "AUTHCODE" => '7mz3EsBnWUTcGOisiA',
     //cookies
     "COOKIE_PREFIX" => 'XjWPaI_',
+    // 仅仅是为了测试
 );
