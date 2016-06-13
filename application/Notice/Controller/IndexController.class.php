@@ -28,17 +28,15 @@ class IndexController extends AdminbaseController{
 	}
 	
 	function add(){
-		$categorys=$this->slidecat_model->field("cid,cat_name")->where("cat_status!=0")->select();
-		$this->assign("categorys",$categorys);
 		$this->display();
 	}
 	
 	function add_post(){
 		if(IS_POST){
 			if ($this->screen_model->create()) {
-				$_POST['screen_pic']=sp_asset_relative_url($_POST['screen_pic']);
+				$_POST['screen_background']=sp_asset_relative_url($_POST['screen_background']);
 				if ($this->screen_model->add()!==false) {
-					$this->success("添加成功！", U("slide/index"));
+					$this->success("添加成功！", U("index/index"));
 				} else {
 					$this->error("添加失败！");
 				}
@@ -49,20 +47,18 @@ class IndexController extends AdminbaseController{
 	}
 	
 	function edit(){
-		$categorys=$this->slidecat_model->field("cid,cat_name")->where("cat_status!=0")->select();
 		$id= intval(I("get.id"));
-		$slide=$this->screen_model->where("screen_id=$id")->find();
-		$this->assign($slide);
-		$this->assign("categorys",$categorys);
+		$screen=$this->screen_model->where("screen_id=$id")->find();
+		$this->assign($screen);
 		$this->display();
 	}
 	
 	function edit_post(){
 		if(IS_POST){
 			if ($this->screen_model->create()) {
-				$_POST['screen_pic']=sp_asset_relative_url($_POST['screen_pic']);
+				$_POST['screen_background']=sp_asset_relative_url($_POST['screen_background']);
 				if ($this->screen_model->save()!==false) {
-					$this->success("保存成功！", U("slide/index"));
+					$this->success("保存成功！", U("index/index"));
 				} else {
 					$this->error("保存失败！");
 				}

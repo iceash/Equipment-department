@@ -2,41 +2,20 @@
 </head>
 <body>
 	<div class="wrap js-check-wrap">
-		<form action="{:U('slide/edit_post')}" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
+		<form action="{:U('index/edit_post')}" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
 			<div class="row-fluid">
 				<div class="span9">
 					<table class="table table-bordered">
 						<tr>
-							<th width="80">栏目</th>
+							<th width="80">标题</th>
 							<td>
-								<select name="slide_cid">
-									<option value="0">默认分类</option>
-									<foreach name="categorys" item="vo">
-										<php>$cid_selected=$slide_cid==$vo['cid']?"selected":"";</php>
-										<option value="{$vo.cid}"{$cid_selected}>{$vo.cat_name}</option>
-									</foreach>
-								</select>
-							</td>
-						</tr>
-						<tr>
-							<th width="80">幻灯片名称</th>
-							<td>
-								<input type="text" style="width: 400px;" name="slide_name" value="{$slide_name}" placeholder="请输入幻灯片名称"/>
+								<input type="text" style="width: 400px;" name="screen_title" value="{$screen_title}" placeholder="请输入公告标题"/>
 								<span class="form-required">*</span>
-								<input type="hidden" name="slide_id" value="{$slide_id}"/>
+								<input type="hidden" name="screen_id" value="{$screen_id}"/>
 							</td>
 						</tr>
-						<tr>
-							<th width="80">链接地址：</th>
-							<td><input type="text" name="slide_url" value="{$slide_url}" style="width: 400px"></td>
-						</tr>
-						<tr>
-							<th width="80">描述</th>
-							<td><input type="text" name="slide_des" value="{$slide_des}" style="width: 400px"></td>
-						</tr>
-						<tr>
-							<th width="80">幻灯片内容</th>
-							<td><textarea name="slide_content" id="description" style="width: 98%; height: 200px;">{$slide_content}</textarea></td>
+							<th width="80">公告内容</th>
+							<td><textarea name="screen_content" id="description" style="width: 98%; height: 200px;">{$screen_content}</textarea></td>
 						</tr>
 					</table>
 				</div>
@@ -48,11 +27,11 @@
 						<tr>
 							<td>
 								<div style="text-align: center;">
-									<input type="hidden" name="slide_pic" id="thumb" value="{$slide_pic}"> <a href="javascript:void(0);" onclick="flashupload('thumb_images', '附件上传','thumb',thumb_images,'1,jpg|jpeg|gif|png|bmp,1,,,1','','','');return false;">
-										<if condition="empty($slide_pic)">
+									<input type="hidden" name="screen_background" id="thumb" value="{$screen_background}"> <a href="javascript:void(0);" onclick="flashupload('thumb_images', '附件上传','thumb',thumb_images,'1,jpg|jpeg|gif|png|bmp,1,,,1','','','');return false;">
+										<if condition="empty($screen_background)">
 											<img src="__TMPL__Public/assets/images/default-thumbnail.png" id="thumb_preview" width="135" style="cursor: hand"/>
 										<else />
-											<img src="{:sp_get_asset_upload_path($slide_pic)}" id="thumb_preview" width="135" style="cursor: hand; height: 113px;"/>
+											<img src="{:sp_get_asset_upload_path($screen_background)}" id="thumb_preview" width="135" style="cursor: hand; height: 113px;"/>
 										</if>
 									</a>
 									<input type="button" class="btn btn-small" onclick="$('#thumb_preview').attr('src','__TMPL__Public/assets/images/default-thumbnail.png');$('#thumb').val('');return false;" value="取消图片">
@@ -64,7 +43,7 @@
 			</div>
 			<div class="form-actions">
 				<button class="btn btn-primary js-ajax-submit" type="submit">提交</button>
-				<a class="btn" href="{:U('slide/index')}">返回</a>
+				<a class="btn" href="{:U('index/index')}">返回</a>
 			</div>
 		</form>
 	</div>
@@ -182,7 +161,7 @@
 											}, {
 												name : '返回列表',
 												callback : function() {
-													location.href = "{:U('slide/index')}";
+													location.href = "{:U('index/index')}";
 													return true;
 												}
 											} ]
