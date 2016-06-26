@@ -1,0 +1,357 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0034)http://www.northnews.cn/news/bxzz/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><style type="text/css" id="882537218741"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>百姓知政-列表-正北方网</title>
+<meta name="Keywords" content="">
+<meta name="Description" content=",">
+<meta name="author" content="正北方网">
+<meta name="Copyright" content="正北方网版权所有">
+<link href="css/2016content.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	var qcloud={};
+	$('[_t_nav]').hover(function(){
+		var _nav = $(this).attr('_t_nav');
+		clearTimeout( qcloud[ _nav + '_timer' ] );
+		qcloud[ _nav + '_timer' ] = setTimeout(function(){
+		$('[_t_nav]').each(function(){
+		$(this)[ _nav == $(this).attr('_t_nav') ? 'addClass':'removeClass' ]('nav-up-selected');
+		});
+		$('#'+_nav).stop(true,true).slideDown(200);
+		}, 150);
+	},function(){
+		var _nav = $(this).attr('_t_nav');
+		clearTimeout( qcloud[ _nav + '_timer' ] );
+		qcloud[ _nav + '_timer' ] = setTimeout(function(){
+		$('[_t_nav]').removeClass('nav-up-selected');
+		$('#'+_nav).stop(true,true).slideUp(200);
+		}, 150);
+	});
+});
+</script>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/config.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/member.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+member.init();
+});
+</script>
+<script>
+function setTab(m,n){
+var tli=document.getElementById("menu_n"+m).getElementsByTagName("li");
+var mli=document.getElementById("main_n"+m).getElementsByTagName("ul");
+for(i=0;i<tli.length;i++){
+   tli[i].className=i==n?"hover":"";
+   mli[i].style.display=i==n?"block":"none";
+}
+}
+</script>
+</head>
+
+<body>
+<div class="ntop"><!--头部-->
+    <div class="zbf_top">
+        <div class="logo"><a href="http://www.northnews.cn/"><img src="images/zbflogo_03.jpg" width="188" height="48" title="正北方网" alt="正北方网"></a></div>
+        <div class="icon">
+            <ul>
+                <li class="k01"><a href="http://www.northnews.cn/product/mobile/" target="_blank">客户端</a></li>
+                <li class="k02"><a href="http://m.northnews.cn/" target="_blank">手机正北方</a></li>
+                <li class="k03"><a href="http://www.northnews.cn/about/tougao.html" target="_blank">投稿</a></li>
+            </ul>
+        </div>
+        <div class="today" id="localtime"><font color="#676767">2016年06月25日&nbsp;&nbsp;星期六</font></div>
+                        <script type="text/javascript">
+                            function showLocale(objD)
+                            {
+                                var str,colorhead,colorfoot;
+                                var yy = objD.getYear();
+                                if(yy<1900) yy = yy+1900;
+                                var MM = objD.getMonth()+1;
+                                if(MM<10) MM = '0' + MM;
+                                var dd = objD.getDate();
+                                if(dd<10) dd = '0' + dd;
+                                var hh = objD.getHours();
+                                if(hh<10) hh = '0' + hh;
+                                var mm = objD.getMinutes();
+                                if(mm<10) mm = '0' + mm;
+                                var ss = objD.getSeconds();
+                                if(ss<10) ss = '0' + ss;
+                                var ww = objD.getDay();
+                                if  ( ww==0 )  colorhead="<font color=\"#676767\">";
+                                if  ( ww > 0 && ww < 6 )  colorhead="<font color=\"#676767\">";
+                                if  ( ww==6 )  colorhead="<font color=\"#676767\">";
+                                if  (ww==0)  ww="星期日";
+                                if  (ww==1)  ww="星期一";
+                                if  (ww==2)  ww="星期二";
+                                if  (ww==3)  ww="星期三";
+                                if  (ww==4)  ww="星期四";
+                                if  (ww==5)  ww="星期五";
+                                if  (ww==6)  ww="星期六";
+                                colorfoot="</font>"
+                                str = colorhead + yy + "年" + MM + "月" + dd + "日&nbsp;&nbsp;" + ww + colorfoot;
+                                return(str);
+                            }
+                            function tick()
+                            {
+                                var today;
+                                today = new Date();
+                                document.getElementById("localtime").innerHTML = showLocale(today);
+                                window.setTimeout("tick()", 1000);
+                            }
+                            tick();
+                            </script>
+            <div class="search">
+        			 <form action="http://app.northnews.cn/?app=search&controller=index&action=search" method="get" name="search" id="allsearch" target="_blank">
+             <input type="hidden" name="order" value="">
+			 <input type="hidden" value="search" name="app">
+             <input type="hidden" value="index" name="controller">
+             <input type="hidden" value="search" name="action">
+             <input type="hidden" value="all" name="type">
+             <input name="wd" type="text" class="box-ss" id="wd">
+             <input id="searchid" type="submit" value="" class="lanton">
+             </form>
+            </div>
+    </div>
+</div><!--头部-->
+<nav class="bule-nav"><!--导航-->
+	<div class="wp2">
+    	<ul>
+        	<li class="now"><a href="http://www.northnews.cn/" target="_blank" class="white">首页</a></li>
+            <li><a href="http://www.northnews.cn/news.shtml" target="_blank" class="white">新闻</a></li>
+            <li><a href="http://china.northnews.cn/" target="_blank" class="white">国内</a></li>
+            <li><a href="http://world.northnews.cn/" target="_blank" class="white">国际</a></li>
+            <li><a href="http://www.northnews.cn/news/shizheng/" target="_blank" class="white">知政</a></li>
+            <li><a href="http://www.northnews.cn/shigequanfugai/" target="_blank" class="white">乡村</a></li>
+            <li><a href="http://photo.northnews.cn/" target="_blank" class="white">读图</a></li>
+            <li><a href="http://video.northnews.cn/" target="_blank" class="white">网视</a></li>
+            <li><a href="http://www.northnews.cn/keji/" target="_blank" class="white">科技</a></li>
+            <li><a href="http://finance.northnews.cn/" target="_blank" class="white">财经</a></li>
+            <li><a href="http://life.northnews.cn/" target="_blank" class="white">生活</a></li>
+            <li><a href="http://www.northnews.cn/wenhua/" target="_blank" class="white">教育</a></li>     
+			<li><a href="http://www.northnews.cn/news/lishi/" target="_blank" class="white">历史</a></li>
+            <li><a href="http://www.northnews.cn/news/xx/" target="_blank" class="white">闲暇</a></li>
+            <li><a href="http://lady.northnews.cn/news/health/" target="_blank" class="white">健康</a></li>
+            <li><a href="http://www.northnews.cn/car/" target="_blank" class="white">汽车</a></li>
+            <li><a href="http://www.northnews.cn/house/" target="_blank" class="white">房产</a></li>
+            <li><a href="http://www.northnews.cn/news/tour/" target="_blank" class="white">旅游</a></li>
+            <li><a href="http://nmg.northnews.cn/cywh/" target="_blank" class="white">人文</a></li>
+            <li><a href="http://sports.northnews.cn/" target="_blank" class="white">足球</a></li>
+            <li><a href="http://www.northnews.cn/news/yule/" target="_blank" class="white">娱乐</a></li>
+            <li><a href="http://video.northnews.cn/shenghuo/" target="_blank" class="white">爱拍</a></li>
+            <li><a href="http://www.99jee.com/" target="_blank" class="white"><span>99</span>街</a></li>
+			<li _t_nav="product"><h2><a href="http://www.northnews.cn/news/bxzz/#" target="_blank" class="white">更多</a></h2></li>
+        </ul>
+        <div class="navigation-down">
+		<div id="product" class="nav-down-menu menu-1" style="display: none;" _t_nav="product">
+			<div class="navigation-down-inner">
+				<dl>
+			<dt>网站导航</dt>
+					<dd><a href="http://www.northnews.cn/news.shtml">新闻中心</a></dd>
+                    <dd><a href="http://www.northnews.cn/news/nmgnews/">内蒙古新闻</a></dd>
+					<dd><a href="http://www.northnews.cn/news/shizheng/">知政</a></dd>
+					<dd><a href="http://society.northnews.cn/">社会新闻</a></dd>
+                    <dd><a href="http://www.northnews.cn/news/msnews/">盟市新闻</a></dd>
+                    <dd><a href="http://www.northnews.cn/news/capitalnews/">呼和浩特新闻</a></dd>
+                    <dd><a href="http://www.northnews.cn/news/clcpinlun/">V评</a></dd>
+                    <dd><a href="http://www.northnews.cn/news/jrdb/">读报</a></dd>
+                    <dd><a href="http://www.northnews.cn/news/">热点专题</a></dd>
+                    <dd><a href="http://www.northnews.cn/tishi/">生活提示</a></dd>
+                    <dd><a href="http://china.northnews.cn/">国内</a></dd>
+                    <dd><a href="http://world.northnews.cn/">国际</a></dd>
+                    <dd><a href="http://www.northnews.cn/wenhua/">体育</a></dd>
+                    <dd><a href="http://www.northnews.cn/news/yule/">娱乐</a></dd>
+                    <dd><a href="http://photo.northnews.cn/">读图</a></dd>
+                    <dd><a href="http://video.northnews.cn/">网视</a></dd>
+                    <dd><a href="http://www.northnews.cn/keji/">科技</a></dd>
+                    <dd><a href="http://finance.northnews.cn/">财经</a></dd>
+                    <dd><a href="http://life.northnews.cn/">生活</a></dd>
+                    <dd><a href="http://www.northnews.cn/wenhua/">教育</a></dd>
+                    <dd><a href="http://www.northnews.cn/car/">汽车</a></dd>
+                    <dd><a href="http://www.northnews.cn/house/">房产</a></dd>
+                    <dd><a href="http://www.northnews.cn/news/qiye/">企业</a></dd>
+                    <dd><a href="http://lady.northnews.cn/news/health/">健康</a></dd>
+                    <dd><a href="http://www.northnews.cn/news/xx/">闲暇</a></dd>
+                    <dd><a href="http://www.northnews.cn/news/lishi/">历史</a></dd>
+                    <dd><a href="http://www.northnews.cn/news/dushu/">悦读</a></dd>
+                    <dd><a href="http://www.northnews.cn/news/lzp/">老照片</a></dd>
+                    <dd><a href="http://www.99jee.com/">99街</a></dd>
+                    <dd><a href="http://www.northnews.cn/shigequanfugai/">乡村</a></dd>
+                    <dd><a href="http://www.northnews.cn/news/tour/">旅游</a></dd>
+                    <dd><a href="http://nmg.northnews.cn/cywh/">人文</a></dd>
+                    <dd><a href="http://video.northnews.cn/shenghuo/">拍生活</a></dd>
+				</dl>
+			</div>
+		</div>
+    </div>
+</div></nav><!--导航-->
+
+<div class="senav"><!--位置-->
+	<div class="wp">
+		<p> 你的位置：<a href="http://www.northnews.cn/">正北方网</a> &gt; <a href="http://www.northnews.cn/news.shtml">新闻</a> &gt; <a href="http://www.northnews.cn/news/nmgnews/">内蒙古新闻</a> &gt; <a href="./文字列表_files/文字列表.html">百姓知政</a> &gt; 文章列表</p>
+    </div>
+</div><!--位置-->
+
+<div class="wp">
+	<div class="l-main"><!--左侧内容-->
+        <div class="l-cont"><!--文章白底部分-->
+		
+ 	        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0612/2195047.shtml" class="blue">乌兰：把“两学一做”成效转化为干事创业的激情</a></h3>
+                <p class="laiy">    [ 2016-06-12 09:54 ]</p>
+                <p><a href="http://www.northnews.cn/2016/0612/2195047.shtml" target="_blank">月7日至8日，内蒙古自治区党委常委、宣传部部长乌兰深入锡林郭勒盟阿巴嘎旗、锡林浩特市，就“两学一做”学习教育和重点工作推进情况进行调研，强调要充分认识开展“两学一做”学习教育的重大意义，按照中央、自治区...</a></p>
+            </div>
+		        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0612/2195012.shtml" class="blue">云光中：提升内蒙古与台湾的贸易交流合作水平</a></h3>
+                <p class="laiy">    [ 2016-06-12 09:53 ]</p>
+                <p><a href="http://www.northnews.cn/2016/0612/2195012.shtml" target="_blank">6月10日， 2016内蒙古(呼和浩特)台湾名品博览会在内蒙古国际会展中心开幕。此前的9日下午，内蒙古自治区副主席云光中会见了台湾贸易中心董事长梁国新一行，双方互祝端午安康！</a></p>
+            </div>
+		        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0612/2194813.shtml" class="blue">内蒙古党校青年学者畅谈“5·17”讲话学习体会</a></h3>
+                <p class="laiy">    [ 2016-06-12 09:52 ]</p>
+                <p><a href="http://www.northnews.cn/2016/0612/2194813.shtml" target="_blank">6月6日，内蒙古党校、内蒙古行政学院召开青年教师座谈会，专题学习习近平总书记5月17日在全国哲学社会科学座谈会上的讲话精神。40余名青年教师齐聚一堂，畅谈体会。
+
+</a></p>
+            </div>
+		        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0612/2194886.shtml" class="blue">内蒙古离退休干部党员“两学一做”有了标准</a></h3>
+                <p class="laiy">    [ 2016-06-12 09:52 ]</p>
+                <p><a href="http://www.northnews.cn/2016/0612/2194886.shtml" target="_blank">近日，内蒙古自治区党委组织部、自治区党委老干部局联合印发了《关于在全区离退休干部党员中开展“两学一做”学习教育的指导意见》(以下简称《意见》)，部署离退休干部党员“两学一做”学习教育工作。
+
+</a></p>
+            </div>
+		        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0612/2195125.shtml" class="blue">内蒙古根河市检察院强化廉政教育出新招</a></h3>
+                <p class="laiy">    [ 2016-06-12 09:23 ]</p>
+                <p><a href="http://www.northnews.cn/2016/0612/2195125.shtml" target="_blank">今年以来，内蒙古自治区根河市检察院以创建“廉政文化示范点”为契机，着力搭建廉政文化宣传的新阵地，近日，组织开展了廉政格言警句征集活动，并将廉政格言警句制作成个人“廉政警示桌牌”放在干警自己的办公桌上，...</a></p>
+            </div>
+		        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0610/2194825.shtml" class="blue">内蒙古政府与中国航天第十二研究院召开座谈会</a></h3>
+                <p class="laiy">    [ 2016-06-10 11:30 ]</p>
+                <p><a href="http://www.northnews.cn/2016/0610/2194825.shtml" target="_blank">6月6日下午，内蒙古自治区政府与中国航天第十二研究院在呼和浩特召开座谈会，双方就推动多领域务实合作进行了广泛深入交流。
+
+</a></p>
+            </div>
+		        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0609/2194697.shtml" class="blue">内蒙古传达学习中央有关会议精神 </a></h3>
+                <p class="laiy">    [ 2016-06-09 12:19 ]</p>
+                <p><a href="http://www.northnews.cn/2016/0609/2194697.shtml" target="_blank">6月8日上午，内蒙古自治区党委召开党的建设工作领导小组会议，传达学习习近平总书记重要批示精神和全国党建研究会第六次会员代表大会精神，讨论审议农村牧区基层党建有关文件，总结上半年党建工作，研究部署下半年党...</a></p>
+            </div>
+	        </div><!--文章白底部分-->
+        <div class="manu"><!--页码-->
+         </div><!--页码-->
+</div><!--左侧内容-->
+    <div class="r-cont"><!--右侧内容-->
+    	<div class="hot"><!--热点推荐-->
+        	<div class="hot-tit">热点推荐</div>
+
+					
+          	<div class="hotbox">
+                <h3><a href="http://www.northnews.cn/2016/0624/2209251.shtml" target="_blank">贝嫂一抹亮黄惊艳街头</a></h3>
+                <a href="http://www.northnews.cn/2016/0624/2209251.shtml" target="_blank"><img src="images/thumb_135_98_1466730590176.jpg" width="135" height="98"></a>
+                <p><a href="http://www.northnews.cn/2016/0624/2209251.shtml" target="_blank" class="grey">维多利亚-贝克汉姆出街被拍。贝嫂一抹亮黄惊艳街头，频撩发如走秀。…</a></p>
+            </div>
+ 
+					
+          	<div class="hotbox">
+                <h3><a href="http://www.northnews.cn/2016/0624/2209238.shtml" target="_blank">阿娇阿sa杨丞琳相聚 甜美似少女</a></h3>
+                <a href="http://www.northnews.cn/2016/0624/2209238.shtml" target="_blank"><img src="images/thumb_135_98_1466731088656.jpg" width="135" height="98"></a>
+                <p><a href="http://www.northnews.cn/2016/0624/2209238.shtml" target="_blank" class="grey">阿娇、阿sa、杨丞琳三姐妹在台北相聚，贺军翔也出席。三姐妹摆出各种搞怪表情，甜美仍似少女。…</a></p>
+            </div>
+ 
+            <ul>
+            	<li><a href="http://china.northnews.cn/2016/0624/2209340.shtml" target="_blank">各地高考头名的学习生活：爱好广泛</a></li>
+             	<li><a href="http://www.northnews.cn/2016/0624/2209235.shtml" target="_blank">被曝出轨又离婚 宁静：我选择离开</a></li>
+             	<li><a href="http://china.northnews.cn/2016/0624/2209336.shtml" target="_blank">女游客潜水遭教练袭胸 嫌疑人被锁定</a></li>
+             	<li><a href="http://china.northnews.cn/2016/0624/2209248.shtml" target="_blank">男子发现初恋已为人妻 悲伤过度撞桥</a></li>
+             	<li><a href="http://china.northnews.cn/2016/0624/2209308.shtml" target="_blank">“高考最牛钉子户”453分  考了20次</a></li>
+             	<li><a href="http://www.northnews.cn/2016/0623/2208928.shtml" target="_blank">最有钱明星排行榜： 第一竟是他！</a></li>
+ 
+            </ul>
+    	</div><!--热点推荐-->
+        <div class="top"><!--排行-->
+        	<div class="hot-tit">热点排行</div>
+             <ul class="list_hot" id="listhot0" style="display: block;">
+ 			    <li style="border-top:0;"><span class="num_hot1"></span><a target="_blank" href="http://www.northnews.cn/2016/0625/2210427.shtml">女孩给父母留字条称“我走了” </a></li>
+                <li><span class="num_hot2"></span><a target="_blank" href="http://www.northnews.cn/2016/0625/2210334.shtml">内蒙古环中国云谷和林格尔自行车公开赛25日开赛</a></li>
+                <li><span class="num_hot3"></span><a target="_blank" href="http://www.northnews.cn/2016/0625/2210287.shtml">内蒙古各界党员劳模代表座谈纪念建党95周年 </a></li>
+                <li><span class="num_hot4"></span><a target="_blank" href="http://www.northnews.cn/2016/0624/2210242.shtml">呼和浩特市中考阅卷将于26日结束</a></li>
+                <li><span class="num_hot5"></span><a target="_blank" href="http://china.northnews.cn/2016/0624/2209471.shtml">男子酒后当女友面强奸其闺蜜 事后威胁不许说</a></li>
+                <li><span class="num_hot6"></span><a target="_blank" href="http://china.northnews.cn/2016/0624/2209903.shtml">一年来网络安全事件我国网民损失915亿</a></li>
+                <li><span class="num_hot7"></span><a target="_blank" href="http://world.northnews.cn/2016/0624/2209894.shtml">英国脱欧公投结果出炉 将脱离欧盟</a></li>
+                <li><span class="num_hot8"></span><a target="_blank" href="http://www.northnews.cn/2016/0624/2209976.shtml">高圆圆调侃助理 网友：女神要爆发逗比因子了！</a></li>
+                <li><span class="num_hot9"></span><a target="_blank" href="http://www.northnews.cn/2016/0624/2209977.shtml">请珍惜！娱乐圈明星们出道前期那些绝版照片</a></li>
+                <li><span class="num_hot10"></span><a target="_blank" href="http://www.northnews.cn/2016/0624/2209946.shtml">蔡依林扎丸子头卖萌 与朋友合影</a></li>
+                <li class="list_more"></li>
+            </ul>
+        </div><!--排行-->
+        <div class="jeenei"><!--99街-->
+        	<div class="jeetit"><span><a target="_blank" href="http://www.99jee.com/" class="gblue">我要爆料&gt;&gt;</a></span></div>	
+            <ul class="hiSlider hiSlider1">
+                <a href="http://www.99jee.com/forum.php?mod=viewthread&tid=1144249" target="_blank"><li data-title="告诉你骑车闯红灯有多危险！" class="hiSlider-item"><img src="images/thumb_260_180_1465802406130.png" alt="告诉你骑车闯红灯有多危险！"></li></a>
+                 <a href="http://www.99jee.com/forum.php?mod=viewthread&tid=1141329" target="_blank"><li data-title="行人请不要跨越护栏珍爱生命" class="hiSlider-item"><img src="images/nopic.gif" alt="行人请不要跨越护栏珍爱生命"></li></a>
+                 <a href="http://www.99jee.com/forum.php?mod=viewthread&tid=1141174" target="_blank"><li data-title="市民手绘公交线路调整通知" class="hiSlider-item"><img src="images/thumb_260_180_1465200249373.png" alt="市民手绘公交线路调整通知"></li></a>
+                 <a href="http://www.99jee.com/forum.php?mod=viewthread&tid=1141209" target="_blank"><li data-title="不听劝闯红灯被撞受伤" class="hiSlider-item"><img src="images/thumb_260_180_1465200211887.png" alt="不听劝闯红灯被撞受伤"></li></a>
+ 
+            </ul>
+            <script src="js/jquery.hiSlider.min.js"></script>
+			<script>
+                $('.hiSlider1').hiSlider();
+                $('.hiSlider2').hiSlider({
+                    isFlexible: true,
+                    mode: 'fade',
+                    isSupportTouch: false,
+                    isShowTitle: false,
+                    isShowPage: false,
+                    titleAttr: function(curIdx){
+                        return $('img', this).attr('alt');
+                    }
+                });
+                $('.hiSlider3').hiSlider({
+                    isFlexible: true,
+                    isSupportTouch: true,
+                    titleAttr: function(curIdx){
+                        return $('img', this).attr('alt');
+                    }
+                });
+                $('.hiSlider4').hiSlider({
+                    startSlide: 2,
+                    direction: 'top'
+                });
+            </script>
+        </div><!--99街-->
+    </div><!--右侧内容-->
+</div>
+<div class="toolbar"><!--返回顶部-->
+           <a href="http://www.northnews.cn/news/bxzz/###" class="toolbar-item toolbar-item-weixin">
+           <span class="toolbar-layer"></span>
+           </a>
+           <a href="http://www.99jee.com/forum-135-1.html" class="toolbar-item toolbar-item-feedback" target="_blank"></a>
+           <a href="http://www.northnews.cn/news/bxzz/###" class="toolbar-item toolbar-item-app">
+            <span class="toolbar-layer"></span>
+           </a>
+           <a href="javascript:scroll(0,0)" id="top" class="toolbar-item toolbar-item-top"></a>
+</div><!--返回顶部-->
+
+<div class="footer"><!--底部-->
+		<p><a href="http://www.northnews.cn/about/about-northnews.html" target="_blank" class="white">网站介绍</a> | <a href="http://www.northnews.cn/about/sponsor.html" target="_blank" class="white">广告报价</a> | <a href="http://www.northnews.cn/about/contact.html" target="_blank" class="white">联系方式</a> | <a href="http://www.northnews.cn/about/falv.html" target="_blank" class="white">法律声明</a> | <a href="http://www.northnews.cn/about/sponsor.html" target="_blank" class="white">对外合作</a> | <a href="http://app.northnews.cn/?app=rss" target="_blank" class="white">RSS订阅</a></p>
+        <p>版权声明：正北方网版权所有，未经授权， 请勿转载或建立镜像，违者依法必究。 &nbsp; <b><a href="http://www.northnews.cn/report/" target="_blank" class="white">违法和不良信息 暴恐音视频举报 电话：0471-6635129</a></b>
+</p><p>内蒙古日报传媒集团 正北方网新闻热线：0471-6635129 | 传真：0471-6635129 | 商务合作：0471-6635388 | <b>Email：northnews@126.com(欢迎投稿 适时监控)</b></p>
+		<p>正北方网 Copyright © 2004-2014 northnews.cn All Rights Reserved. 蒙ICP备10000005号 国新网许可证编号：<a href="http://www.northnews.cn/aboutguo" target="_blank" class="white">1512011001</a></p><p>&nbsp; </p>
+</div><!--底部-->
+<div style="display:none;"><!--流量-->
+	<script type="text/javascript" src="js/cnzz_phone.js"></script>
+    <script src="images/stat.php" language="JavaScript"></script><script src="images/core.php" charset="utf-8" type="text/javascript"></script>
+    <script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F271430eb7c28547d5fea579fca819c94' type='text/javascript'%3E%3C/script%3E"));
+    </script><script src="js/h.js" type="text/javascript"></script><a href="http://tongji.baidu.com/hm-web/welcome/ico?s=271430eb7c28547d5fea579fca819c94" target="_blank"><img border="0" src="images/21.gif" width="20" height="20"></a>
+</div><!--流量-->
+
+
+
+<div style="position: static; width: 0px; height: 0px; border: none; padding: 0px; margin: 0px;"><div id="trans-tooltip"><div id="tip-left-top" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-left-top.png);"></div><div id="tip-top" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-top.png) repeat-x;"></div><div id="tip-right-top" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-right-top.png);"></div><div id="tip-right" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-right.png) repeat-y;"></div><div id="tip-right-bottom" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-right-bottom.png);"></div><div id="tip-bottom" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-bottom.png) repeat-x;"></div><div id="tip-left-bottom" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-left-bottom.png);"></div><div id="tip-left" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-left.png);"></div><div id="trans-content"></div></div><div id="tip-arrow-bottom" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-arrow-bottom.png);"></div><div id="tip-arrow-top" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-arrow-top.png);"></div></div></body></html>

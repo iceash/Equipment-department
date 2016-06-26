@@ -1,0 +1,598 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0032)http://www.northnews.cn/news/xx/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><style type="text/css" id="882585210066"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>闲暇-列表-正北方网</title>
+<meta name="Keywords" content="">
+<meta name="Description" content=",">
+<meta name="author" content="正北方网">
+<meta name="Copyright" content="正北方网版权所有">
+<link href="css/2016content.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	var qcloud={};
+	$('[_t_nav]').hover(function(){
+		var _nav = $(this).attr('_t_nav');
+		clearTimeout( qcloud[ _nav + '_timer' ] );
+		qcloud[ _nav + '_timer' ] = setTimeout(function(){
+		$('[_t_nav]').each(function(){
+		$(this)[ _nav == $(this).attr('_t_nav') ? 'addClass':'removeClass' ]('nav-up-selected');
+		});
+		$('#'+_nav).stop(true,true).slideDown(200);
+		}, 150);
+	},function(){
+		var _nav = $(this).attr('_t_nav');
+		clearTimeout( qcloud[ _nav + '_timer' ] );
+		qcloud[ _nav + '_timer' ] = setTimeout(function(){
+		$('[_t_nav]').removeClass('nav-up-selected');
+		$('#'+_nav).stop(true,true).slideUp(200);
+		}, 150);
+	});
+});
+</script>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/config.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/member.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+member.init();
+});
+</script>
+<script>
+function setTab(m,n){
+var tli=document.getElementById("menu_n"+m).getElementsByTagName("li");
+var mli=document.getElementById("main_n"+m).getElementsByTagName("ul");
+for(i=0;i<tli.length;i++){
+   tli[i].className=i==n?"hover":"";
+   mli[i].style.display=i==n?"block":"none";
+}
+}
+</script>
+</head>
+
+<body>
+<div class="ntop"><!--头部-->
+    <div class="zbf_top">
+        <div class="logo"><a href="http://www.northnews.cn/"><img src="images/zbflogo_03.jpg" width="188" height="48" title="正北方网" alt="正北方网"></a></div>
+        <div class="icon">
+            <ul>
+                <li class="k01"><a href="http://www.northnews.cn/product/mobile/" target="_blank">客户端</a></li>
+                <li class="k02"><a href="http://m.northnews.cn/" target="_blank">手机正北方</a></li>
+                <li class="k03"><a href="http://www.northnews.cn/about/tougao.html" target="_blank">投稿</a></li>
+            </ul>
+        </div>
+        <div class="today" id="localtime"><font color="#676767">2016年06月25日&nbsp;&nbsp;星期六</font></div>
+                        <script type="text/javascript">
+                            function showLocale(objD)
+                            {
+                                var str,colorhead,colorfoot;
+                                var yy = objD.getYear();
+                                if(yy<1900) yy = yy+1900;
+                                var MM = objD.getMonth()+1;
+                                if(MM<10) MM = '0' + MM;
+                                var dd = objD.getDate();
+                                if(dd<10) dd = '0' + dd;
+                                var hh = objD.getHours();
+                                if(hh<10) hh = '0' + hh;
+                                var mm = objD.getMinutes();
+                                if(mm<10) mm = '0' + mm;
+                                var ss = objD.getSeconds();
+                                if(ss<10) ss = '0' + ss;
+                                var ww = objD.getDay();
+                                if  ( ww==0 )  colorhead="<font color=\"#676767\">";
+                                if  ( ww > 0 && ww < 6 )  colorhead="<font color=\"#676767\">";
+                                if  ( ww==6 )  colorhead="<font color=\"#676767\">";
+                                if  (ww==0)  ww="星期日";
+                                if  (ww==1)  ww="星期一";
+                                if  (ww==2)  ww="星期二";
+                                if  (ww==3)  ww="星期三";
+                                if  (ww==4)  ww="星期四";
+                                if  (ww==5)  ww="星期五";
+                                if  (ww==6)  ww="星期六";
+                                colorfoot="</font>"
+                                str = colorhead + yy + "年" + MM + "月" + dd + "日&nbsp;&nbsp;" + ww + colorfoot;
+                                return(str);
+                            }
+                            function tick()
+                            {
+                                var today;
+                                today = new Date();
+                                document.getElementById("localtime").innerHTML = showLocale(today);
+                                window.setTimeout("tick()", 1000);
+                            }
+                            tick();
+                            </script>
+            <div class="search">
+        			 <form action="http://app.northnews.cn/?app=search&controller=index&action=search" method="get" name="search" id="allsearch" target="_blank">
+             <input type="hidden" name="order" value="">
+			 <input type="hidden" value="search" name="app">
+             <input type="hidden" value="index" name="controller">
+             <input type="hidden" value="search" name="action">
+             <input type="hidden" value="all" name="type">
+             <input name="wd" type="text" class="box-ss" id="wd">
+             <input id="searchid" type="submit" value="" class="lanton">
+             </form>
+            </div>
+    </div>
+</div><!--头部-->
+<nav class="bule-nav">  <!--导航-->
+	<div class="wp2">   
+    	<ul>
+        	<li class="now"><a href="http://www.northnews.cn/" target="_blank" class="white">首页</a></li>
+         <li><a href="http://www.northnews.cn/news.shtml" target="_blank" class="white">新闻</a></li>
+            <li><a href="http://china.northnews.cn/" target="_blank" class="white">国内</a></li>
+            <li><a href="http://world.northnews.cn/" target="_blank" class="white">国际</a></li>
+            <li><a href="http://www.northnews.cn/news/bxzz/" target="_blank" class="white">知政</a></li>
+            <li><a href="http://www.northnews.cn/shigequanfugai/" target="_blank" class="white">乡村</a></li>
+            <li><a href="http://photo.northnews.cn/" target="_blank" class="white">读图</a></li>
+            <li><a href="http://video.northnews.cn/" target="_blank" class="white">网视</a></li>
+            <li><a href="http://www.northnews.cn/keji/" target="_blank" class="white">科技</a></li>
+            <li><a href="http://finance.northnews.cn/" target="_blank" class="white">财经</a></li>
+            <li><a href="http://life.northnews.cn/" target="_blank" class="white">生活</a></li>
+            <li><a href="http://www.northnews.cn/wenhua/" target="_blank" class="white">教育</a></li>     
+			<li><a href="http://www.northnews.cn/news/lishi/" target="_blank" class="white">历史</a></li>
+            <li><a href="./图片列表_files/图片列表.html" target="_blank" class="white">闲暇</a></li>
+            <li><a href="http://lady.northnews.cn/news/health/" target="_blank" class="white">健康</a></li>
+            <li><a href="http://auto.northnews.cn/" target="_blank" class="white">汽车</a></li>
+            <li><a href="http://www.northnews.cn/house/" target="_blank" class="white">房产</a></li>
+            <li><a href="http://www.northnews.cn/news/tour/" target="_blank" class="white">旅游</a></li>
+            <li><a href="http://nmg.northnews.cn/cywh/" target="_blank" class="white">人文</a></li>
+            <li><a href="http://sports.northnews.cn/news/sports/sportnews/" target="_blank" class="white">足球</a></li>
+            <li><a href="http://www.northnews.cn/news/yule/" target="_blank" class="white">娱乐</a></li>
+            <li><a href="http://video.northnews.cn/shenghuo/" target="_blank" class="white">爱拍</a></li>
+            <li><a href="http://www.99jee.com/" target="_blank" class="white"><span>99</span>街</a></li>
+			<li _t_nav="product"><h2><a href="http://www.northnews.cn/news/xx/#" target="_blank" class="white">更多</a></h2></li>
+        </ul>
+        <div class="navigation-down">
+		<div id="product" class="nav-down-menu menu-1" style="display: none;" _t_nav="product">
+			<div class="navigation-down-inner">
+				<dl>
+					<dt>网站导航</dt>
+					<dd><a href="http://www.northnews.cn/news/nmgnews/">内蒙古新闻</a></dd>
+					<dd><a href="http://www.northnews.cn/qwfb/">知政</a></dd>
+					<dd><a href="http://society.northnews.cn/">社会新闻</a></dd>
+                    <dd><a href="http://www.northnews.cn/news/msnews/">盟市新闻</a></dd>
+                    <dd><a href="http://www.northnews.cn/news/capitalnews/">呼和浩特新闻</a></dd>
+                    <dd><a href="http://www.northnews.cn/news/clcpinlun/">V评</a></dd>
+                    <dd><a href="http://www.northnews.cn/news/jrdb/">读报</a></dd>
+                    <dd><a href="http://www.northnews.cn/news/">热点专题</a></dd>
+                    <dd><a href="http://www.northnews.cn/tishi/">生活提示</a></dd>
+                    <dd><a href="http://china.northnews.cn/">国内</a></dd>
+                    <dd><a href="http://world.northnews.cn/">国际</a></dd>
+                    <dd><a href="http://sports.northnews.cn/">体育</a></dd>
+                    <dd><a href="http://www.northnews.cn/news/yule/">娱乐</a></dd>
+                    <dd><a href="http://photo.northnews.cn/">读图</a></dd>
+                    <dd><a href="http://video.northnews.cn/">网视</a></dd>
+                    <dd><a href="http://www.northnews.cn/keji/">科技</a></dd>
+                    <dd><a href="http://finance.northnews.cn/">财经</a></dd>
+                    <dd><a href="http://life.northnews.cn/">生活</a></dd>
+                    <dd><a href="http://www.northnews.cn/wenhua/">教育</a></dd>
+                    <dd><a href="http://auto.northnews.cn/">汽车</a></dd>
+                    <dd><a href="http://www.northnews.cn/house/">房产</a></dd>
+                    <dd><a href="http://www.northnews.cn/news/qiye/">企业</a></dd>
+                    <dd><a href="http://lady.northnews.cn/news/health/">健康</a></dd>
+                    <dd><a href="./图片列表_files/图片列表.html">闲暇</a></dd>
+                    <dd><a href="http://www.northnews.cn/news/lishi/">历史</a></dd>
+                    <dd><a href="http://www.northnews.cn/news/dushu/">悦读</a></dd>
+                    <dd><a href="http://www.northnews.cn/news/lzp/">老照片</a></dd>
+                    <dd><a href="http://www.99jee.com/">99街</a></dd>
+                    <dd><a href="http://www.northnews.cn/shigequanfugai/">乡村</a></dd>
+                    <dd><a href="http://www.northnews.cn/news/tour/">旅游</a></dd>
+                    <dd><a href="http://nmg.northnews.cn/cywh/">人文</a></dd>
+                    <dd><a href="http://video.northnews.cn/shenghuo/">拍生活</a></dd>
+				</dl>
+			</div>
+		</div>
+    </div>
+</div></nav> <!--导航-->
+
+<div class="senav"><!--位置-->
+	<div class="wp">
+		<p> 你的位置：<a href="http://www.northnews.cn/">正北方网</a> &gt; <a href="http://www.northnews.cn/news.shtml">新闻</a> &gt; <a href="./图片列表_files/图片列表.html">闲暇</a> &gt; 文章列表</p>
+    </div>
+</div><!--位置-->
+
+<div class="wp">
+	<div class="l-main"><!--左侧内容-->
+        <div class="l-cont"><!--文章白底部分-->
+		
+         	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0623/2207965.shtml" class="blue">把头发弄成这样，你才知道自己有多漂亮！</a></h3>
+				 <img src="images/thumb_137_98_1466636361681.png" width="137" height="98">
+                <p class="laiy">    [ 2016-06-23 06:59 ]</p>
+                <p><a href="http://www.northnews.cn/2016/0623/2207965.shtml" target="_blank">发型 露出耳朵
+
+亲的脸型不大，建议你可以微薄的齐刘海，把头发剪到肩，可以微微内扣，喜欢的话可以把两侧头发放耳朵后面，简单又清新哦。</a></p>
+            </div>
+		        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0623/2207964.shtml" class="blue">有一种痛叫绑带鞋，穿不好真的很难看！</a></h3>
+                <p class="laiy">    [ 2016-06-23 06:51 ]</p>
+                <p>夏天到了，如果你还没有一双绑带鞋的话就该out啦，不过要想穿出去美美的话，首先就要瘦脚瘦腿啦，不然的话就会像下面那些样子，简直丑爆了。好多明星妹子都喜欢穿绑带鞋，杨幂唐嫣迪丽热巴，穿起来非常显气质。</p>
+            </div>
+	        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0623/2207963.shtml" class="blue">喝了那么多年香槟，你真的了解它吗？</a></h3>
+				 <img src="images/thumb_137_98_1466635775941.png" width="137" height="98">
+                <p class="laiy">    [ 2016-06-23 06:48 ]</p>
+                <p><a href="http://www.northnews.cn/2016/0623/2207963.shtml" target="_blank">无论你是门外汉，刚入门的新人，还是江湖老手，你一定知道香槟（Champagne）！无论是电视电影、广告宣传，还是各种大小庆典，香槟几乎无处 不在。在中国，香槟的知名度自然不用说，在过去很长一段时间里，不少人甚至...</a></p>
+            </div>
+		        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0622/2207813.shtml" class="blue">你以为纹身都在身上？笑你太天真</a></h3>
+                <p class="laiy">    [ 2016-06-22 17:11 ]</p>
+                <p>提到纹身你会想到什么？大花臂？黑社会？那基本上已经算上个世纪的事儿了！最新的纹身趋势那就是纹到嘴上去！</p>
+            </div>
+		        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0622/2207810.shtml" class="blue">保湿和补水根本就不是一回事，你分清了吗？</a></h3>
+                <p class="laiy">    [ 2016-06-22 17:10 ]</p>
+                <p>或许很多时候美喵购买化妆品的时候都会遇到这样一个问题，就是每次ba给你说你的皮肤问题都是缺水，但是推荐给你的化妆品写的却是保湿。</p>
+            </div>
+		        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0622/2207806.shtml" class="blue">瘦大腿要做的8件事</a></h3>
+                <p class="laiy">    [ 2016-06-22 17:08 ]</p>
+                <p>1、坚持做有氧运动
+
+运动起来，燃烧掉体内卡路里是减去整体身体脂肪的关键。能快速消耗热量的运动包括跑步，骑自行车和跳绳。在做这些运动时，注意收紧大腿的肌肉。每周5次，每次做有氧运动一个小时，大腿就会有效地...</p>
+            </div>
+		        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0622/2207794.shtml" class="blue">玩转Mini世界奇妙之旅 吃喝玩乐嗨翻上海</a></h3>
+                <p class="laiy">    [ 2016-06-22 17:04 ]</p>
+                <p>每个人心中都有一个童话梦，万众期待的上海迪士尼乐园终于在2016年6月16日正式开园啦！从此上海又多了一个在家门口就能逛的世界级童话乐园，阿拉上海越来越好玩。零食好伙伴粒上皇，也将在这个欢乐时刻，在全上海区...</p>
+            </div>
+		        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0622/2207789.shtml" class="blue">一个家的风水好坏，是由女人决定的！</a></h3>
+                <p class="laiy">    [ 2016-06-22 17:01 ]</p>
+                <p>中国最有内涵的一个字是“安”。“安”字，上面一个宝盖头喻义为家，就是告诉男人，女人就是家，家里有一个女人，你的心里才能安宁，你才能感觉温暖。古语说：“妻贤夫安。”</p>
+            </div>
+		        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0622/2207785.shtml" class="blue">露肉又显瘦 ! 4个穿出今夏潮流的混搭方案</a></h3>
+                <p class="laiy">    [ 2016-06-22 16:59 ]</p>
+                <p>啊啊啊啊，还没意识到瘦身的问题，夏天就已经来了。又想遮住肉肉，又想要凉快，这可怎么办？今天就将潮流与显瘦二合一，用今夏季大热的4款单品，搭配出又清凉又显瘦的装扮吧。</p>
+            </div>
+		        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0622/2207782.shtml" class="blue">学霸做不来，那就学她做“裙霸”呗！</a></h3>
+                <p class="laiy">    [ 2016-06-22 16:57 ]</p>
+                <p>看到喜欢时尚博主每天光鲜亮丽，你一定也想花更多时间捣鼓穿衣化妆，一步步往女神们靠近。说实话，你是不是没少被父母说过不务正业呢~</p>
+            </div>
+		        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0622/2207780.shtml" class="blue">睡衣风style，夏日出街新装备！</a></h3>
+                <p class="laiy">    [ 2016-06-22 16:56 ]</p>
+                <p>2016春夏的秀场内外，睡衣风随处可见。舒适、运动，慵懒，它是所谓的“高段位”时髦单品，挑选这样一身装扮出街，回头率100%。</p>
+            </div>
+		        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0622/2207777.shtml" class="blue">绑带、流苏、镂空，今夏必备时髦凉鞋</a></h3>
+                <p class="laiy">    [ 2016-06-22 16:55 ]</p>
+                <p>炎炎夏日，准备好下一次旅行清凉舒适的服装，但是该搭配什么样的凉鞋好呢？让我们一起从2016春夏时装周的亮眼鞋款中，找出以下三种最in的流行元素吧!</p>
+            </div>
+	        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0622/2207308.shtml" class="blue">光头杨幂美翻？颜值不够还得发际线来救</a></h3>
+				 <img src="images/thumb_137_98_1466579159142.png" width="137" height="98">
+                <p class="laiy">    [ 2016-06-22 15:06 ]</p>
+                <p><a href="http://www.northnews.cn/2016/0622/2207308.shtml" target="_blank">听说杨幂光头造型火了，小编好奇去围观了一下。咳咳，原谅我欣赏不来这款光头造型，尽管大幂幂五官精致，但有头发和没头发的颜值差距不止一丢丢吧，你觉得呢？</a></p>
+            </div>
+	        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0622/2207267.shtml" class="blue">10大香水品牌经典广告语，哪句打动了你？</a></h3>
+				 <img src="images/thumb_137_98_1466578901725.png" width="137" height="98">
+                <p class="laiy">    [ 2016-06-22 15:01 ]</p>
+                <p><a href="http://www.northnews.cn/2016/0622/2207267.shtml" target="_blank">香水散发出的魅力，虽说看不见摸不着，却能带来极致的魅惑。各大香水品牌的香水广告奔放火爆，直至心底，魅力何在?今天小编为大家搜集了十大香水品牌经典广告语录，一起欣赏，看哪句最戳你心!</a></p>
+            </div>
+	        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0622/2206895.shtml" class="blue">成功减掉10斤的人早餐吃什么？</a></h3>
+				 <img src="images/thumb_137_98_1466561175480.png" width="137" height="98">
+                <p class="laiy">    [ 2016-06-22 10:06 ]</p>
+                <p><a href="http://www.northnews.cn/2016/0622/2206895.shtml" target="_blank">通过对知名节食减肥APP (软件)MyFitnessPal上6500万名用户数据的整理，那些至少成功减去10斤体重的人早餐吃最多的是下面9种食物。</a></p>
+            </div>
+	        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0622/2206788.shtml" class="blue">十二星座女晚婚心态</a></h3>
+				 <img src="images/thumb_137_98_1466557639166.png" width="137" height="98">
+                <p class="laiy">    [ 2016-06-22 09:07 ]</p>
+                <p><a href="http://www.northnews.cn/2016/0622/2206788.shtml" target="_blank">白羊座
+
+个性直接又好强，白羊女不是很有耐心慢慢培养感情，所以相亲这种事如果不是能一见钟情，基本上就很难有后来的甜蜜发展。</a></p>
+            </div>
+		        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0621/2206364.shtml" class="blue"> 珠宝买大牌好还是定制好？</a></h3>
+                <p class="laiy">    [ 2016-06-21 17:15 ]</p>
+                <p>从婚礼那刻无名指上的婚戒，到现在每个值得纪念的日子都会珠宝来见证；拿到人生的第一桶金，买个珠宝，好好奖励自己；28岁生日，这次决不能省，我要定制一枚只属于我28岁的戒指。。。。。。。。随着，生活水平的提高...</p>
+            </div>
+	        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0621/2206356.shtml" class="blue">这个5岁女孩比你还会扎头发</a></h3>
+				 <img src="images/thumb_137_98_1466500388390.png" width="137" height="98">
+                <p class="laiy">    [ 2016-06-21 17:13 ]</p>
+                <p><a href="http://www.northnews.cn/2016/0621/2206356.shtml" target="_blank">还记得前段时间小编给你们介绍过的超会化妆的小萝莉么？这不，又来了一位5岁就特别会弄头发的小女孩，Magnolia。</a></p>
+            </div>
+	        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0621/2206338.shtml" class="blue">中国十大公认女神排行榜，第一名我服</a></h3>
+				 <img src="images/thumb_137_98_1466500189133.png" width="137" height="98">
+                <p class="laiy">    [ 2016-06-21 17:09 ]</p>
+                <p><a href="http://www.northnews.cn/2016/0621/2206338.shtml" target="_blank">NO10.郑爽以《一起来看流星雨》出道，当初的清纯模样很是惹人喜爱，后来和塘主的一段恋情，让郑爽倍感伤心，还曾为了取悦塘主去整了容，不过还好，郑爽的颜值经历了一段小小的波折，又回来了。</a></p>
+            </div>
+		        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0621/2205823.shtml" class="blue">“怪咖”十五条标准你中枪了吗？ </a></h3>
+                <p class="laiy">    [ 2016-06-21 11:12 ]</p>
+                <p>你有没有特别的爱好？或者说，你有没有在某些时刻，感觉自己与众不同甚至奇怪？一位自1970年起，持续研究了20多年“怪咖”的英国爱丁堡大学心理学博士， 总结了关于“怪咖”的十五条标准， 其中前五点为必备条件，你...</p>
+            </div>
+	        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0621/2205377.shtml" class="blue">最让人高兴的十件事</a></h3>
+				 <img src="images/thumb_137_98_1466473859722.png" width="137" height="98">
+                <p class="laiy">    [ 2016-06-21 09:51 ]</p>
+                <p><a href="http://www.northnews.cn/2016/0621/2205377.shtml" target="_blank">根据著名软饮料品牌 Appletiser 一项调查显示，得到夸奖会让超过41%的女性有一个好心情，而这也让夸奖超过巧克力和OOXX成为最靠谱的快乐之源。而另一项研究调查表明，夸奖比 OOXX，金钱以及喝酒更能让大学生们快乐。...</a></p>
+            </div>
+	        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0621/2205346.shtml" class="blue">这四种90年代的发型，却流行至今</a></h3>
+				 <img src="images/thumb_137_98_1466473514371.png" width="137" height="98">
+                <p class="laiy">    [ 2016-06-21 09:45 ]</p>
+                <p><a href="http://www.northnews.cn/2016/0621/2205346.shtml" target="_blank">在发型的世界中，我们经常会看到一些风格，在20年前流行的发型又突然兴起。16年可能会成为90年代风格的再一次体现，因为有些发型又开始流行了。</a></p>
+            </div>
+	        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0620/2204802.shtml" class="blue">作为吃货，怎么能不去这些神奇的美食博物馆？</a></h3>
+				 <img src="images/thumb_137_98_1466410033453.png" width="137" height="98">
+                <p class="laiy">    [ 2016-06-20 16:07 ]</p>
+                <p><a href="http://www.northnews.cn/2016/0620/2204802.shtml" target="_blank">在国内，美食博物馆并不常见，不过在世界各地，确实有不少以美食作为主题的博物馆，比如美国罐头猪肉博物馆、比利时的炸薯条博物馆和日本的拉面博物馆等。</a></p>
+            </div>
+	        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0620/2204132.shtml" class="blue">给我一杯酒，我能萌翻全世界</a></h3>
+				 <img src="images/thumb_137_98_1466389659661.png" width="137" height="98">
+                <p class="laiy">    [ 2016-06-20 10:11 ]</p>
+                <p><a href="http://www.northnews.cn/2016/0620/2204132.shtml" target="_blank">你有很多梦想：多喝点好酒，环游世界酒庄，甚至拥有一片属于自己的葡萄园。但每天做的最多的事，却是拿着手机看看朋友圈，酒圈的群里吹吹牛。睡前感叹今天又荒废了，再过一个千篇一律的明天。</a></p>
+            </div>
+	        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0620/2204053.shtml" class="blue">小鲜肉霸占封面，女明星们纷纷哭晕在厕所</a></h3>
+				 <img src="images/thumb_137_98_1466389192192.png" width="137" height="98">
+                <p class="laiy">    [ 2016-06-20 09:58 ]</p>
+                <p><a href="http://www.northnews.cn/2016/0620/2204053.shtml" target="_blank">在很久很久以前，有一批神秘组织悄悄潜入我们的生活中，他们无处不在。在家里你会在电视上发现他们的踪影，马路上你会看到他们的巨型广告牌，打开手机也会无时无刻的被他们刷着屏，这批神秘组织无处不在，无孔不入一...</a></p>
+            </div>
+		        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0617/2203322.shtml" class="blue">三个步骤，打造肥而不腻的梅菜扣肉！</a></h3>
+                <p class="laiy">    [ 2016-06-17 17:16 ]</p>
+                <p>梅菜扣肉，国民级美食，没吃过的估计不多。好吃是没错，不过那大片肉块带来的脂肪和热量也足以让人心惊。声明下，今天这道菜显然不是快手菜，足以担当你家宴压轴菜式的梅菜扣肉，值得你多花点时间和功夫。首先就是梅...</p>
+            </div>
+		        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0617/2203319.shtml" class="blue">一草一木皆是情，多肉植物也有鸟语花香！</a></h3>
+                <p class="laiy">    [ 2016-06-17 17:14 ]</p>
+                <p>喜欢花草的人大多是有情怀的，一草一木皆是情，喜欢自然，心思细腻，温柔善良。也或多或少有些多愁善感，小花小草的生命也会疼惜……</p>
+            </div>
+		        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0617/2203317.shtml" class="blue">如何在办公室优雅地睡一个午觉</a></h3>
+                <p class="laiy">    [ 2016-06-17 17:14 ]</p>
+                <p>俗话说“春困秋乏夏打盹，睡不醒的冬三月。”
+
+不知道你们有没有感觉到，最近，每一个吃完午饭后，都会困。
+
+各种困zzZ</p>
+            </div>
+		        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0617/2203314.shtml" class="blue">装修中的奇葩事，打开了新世界大门</a></h3>
+                <p class="laiy">    [ 2016-06-17 17:12 ]</p>
+                <p>装修是一门很深的学问。来说说装修中我们曾遇到的奇闻异事，省小便宜真的能打造满意的家居环境？只能说，不要想得太天真~</p>
+            </div>
+		        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0617/2203309.shtml" class="blue">露背装真心不是这样穿，拜托不要伤路人的眼睛了好不好？</a></h3>
+                <p class="laiy">    [ 2016-06-17 17:05 ]</p>
+                <p>众星云集的场合必定是个露肉的场合，各路明星为了力压群芳，想尽一切办法让自己变特别，对于想要大秀身材的女星来说，露背装是最佳的选择，然而露背装并不是谁穿都适合，穿坏了真的很伤眼睛。</p>
+            </div>
+		        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0617/2203308.shtml" class="blue">90秒知道 夏天出街，迷你宠物包真的很重要！</a></h3>
+                <p class="laiy">    [ 2016-06-17 17:04 ]</p>
+                <p>姑娘们夏天背的小包包都备好了吗？如果想问今年什么样的包包最值得入手，答案肯定是迷你包。这两年不知道是谁吹得一阵风，给姑娘们心中种下了深深的一棵草：包的造型要越精致越好，丧心病狂到变成小动物才好呢！</p>
+            </div>
+		        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0617/2203305.shtml" class="blue">今天穿什么：泰勒抖森恋情曝光！小碎花洋裙才是撩男神的必杀啊</a></h3>
+                <p class="laiy">    [ 2016-06-17 17:02 ]</p>
+                <p>据外媒报道，6月14日下午4点，“抖森”汤姆-希德勒斯顿（Tom Hiddleston）与泰勒-斯威夫特(Taylor Swift)在美国罗德岛看海，牵手、相拥、接吻，疑似热恋。此照片一流出，媒体瞬间就炸开了锅！</p>
+            </div>
+		        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0617/2203207.shtml" class="blue">微段子 </a></h3>
+                <p class="laiy">    [ 2016-06-17 16:25 ]</p>
+                <p>老师让同学们写作文，题目是《我的理想》。 小明在作文里写道：“我长大了要去抢银行，然后把钱分给穷苦老百姓。” 第二天老师改完了，给小明的评语是这样写的：“很不错的理想，分钱的时候不要忘了老师，但你要注意...</p>
+            </div>
+	        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0617/2203029.shtml" class="blue">女人，你想要变得时尚，请学会这些基础搭配！</a></h3>
+				 <img src="images/thumb_137_98_1466151698182.png" width="137" height="98">
+                <p class="laiy">    [ 2016-06-17 14:45 ]</p>
+                <p><a href="http://www.northnews.cn/2016/0617/2203029.shtml" target="_blank">爱美之心人皆有之，更何况女人呢，女人天生就爱美，不爱美的女人，小编只能说呵呵了！那么我们得学会怎么变美，最好的方式就是学会穿衣搭配！</a></p>
+            </div>
+		        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0617/2203024.shtml" class="blue">韩国迷你版长腿欧巴 特别爱对着镜子拍照</a></h3>
+                <p class="laiy">    [ 2016-06-17 14:43 ]</p>
+                <p>韩国迷你版长腿欧巴 特别爱对着镜子拍照</p>
+            </div>
+	        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0617/2203016.shtml" class="blue">论资深“照骗”的自我修养!</a></h3>
+				 <img src="images/thumb_137_98_1466153015815.png" width="137" height="98">
+                <p class="laiy">    [ 2016-06-17 14:34 ]</p>
+                <p><a href="http://www.northnews.cn/2016/0617/2203016.shtml" target="_blank">亚洲四大妖术：泰国变性术、韩国整形术、日本化妆术、中国PS技术，曾收下过我的膝盖！但是得知“照骗”的演技后，
+请收下我的全部！</a></p>
+            </div>
+		        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0617/2202486.shtml" class="blue">枣香黑糖吐司 </a></h3>
+                <p class="laiy">    [ 2016-06-17 10:03 ]</p>
+                <p>对于喜爱烘焙的人来说，喜欢闻着面团发酵时的清香，更喜欢屋子里绕满烘烤时那让人陶醉的面包香。本期，为大家奉上枣香黑糖吐司的详细做法。</p>
+            </div>
+	        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0617/2202477.shtml" class="blue">夏日最火发型， 所有女星都在梳拳击手辫子头</a></h3>
+				 <img src="images/thumb_137_98_1466128940890.png" width="137" height="98">
+                <p class="laiy">    [ 2016-06-17 10:00 ]</p>
+                <p><a href="http://www.northnews.cn/2016/0617/2202477.shtml" target="_blank">当大街上的菇凉们都顶着半丸子头出门时，时尚圈已经悄悄刮起了一阵辫子风，时尚圈就是这么善变。</a></p>
+            </div>
+	        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0617/2202440.shtml" class="blue">这些超有品的男士好物，最适合致敬深沉的父爱</a></h3>
+				 <img src="images/thumb_137_98_1466128296388.png" width="137" height="98">
+                <p class="laiy">    [ 2016-06-17 09:51 ]</p>
+                <p><a href="http://www.northnews.cn/2016/0617/2202440.shtml" target="_blank">时光荏苒，留下了岁月的痕迹和回忆，父爱如书，需要仔细研读并愈加珍惜。时间的磨砺和洗礼，不仅练就了父亲成熟睿智的沉着气度，更让他们在人生旅途中实现了有成事业与品质生活的兼容并重。怀揣感恩，铭记于心。在20...</a></p>
+            </div>
+		        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0617/2202416.shtml" class="blue">清凉夏日自己动手做冷饮</a></h3>
+                <p class="laiy">    [ 2016-06-17 09:47 ]</p>
+                <p>夏天来了，每每看到商店冰柜里的冰激凌，眼都馋了！爱吃的芒果，爱喝的酸奶，一样都不能少。很多人都想一试身手做甜点，但最终却多以失败而告终。如果你不甘心，不妨试试这些分分钟就能做成的简易冷饮。</p>
+            </div>
+	        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0616/2201963.shtml" class="blue">你下巴抵着我额头当心粘上一身油</a></h3>
+				 <img src="images/thumb_137_98_1466068935574.jpg" width="137" height="98">
+                <p class="laiy">    [ 2016-06-16 16:43 ]</p>
+                <p><a href="http://www.northnews.cn/2016/0616/2201963.shtml" target="_blank">听说最近有个段子很火：有一种温柔，叫做“当你的下巴抵着我的额头”；有一种爱情，叫做“一起来穿情侣装”。大概描述的是这种场景：</a></p>
+            </div>
+	        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0616/2201913.shtml" class="blue">太爱笑未必是好事 低音炮王凯就长了鱼尾纹</a></h3>
+				 <img src="images/thumb_137_98_1466065990425.png" width="137" height="98">
+                <p class="laiy">    [ 2016-06-16 16:29 ]</p>
+                <p><a href="http://www.northnews.cn/2016/0616/2201913.shtml" target="_blank">有种男人真是长得好看，手也漂亮，低音炮嗓门还很性感，一开口更是苏到千千万万个迷妹的心，逼死单身汉的节奏！这类男人的典型代表就是王凯，不过王凯爱笑，脸上也逃不过岁月赐予的痕迹——鱼尾纹。</a></p>
+            </div>
+	        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0616/2201879.shtml" class="blue">同样是小短腿，宋慧乔穿衣能甩李小璐好几条街！</a></h3>
+				 <img src="images/thumb_137_98_1466065921390.png" width="137" height="98">
+                <p class="laiy">    [ 2016-06-16 16:21 ]</p>
+                <p><a href="http://www.northnews.cn/2016/0616/2201879.shtml" target="_blank">宋慧乔与李小璐看似八竿子打不着的两个人却有着一个共同的特点那就是小短腿更，而两个人的年纪也只差1岁而已。比起明星这个称号李小璐更适合网红这个代名词，为什么这么说呢？大家看看就知道了。</a></p>
+            </div>
+	        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0616/2200918.shtml" class="blue">看这些红毯的女星们，一个比一个有心机啊！</a></h3>
+				 <img src="images/thumb_137_98_1466041907295.png" width="137" height="98">
+                <p class="laiy">    [ 2016-06-16 09:31 ]</p>
+                <p><a href="http://www.northnews.cn/2016/0616/2200918.shtml" target="_blank">红毯上总少不了明星们的争奇斗艳，男明星就先不说，这些女星们的心机简直就是一个比一个重，举手投足间都要想怎么来吸引人的目光，假摔，穿着暴露，任何一个但她们都能拿来大做文章，不得不为她们点一个大大的赞啊！</a></p>
+            </div>
+	        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0616/2200885.shtml" class="blue">国外很火的百元小众凉鞋</a></h3>
+				 <img src="images/thumb_137_98_1466040290262.jpg" width="137" height="98">
+                <p class="laiy">    [ 2016-06-16 09:24 ]</p>
+                <p><a href="http://www.northnews.cn/2016/0616/2200885.shtml" target="_blank">See姨说：盛夏就要来到，再不买双凉鞋怎么行。这个夏天，凉鞋款式花样百出，究竟该买哪些牌子不贵又时髦呢？一起来看看这些百搭又好看的小众凉鞋，一定能找到你心心念念的那双。</a></p>
+            </div>
+		        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0615/2200537.shtml" class="blue">不买多不买贵，五双鞋穿一个夏天</a></h3>
+                <p class="laiy">    [ 2016-06-15 17:22 ]</p>
+                <p>当大批闪亮的凉鞋铺天盖地袭来的时候，就是美少女们又哭又笑痛并快乐剁手的时候了。夏天能穿的衣服那么多，每天换一套都不嫌多，只有一双凉鞋怎么够我们浪！买买买之后总跟着那么一个连词：但是=。= 我们买了那么多...</p>
+            </div>
+		        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0615/2200535.shtml" class="blue">用笔尖勾勒出的闪耀绝美珠宝设计草图</a></h3>
+                <p class="laiy">    [ 2016-06-15 17:19 ]</p>
+                <p>闪闪发光的珠宝充满了无限魅力，但你是否知道，这些完美的珠宝最早是由设计师在纸上绘画出原型，没有宝石的闪烁，但一笔笔的勾勒仍旧散发出光彩，这些珠宝设计草图有着高级珠宝最初的华丽灵魂。</p>
+            </div>
+		        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0615/2200533.shtml" class="blue">长发造型out了现在女星最爱的是中长发</a></h3>
+                <p class="laiy">    [ 2016-06-15 17:17 ]</p>
+                <p>女明星一直都是潮流的风向标，最近流行什么看她们的装扮就对了，夏天到了小编发现，很多女星都剪短了自己的长发，留起了气质的中长发，今天咱们就来盘点一下。</p>
+            </div>
+		        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0615/2200530.shtml" class="blue">想看金小妹Gigi大口吃肉的样子吗 我们满足你！</a></h3>
+                <p class="laiy">    [ 2016-06-15 17:16 ]</p>
+                <p>谁不爱看颜值高的人吃美食？答案一定是没有了吧！人生有什么事情比吃汉堡更值得令人兴奋的吗？（好吧，除非是小编最爱的麻辣火锅）这些拥有魔鬼身材的模特吃起汉堡的样子实在是太反差萌了来看看她们的食相吧！</p>
+            </div>
+		        	<div class="list-box">
+            	<h3><a href="http://www.northnews.cn/2016/0615/2200525.shtml" class="blue">有这些便宜又好看的牌子 韩国欧巴不时髦才怪呢 </a></h3>
+                <p class="laiy">    [ 2016-06-15 17:12 ]</p>
+                <p>识装宝宝今天还是在首尔~~~昨天给大家带来的是韩国的时髦姑娘，今天再送上几位欧巴，还是那句话，韩国年轻人时髦度真的很高，他们很善于结合自己亚洲人的身材和肤色特点来搭配，而且韩国的本土品牌也给了他们很大的...</p>
+            </div>
+	        </div><!--文章白底部分-->
+        <div class="manu"><!--页码-->
+ <li><a href="javascript:void(0);" class="prev disable">上一页</a></li><li><a href="javascript:void(0);" class="now">1</a></li><li><a href="http://www.northnews.cn/news/xx/2.shtml">2</a></li><li><a href="http://www.northnews.cn/news/xx/3.shtml">3</a></li><li><a href="http://www.northnews.cn/news/xx/4.shtml">4</a></li><li><a href="http://www.northnews.cn/news/xx/5.shtml">5</a></li><li><a href="http://www.northnews.cn/news/xx/6.shtml">6</a></li><li><a href="http://www.northnews.cn/news/xx/24.shtml">... 24</a></li><li><a href="http://www.northnews.cn/news/xx/2.shtml" class="next">下一页</a></li>        </div><!--页码-->
+</div><!--左侧内容-->
+    <div class="r-cont"><!--右侧内容-->
+    	<div class="hot"><!--热点推荐-->
+        	<div class="hot-tit">热点推荐</div>
+
+					
+          	<div class="hotbox">
+                <h3><a href="http://www.northnews.cn/2016/0624/2209251.shtml" target="_blank">贝嫂一抹亮黄惊艳街头</a></h3>
+                <a href="http://www.northnews.cn/2016/0624/2209251.shtml" target="_blank"><img src="images/thumb_135_98_1466730590176.jpg" width="135" height="98"></a>
+                <p><a href="http://www.northnews.cn/2016/0624/2209251.shtml" target="_blank" class="grey">维多利亚-贝克汉姆出街被拍。贝嫂一抹亮黄惊艳街头，频撩发如走秀。…</a></p>
+            </div>
+ 
+					
+          	<div class="hotbox">
+                <h3><a href="http://www.northnews.cn/2016/0624/2209238.shtml" target="_blank">阿娇阿sa杨丞琳相聚 甜美似少女</a></h3>
+                <a href="http://www.northnews.cn/2016/0624/2209238.shtml" target="_blank"><img src="images/thumb_135_98_1466731088656.jpg" width="135" height="98"></a>
+                <p><a href="http://www.northnews.cn/2016/0624/2209238.shtml" target="_blank" class="grey">阿娇、阿sa、杨丞琳三姐妹在台北相聚，贺军翔也出席。三姐妹摆出各种搞怪表情，甜美仍似少女。…</a></p>
+            </div>
+ 
+            <ul>
+            	<li><a href="http://china.northnews.cn/2016/0624/2209340.shtml" target="_blank">各地高考头名的学习生活：爱好广泛</a></li>
+             	<li><a href="http://www.northnews.cn/2016/0624/2209235.shtml" target="_blank">被曝出轨又离婚 宁静：我选择离开</a></li>
+             	<li><a href="http://china.northnews.cn/2016/0624/2209336.shtml" target="_blank">女游客潜水遭教练袭胸 嫌疑人被锁定</a></li>
+             	<li><a href="http://china.northnews.cn/2016/0624/2209248.shtml" target="_blank">男子发现初恋已为人妻 悲伤过度撞桥</a></li>
+             	<li><a href="http://china.northnews.cn/2016/0624/2209308.shtml" target="_blank">“高考最牛钉子户”453分  考了20次</a></li>
+             	<li><a href="http://www.northnews.cn/2016/0623/2208928.shtml" target="_blank">最有钱明星排行榜： 第一竟是他！</a></li>
+ 
+            </ul>
+    	</div><!--热点推荐-->
+        <div class="top"><!--排行-->
+        	<div class="hot-tit">热点排行</div>
+             <ul class="list_hot" id="listhot0" style="display: block;">
+ 			    <li style="border-top:0;"><span class="num_hot1"></span><a target="_blank" href="http://www.northnews.cn/2016/0625/2210427.shtml">女孩给父母留字条称“我走了” </a></li>
+                <li><span class="num_hot2"></span><a target="_blank" href="http://www.northnews.cn/2016/0625/2210334.shtml">内蒙古环中国云谷和林格尔自行车公开赛25日开赛</a></li>
+                <li><span class="num_hot3"></span><a target="_blank" href="http://www.northnews.cn/2016/0625/2210287.shtml">内蒙古各界党员劳模代表座谈纪念建党95周年 </a></li>
+                <li><span class="num_hot4"></span><a target="_blank" href="http://www.northnews.cn/2016/0624/2210242.shtml">呼和浩特市中考阅卷将于26日结束</a></li>
+                <li><span class="num_hot5"></span><a target="_blank" href="http://china.northnews.cn/2016/0624/2209471.shtml">男子酒后当女友面强奸其闺蜜 事后威胁不许说</a></li>
+                <li><span class="num_hot6"></span><a target="_blank" href="http://china.northnews.cn/2016/0624/2209903.shtml">一年来网络安全事件我国网民损失915亿</a></li>
+                <li><span class="num_hot7"></span><a target="_blank" href="http://world.northnews.cn/2016/0624/2209894.shtml">英国脱欧公投结果出炉 将脱离欧盟</a></li>
+                <li><span class="num_hot8"></span><a target="_blank" href="http://www.northnews.cn/2016/0624/2209976.shtml">高圆圆调侃助理 网友：女神要爆发逗比因子了！</a></li>
+                <li><span class="num_hot9"></span><a target="_blank" href="http://www.northnews.cn/2016/0624/2209977.shtml">请珍惜！娱乐圈明星们出道前期那些绝版照片</a></li>
+                <li><span class="num_hot10"></span><a target="_blank" href="http://www.northnews.cn/2016/0624/2209946.shtml">蔡依林扎丸子头卖萌 与朋友合影</a></li>
+                <li class="list_more"></li>
+            </ul>
+        </div><!--排行-->
+        <div class="jeenei"><!--99街-->
+        	<div class="jeetit"><span><a target="_blank" href="http://www.99jee.com/" class="gblue">我要爆料&gt;&gt;</a></span></div>	
+            <ul class="hiSlider hiSlider1">
+                <a href="http://www.99jee.com/forum.php?mod=viewthread&tid=1144249" target="_blank"><li data-title="告诉你骑车闯红灯有多危险！" class="hiSlider-item"><img src="images/thumb_260_180_1465802406130.png" alt="告诉你骑车闯红灯有多危险！"></li></a>
+                 <a href="http://www.99jee.com/forum.php?mod=viewthread&tid=1141329" target="_blank"><li data-title="行人请不要跨越护栏珍爱生命" class="hiSlider-item"><img src="images/nopic.gif" alt="行人请不要跨越护栏珍爱生命"></li></a>
+                 <a href="http://www.99jee.com/forum.php?mod=viewthread&tid=1141174" target="_blank"><li data-title="市民手绘公交线路调整通知" class="hiSlider-item"><img src="images/thumb_260_180_1465200249373.png" alt="市民手绘公交线路调整通知"></li></a>
+                 <a href="http://www.99jee.com/forum.php?mod=viewthread&tid=1141209" target="_blank"><li data-title="不听劝闯红灯被撞受伤" class="hiSlider-item"><img src="images/thumb_260_180_1465200211887.png" alt="不听劝闯红灯被撞受伤"></li></a>
+ 
+            </ul>
+            <script src="js/jquery.hiSlider.min.js"></script>
+			<script>
+                $('.hiSlider1').hiSlider();
+                $('.hiSlider2').hiSlider({
+                    isFlexible: true,
+                    mode: 'fade',
+                    isSupportTouch: false,
+                    isShowTitle: false,
+                    isShowPage: false,
+                    titleAttr: function(curIdx){
+                        return $('img', this).attr('alt');
+                    }
+                });
+                $('.hiSlider3').hiSlider({
+                    isFlexible: true,
+                    isSupportTouch: true,
+                    titleAttr: function(curIdx){
+                        return $('img', this).attr('alt');
+                    }
+                });
+                $('.hiSlider4').hiSlider({
+                    startSlide: 2,
+                    direction: 'top'
+                });
+            </script>
+        </div><!--99街-->
+    </div><!--右侧内容-->
+</div>
+<div class="toolbar"><!--返回顶部-->
+           <a href="http://www.northnews.cn/news/xx/###" class="toolbar-item toolbar-item-weixin">
+           <span class="toolbar-layer"></span>
+           </a>
+           <a href="http://www.99jee.com/forum-135-1.html" class="toolbar-item toolbar-item-feedback" target="_blank"></a>
+           <a href="http://www.northnews.cn/news/xx/###" class="toolbar-item toolbar-item-app">
+            <span class="toolbar-layer"></span>
+           </a>
+           <a href="javascript:scroll(0,0)" id="top" class="toolbar-item toolbar-item-top"></a>
+</div><!--返回顶部-->
+
+<div class="footer"><!--底部-->
+		<p><a href="http://www.northnews.cn/about/about-northnews.html" target="_blank" class="white">网站介绍</a> | <a href="http://www.northnews.cn/about/sponsor.html" target="_blank" class="white">广告报价</a> | <a href="http://www.northnews.cn/about/contact.html" target="_blank" class="white">联系方式</a> | <a href="http://www.northnews.cn/about/falv.html" target="_blank" class="white">法律声明</a> | <a href="http://www.northnews.cn/about/sponsor.html" target="_blank" class="white">对外合作</a> | <a href="http://app.northnews.cn/?app=rss" target="_blank" class="white">RSS订阅</a></p>
+        <p>版权声明：正北方网版权所有，未经授权， 请勿转载或建立镜像，违者依法必究。 &nbsp; <b><a href="http://www.northnews.cn/report/" target="_blank" class="white">违法和不良信息 暴恐音视频举报 电话：0471-6635129</a></b>
+</p><p>内蒙古日报传媒集团 正北方网新闻热线：0471-6635129 | 传真：0471-6635129 | 商务合作：0471-6635388 | <b>Email：northnews@126.com(欢迎投稿 适时监控)</b></p>
+		<p>正北方网 Copyright © 2004-2014 northnews.cn All Rights Reserved. 蒙ICP备10000005号 国新网许可证编号：<a href="http://www.northnews.cn/aboutguo" target="_blank" class="white">1512011001</a></p><p>&nbsp; </p>
+</div><!--底部-->
+<div style="display:none;"><!--流量-->
+	<script type="text/javascript" src="js/cnzz_phone.js"></script>
+    <script src="images/stat.php" language="JavaScript"></script><script src="images/core.php" charset="utf-8" type="text/javascript"></script>
+    <script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F271430eb7c28547d5fea579fca819c94' type='text/javascript'%3E%3C/script%3E"));
+    </script><script src="js/h.js" type="text/javascript"></script><a href="http://tongji.baidu.com/hm-web/welcome/ico?s=271430eb7c28547d5fea579fca819c94" target="_blank"><img border="0" src="images/21.gif" width="20" height="20"></a>
+</div><!--流量-->
+
+
+
+<div style="position: static; width: 0px; height: 0px; border: none; padding: 0px; margin: 0px;"><div id="trans-tooltip"><div id="tip-left-top" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-left-top.png);"></div><div id="tip-top" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-top.png) repeat-x;"></div><div id="tip-right-top" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-right-top.png);"></div><div id="tip-right" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-right.png) repeat-y;"></div><div id="tip-right-bottom" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-right-bottom.png);"></div><div id="tip-bottom" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-bottom.png) repeat-x;"></div><div id="tip-left-bottom" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-left-bottom.png);"></div><div id="tip-left" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-left.png);"></div><div id="trans-content"></div></div><div id="tip-arrow-bottom" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-arrow-bottom.png);"></div><div id="tip-arrow-top" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-arrow-top.png);"></div></div></body></html>
