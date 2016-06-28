@@ -5,6 +5,243 @@
     即 ../public/ -->
 </head>
 <body>
-    <p>这是测试</p>
+    <div class="container-fluid">
+        <div class="span10" id="datacontent">
+            
+            <form action="index.php?exam-master-exams" method="post">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th colspan="2">搜索</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>
+                            选择类型：
+                        </td>
+                        <td>
+                            <select name="search[examtype]">
+                                <option value="0">不限</option>
+                                <option value="1">随机抽题</option>
+                                <option value="2">手动抽题</option>
+                                <option value="2">手工组卷</option>
+                            </select>
+                        </td>
+                        <td>
+                            组卷时间：
+                        </td>
+                        <td>
+                            <input class="input-small datetimepicker" data-date="2016-06-16" data-date-format="yyyy-mm-dd" type="text" name="search[stime]" size="10" id="stime" value="" autocomplete="off"> - <input class="input-small datetimepicker" data-date="2016-06-16" data-date-format="yyyy-mm-dd" size="10" type="text" name="search[etime]" id="etime" value="" autocomplete="off">
+                        </td>
+                        <td>
+                            <button class="btn btn-primary" type="submit">搜索</button>
+                            <input type="hidden" value="1" name="search[argsmodel]" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>考试名称</th>
+                        <th>组卷类型</th>
+                        <th>组卷时间</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                                        <tr>
+                        <td>
+                            10                      </td>
+                        <td>
+                            123                     </td>
+                         
+                        <td>
+                            手工组卷                        </td>
+                        <td>
+                            2016-06-14                      </td>
+                         
+                        <td>
+                            <div class="btn-group">
+                                                                <a class="btn" target="_blank" href="index.php?exam-master-exams-preview&examid=10" title="查看试卷"><em class="icon-list-alt"></em></a>
+                                <a class="btn confirm" href="index.php?exam-master-exams-del&page=&examid=10" title="删除"><em class="icon-remove"></em></a>
+                            </div>
+                        </td>
+                    </tr>
+                                        <tr>
+                        <td>
+                            9                       </td>
+                        <td>
+                            测试试卷                        </td>
+                        
+                        <td>
+                            随机组卷                        </td>
+                        <td>
+                            2016-05-12                      </td>
+                         
+                        <td>
+                            <div class="btn-group">
+                                <a class="btn confirm" href="index.php?exam-master-exams-del&page=&examid=9" title="删除"><em class="icon-remove"></em></a>
+                            </div>
+                        </td>
+                    </tr>
+                                        <tr>
+                        <td>
+                            8                       </td>
+                        <td>
+                            300                     </td>
+                        
+                        <td>
+                            手工组卷                        </td>
+                        <td>
+                            2015-11-20                      </td>
+                        
+                        <td>
+                            <div class="btn-group">
+                                                                <a class="btn" target="_blank" href="index.php?exam-master-exams-preview&examid=8" title="查看试卷"><em class="icon-list-alt"></em></a>
+                                                                <a class="btn" href="index.php?exam-master-exams-modify&page=&examid=8" title="修改"><em class="icon-edit"></em></a>
+                                <a class="btn confirm" href="index.php?exam-master-exams-del&page=&examid=8" title="删除"><em class="icon-remove"></em></a>
+                            </div>
+                        </td>
+                    </tr>
+                                        <tr>
+                        <td>
+                            7                       </td>
+                        <td>
+                            2222                        </td>
+                        
+                        <td>
+                            手工组卷                        </td>
+                        <td>
+                            2015-11-20                      </td>
+                        
+                        <td>
+                            <div class="btn-group">
+                                                                <a class="btn" target="_blank" href="index.php?exam-master-exams-preview&examid=7" title="查看试卷"><em class="icon-list-alt"></em></a>
+                                                                <a class="btn" href="index.php?exam-master-exams-modify&page=&examid=7" title="修改"><em class="icon-edit"></em></a>
+                                <a class="btn confirm" href="index.php?exam-master-exams-del&page=&examid=7" title="删除"><em class="icon-remove"></em></a>
+                            </div>
+                        </td>
+                    </tr>
+                                        <tr>
+                        <td>
+                            6                       </td>
+                        <td>
+                            测试                      </td>
+                        
+                        <td>
+                            手工组卷                        </td>
+                        <td>
+                            2015-11-20                      </td>
+                        
+                        <td>
+                            <div class="btn-group">
+                                                                <a class="btn" target="_blank" href="index.php?exam-master-exams-preview&examid=6" title="查看试卷"><em class="icon-list-alt"></em></a>
+                                                                <a class="btn" href="index.php?exam-master-exams-modify&page=&examid=6" title="修改"><em class="icon-edit"></em></a>
+                                <a class="btn confirm" href="index.php?exam-master-exams-del&page=&examid=6" title="删除"><em class="icon-remove"></em></a>
+                            </div>
+                        </td>
+                    </tr>
+                                        <tr>
+                        <td>
+                            5                       </td>
+                        <td>
+                            1111                        </td>
+                        
+                        <td>
+                            手工组卷                        </td>
+                        <td>
+                            2015-11-20                      </td>
+                        
+                        <td>
+                            <div class="btn-group">
+                                                                <a class="btn" target="_blank" href="index.php?exam-master-exams-preview&examid=5" title="查看试卷"><em class="icon-list-alt"></em></a>
+                                                                <a class="btn" href="index.php?exam-master-exams-modify&page=&examid=5" title="修改"><em class="icon-edit"></em></a>
+                                <a class="btn confirm" href="index.php?exam-master-exams-del&page=&examid=5" title="删除"><em class="icon-remove"></em></a>
+                            </div>
+                        </td>
+                    </tr>
+                                        <tr>
+                        <td>
+                            4                       </td>
+                        <td>
+                            测试教师组卷                      </td>
+                        
+                        <td>
+                            随机组卷                        </td>
+                        <td>
+                            2015-08-26                      </td>
+                        
+                        <td>
+                            <div class="btn-group">
+                                <a class="btn confirm" href="index.php?exam-master-exams-del&page=&examid=4" title="删除"><em class="icon-remove"></em></a>
+                            </div>
+                        </td>
+                    </tr>
+                                        <tr>
+                        <td>
+                            3                       </td>
+                        <td>
+                            测试随机2                       </td>
+                        
+                        <td>
+                            随机组卷                        </td>
+                        <td>
+                            2015-06-11                      </td>
+                        
+                        <td>
+                            <div class="btn-group">
+                                <a class="btn confirm" href="index.php?exam-master-exams-del&page=&examid=3" title="删除"><em class="icon-remove"></em></a>
+                            </div>
+                        </td>
+                    </tr>
+                                        <tr>
+                        <td>
+                            2                       </td>
+                        <td>
+                            测试随机试卷                      </td>
+                        
+                        <td>
+                            随机组卷                        </td>
+                        <td>
+                            2015-06-11                      </td>
+                        
+                        <td>
+                            <div class="btn-group">
+                                <a class="btn confirm" href="index.php?exam-master-exams-del&page=&examid=2" title="删除"><em class="icon-remove"></em></a>
+                            </div>
+                        </td>
+                    </tr>
+                                        <tr>
+                        <td>
+                            1                       </td>
+                        <td>
+                            测试手工组卷                      </td>
+                        <td>
+                            手工组卷                        </td>
+                        <td>
+                            2015-05-25                      </td>
+                        
+                        <td>
+                            <div class="btn-group">
+                                                                <a class="btn" target="_blank" href="index.php?exam-master-exams-preview&examid=1" title="查看试卷"><em class="icon-list-alt"></em></a>
+                                <a class="btn confirm" href="index.php?exam-master-exams-del&page=&examid=1" title="删除"><em class="icon-remove"></em></a>
+                            </div>
+                        </td>
+                    </tr>
+                                    </tbody>
+            </table>
+            <div class="pagination pagination-right">
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

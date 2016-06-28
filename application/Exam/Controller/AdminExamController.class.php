@@ -20,6 +20,12 @@ class AdminExamController extends AdminbaseController {
 		// echo "string";
 		$this->display();
 	}
-	
+	function exam_rand(){
+		$this->display();
+	}
+	function exam_manual(){
+		$this->display();
+	}
+
 	
 }
