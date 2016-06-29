@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>公告</title>
+	<link rel="stylesheet" href="__PUBLIC__/Gonggao/bootstrap.min.css">
+	<link rel="stylesheet" href="__PUBLIC__/Gonggao/gonggao.css">
+	<script src="__PUBLIC__/js/jquery.js"></script>
+	<script src="__PUBLIC__/simpleboot/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div id="myCarousel" class="carousel slide">  
+   <!-- 轮播（Carousel）项目 -->
+   <div class="carousel-inner">
+   	<volist name="screen" id="vo">
+   	  <eq name="key" value="0">
+      <div class="item active">
+      <else />
+      <div class="item">
+      </eq>
+      <eq name="vo['bg_type']" value="0">
+      <div class="jumbotron" style="background:url({$vo.screen_background}) no-repeat;background-size:cover;color:{$vo.font_color}">
+      <else/>
+        <div class="jumbotron" style="background:{$vo.screen_background};color:{$vo.font_color}">
+       </eq>
+         	<div class="container">
+         		<h1>{$vo.screen_title}</h1>
+         		<p>{$vo.screen_content|str_replace="\\r\\n","<br/>",###}</p>
+         	</div>
+         </div>
+      </div>
+     </volist>
+   </div>
+</div> 
+<script>
+	$(document).ready(function () {
+		$('.carousel').carousel({
+			interval: 2000,
+			pause:false
+		});
+	});
+</script>
+</body>
+</html>
