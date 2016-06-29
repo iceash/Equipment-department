@@ -1,0 +1,126 @@
+
+<div id="select_list">
+    <form action="#" method="post">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th colspan="2">搜索</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody><tr>
+                <td>
+                    试题ID：
+                </td>
+                <td>
+                    <input name="search[questionid]" class="input-small" size="25" type="text" value="" autocomplete="off">
+                </td>
+                <td>
+                    录入时间：
+                </td>
+                <td>
+                    <input class="input-small datetimepicker" data-date="2016-06-16" data-date-format="yyyy-mm-dd" type="text" name="search[stime]" size="10" id="stime" value="" autocomplete="off"> - <input class="input-small datetimepicker" data-date="2016-06-16" data-date-format="yyyy-mm-dd" size="10" type="text" name="search[etime]" id="etime" value="" autocomplete="off">
+                </td>
+                <td>
+                    关键字：
+                </td>
+                <td>
+                    <input class="input-small" name="search[keyword]" size="25" type="text" value="" autocomplete="off">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button class="btn btn-primary" type="submit" autocomplete="off">搜索</button>
+                    <input type="hidden" value="1" name="search[argsmodel]" autocomplete="off">
+                </td>
+                <td colspan="4"></td>
+            </tr>
+        </tbody></table>
+    </form>
+    <form id="question-list" action="#" method="post">
+        <fieldset>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" class="checkall" target="delids" autocomplete="off"></th>
+                        <th>ID</th>
+                        <th>试题内容</th>
+                        <th>录入时间</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <foreach name="questions" item="one">
+                        <tr>
+                            <td>
+                                <input class="checkone" type="checkbox" name="delids[{$one.id}]" value="{$one.id}">
+                            </td>
+                            <td>{$one.id}</td>
+                            <td>
+                                <a class="selfmodal" href="javascript:;">{$one.question}</a>
+                            </td>
+                            <td>
+                                <?php echo date("Y-m-d h:i:s", $one["time"]); ?>
+                            </td>
+                        </tr>
+                    </foreach>
+                </tbody>
+            </table>
+            <div class="control-group">
+                <div class="controls">
+                    <label class="radio inline">
+                        <button class="btn btn-primary" id="choose" type="button" autocomplete="off">选择</button>
+                    </label>
+                    <input type="hidden" name="page" value="" autocomplete="off">
+                </div>
+            </div>
+                    <div class="pagination pagination-right">
+                        <!-- <ul><li><a target="" href="index.php?exam-master-questions&amp;page=&amp;page=1">|‹</a></li><li><a href="#" class="current">1</a></li><li><a target="" href="index.php?exam-master-questions&amp;page=&amp;page=2">2</a></li><li><a target="" href="index.php?exam-master-questions&amp;page=&amp;page=3">3</a></li><li><a target="" href="index.php?exam-master-questions&amp;page=&amp;page=4">4</a></li><li><a target="" href="index.php?exam-master-questions&amp;page=&amp;page=5">5</a></li><li><a target="" href="index.php?exam-master-questions&amp;page=&amp;page=6">6</a></li><li><a target="" href="index.php?exam-master-questions&amp;page=&amp;page=7">7</a></li><li><a target="" href="index.php?exam-master-questions&amp;page=&amp;page=8">8</a></li><li><a target="" href="index.php?exam-master-questions&amp;page=&amp;page=9">9</a></li><li><a target="" href="index.php?exam-master-questions&amp;page=&amp;page=10">10</a></li><li><a target="" href="index.php?exam-master-questions&amp;page=&amp;page=11"> &gt;&gt; </a></li><li><a target="" href="index.php?exam-master-questions&amp;page=&amp;page=78">›|</a></li><li></li></ul> -->
+                        <ul>
+                        {$page}
+                            <a>共{$count}道题</a>
+                        </ul>
+                    </div>
+        </fieldset>
+    </form>
+</div>
+<script type="text/javascript">
+    var type = {$type};
+    switch(type){
+        case 1 :
+            type = "single";
+            break;
+        case 2 :
+            type = "multi";
+            break;
+        case 3 :
+            type = "judge";
+            break;
+    }
+    $(".checkone").each(function(){
+        var id = $(this).val();
+        if (!($.inArray(id,exam_questions[type]) == -1)) {
+            $(this).attr("checked","checked");
+        };
+    });
+    $(document).on("click","#choose",function(){
+        $(".checkone").each(function(){
+            var questionId = $(this).val();
+            var checked = $(this).attr("checked");
+            if (checked) {
+                if ($.inArray(questionId,exam_questions[type]) == -1) {
+                    exam_questions[type].push(questionId);
+                };
+            }else{
+                var tmp = $.inArray(questionId,exam_questions[type]);
+                if (tmp != -1) {
+                    exam_questions[type].splice(tmp,1);
+                };
+            };
+        });
+        $.fancybox.close();
+        $("#ialreadyselectnumber_" + type).text(exam_questions[type].length);
+    })
+</script>

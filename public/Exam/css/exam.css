@@ -8,3 +8,5 @@
 	border: 0;
 }
 .btn{background-color: #4dd4ba;}
+#selecttext .controls>span{margin-left: -20px;margin-right: 12px;}
+.well{padding: 10px 0 0 20px;}

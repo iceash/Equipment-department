@@ -3,6 +3,8 @@
 <link rel="stylesheet" type="text/css" href="__PUBLIC__/Exam/css/exam.css">
 <!-- 这里放文件单独需要引用的东西，所有静态文件都统一放在__PUBLIC__/下，
     即 ../public/ -->
+    <script src="__PUBLIC__/validate/jquery.validate.min.js"></script>
+    <script src="__PUBLIC__/validate/messages_zh.js"></script>
 </head>
 <body>
     
@@ -10,13 +12,13 @@
         <ul class="nav nav-tabs">
             
         </ul>
-        <form action="index.php?exam-master-questions-addquestion" method="post" class="form-horizontal">
+        <form action="__URL__/ajaxAddquestion" id="addQuestionForm" method="post" class="form-horizontal">
                 <fieldset>
                 <div class="control-group">
                     <label class="control-label">题型：</label>
                     <div class="controls">
-                        <select needle="needle" msg="您必须为要添加的试题选择一种题型" name="questiontype" id="questiontyoe_select" class="combox" >
-                            <option rel="1" value="1">单选题</option>
+                        <select needle="needle" msg="您必须为要添加的试题选择一种题型" name="question[type]" id="questiontyoe_select" class="combox" >
+                            <option rel="1" value="1" >单选题</option>
                             <option rel="2" value="2">多选题</option>
                             <option rel="3" value="3">判断题</option>
                         </select>
@@ -25,17 +27,17 @@
                 <div class="control-group">
                     <label class="control-label">题干：</label>
                     <div class="controls">
-                        <textarea class="ckeditor" name="args[question]" id="question" autocomplete="off" ></textarea> 
+                        <textarea class="ckeditor" name="question[question]" id="question" required>{$que.question}</textarea> 
                     </div>
                 </div>
                 <div class="control-group" id="selectnumber">
                     <label class="control-label">备选项数量：</label>
                     <div class="controls">
-                        <select class="combox" id="questionselectnumber" name="args[questionselectnumber]" autocomplete="off">
+                        <select class="combox" id="questionselectnumber" name="question[number]" autocomplete="off">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
-                            <option value="4" selected="">4</option>
+                            <option value="4">4</option>
                             <option value="5">5</option>
                             <option value="6">6</option>
                         </select>
@@ -44,16 +46,9 @@
                 <div class="control-group" id="selecttext">
                     <label class="control-label">备选项：</label>
                     <div class="controls">
-                        <textarea class="ckeditor questionselect" name="questionselect[]"></textarea><span>A</span><br><br>
-                        <textarea class="ckeditor questionselect" name="questionselect[]"></textarea>
-                        <span>B</span>
-                        <br><br>
-                        <textarea class="ckeditor questionselect" name="questionselect[]"></textarea>
-                        <span>C</span>
-                        <br><br>
-                        <textarea class="ckeditor questionselect" name="questionselect[]"></textarea>
-                        <span>D</span>
-                        <br><br>
+                        <foreach name="que['option']" item="vo" key="k">
+                            <span>{$k}</span><textarea class="ckeditor questionselect" name="question[option][{$k}]">{$vo}</textarea><br><br>
+                        </foreach>
                     </div>
                 </div>
                 <div class="control-group">
@@ -61,65 +56,65 @@
                     <div class="controls">
                         <div id="answerbox_radio" class="answerbox">
                             <label class="radio inline" id="radio-1">
-                                <input type="radio" name="questionanswer[]" value="A" checked="">A
+                                <input type="radio" name="question[answer]" value="A">A
                             </label>
                             <label class="radio inline" id="radio-2">
-                                <input type="radio" name="questionanswer[]" value="B">B
+                                <input type="radio" name="question[answer]" value="B">B
                             </label>
                             <label class="radio inline" id="radio-3">
-                                <input type="radio" name="questionanswer[]" value="C">C
+                                <input type="radio" name="question[answer]" value="C">C
                             </label>
                             <label class="radio inline" id="radio-4">
-                                <input type="radio" name="questionanswer[]" value="D">D
+                                <input type="radio" name="question[answer]" value="D">D
                             </label>
                             <label class="radio inline" id="radio-5" style="display:none;">
-                                <input type="radio" name="questionanswer[]" value="E">E
+                                <input type="radio" name="question[answer]" value="E">E
                             </label>
                             <label class="radio inline" id="radio-6" style="display:none;">
-                                <input type="radio" name="questionanswer[]" value="F">F
+                                <input type="radio" name="question[answer]" value="F">F
                             </label>
                         </div>
                         <div id="answerbox_checkbox" class="answerbox"  style="display:none;">
                             <label class="checkbox inline" id="checkbox-1">
-                                <input type="checkbox" name="questionanswer[]" value="A" checked="">A
+                                <input type="checkbox" name="question[multianswer][]" value="A" >A
                             </label>
                             <label class="checkbox inline" id="checkbox-2">
-                                <input type="checkbox" name="questionanswer[]" value="B">B
+                                <input type="checkbox" name="question[multianswer][]" value="B">B
                             </label>
                             <label class="checkbox inline" id="checkbox-3">
-                                <input type="checkbox" name="questionanswer[]" value="C">C
+                                <input type="checkbox" name="question[multianswer][]" value="C">C
                             </label>
                             <label class="checkbox inline" id="checkbox-4">
-                                <input type="checkbox" name="questionanswer[]" value="D">D
+                                <input type="checkbox" name="question[multianswer][]" value="D">D
                             </label>
                             <label class="checkbox inline" id="checkbox-5" style="display:none;">
-                                <input type="checkbox" name="questionanswer[]" value="E">E
+                                <input type="checkbox" name="question[multianswer][]" value="E">E
                             </label>
                             <label class="checkbox inline" id="checkbox-6" style="display:none;">
-                                <input type="checkbox" name="questionanswer[]" value="F">F
+                                <input type="checkbox" name="question[multianswer][]" value="F">F
                             </label>
                         </div>
                         <div id="answerbox_judge" class="answerbox" style="display:none;">
                             <label class="radio inline">
-                                <input type="radio" name="targs[questionanswer4]" value="A" checked="" autocomplete="off">对
+                                <input type="radio" name="question[judgeanswer]" value="A"  autocomplete="off">对
                             </label>
                             <label class="radio inline">
-                                <input type="radio" name="targs[questionanswer4]" value="B" autocomplete="off">错
+                                <input type="radio" name="question[judgeanswer]" value="B" autocomplete="off">错
                             </label>
                         </div>
                     </div>
                 </div>
                 <div class="control-group">
-                    <label class="control-label">习题解析：</label>
+                    <label class="control-label">习题解析(可选)：</label>
                     <div class="controls">
-                        <textarea class="ckeditor" name="args[questiondescribe]" id="questiondescribe" autocomplete="off" ></textarea>
+                        <textarea class="ckeditor" name="question[describe]" id="questiondescribe" autocomplete="off" >{$que["describe"]}</textarea>
                     </div>
                 </div>
                 <div class="control-group">
                     <div class="controls">
                         <button class="btn btn-primary" type="submit" autocomplete="off">提交</button>
-                        <input type="hidden" name="page" value="" autocomplete="off">
-                        <input type="hidden" name="insertquestion" value="1" autocomplete="off">
+                        <input type="hidden" name="question[id]" value="{$que.id}" autocomplete="off">
+                        <!-- <input type="hidden" name="insertquestion" value="1" autocomplete="off"> -->
                     </div>
                 </div>
             
@@ -127,9 +122,7 @@
         </form>
     </div>
 <script type="text/javascript">
-    $("#questiontyoe_select").change(function(){
-        //选择题型
-        var type = $(this).val();
+    function selectType(type){
         $(".answerbox").hide();
         $("#selecttext").show();
         $("#selectnumber").show();
@@ -146,10 +139,8 @@
                 $("#selectnumber").hide();
                 break;
         }
-    });
-    $("#questionselectnumber").change(function(){
-        //选择备选项数量
-        var num = $(this).val();
+    }
+    function selectNumber(num){
         $("#answerbox_radio").find("label.radio").each(function(){
             $(this).hide();
         });
@@ -160,11 +151,63 @@
         for (var i = 1; i <= num; i++) {
             $("#radio-" + i).show();
             $("#checkbox-" + i).show();
-            var str = '<textarea class="ckeditor questionselect" name="questionselect[]"></textarea><span>'+ String.fromCharCode(64 + i) +'</span><br><br>';
+            var str = '<span>'+ String.fromCharCode(64 + i) +'</span><textarea class="ckeditor questionselect" name="question[option]['+(i-1)+']" required></textarea><br><br>';
             strhtml += str;
         };
         $("#selecttext").find(".controls").html(strhtml);
+    }
+    $("#questiontyoe_select").change(function(){
+        //选择题型
+        var type = $(this).val();
+        selectType(type);
     });
+    $("#questionselectnumber").change(function(){
+        //选择备选项数量
+        var num = $(this).val();
+        selectNumber(num);
+    });
+    //表单校验
+    $.validator.setDefaults({
+        submitHandler: function() {
+            $.ajax({
+                url:'__URL__/ajaxEditquestion',
+                dataType:'json',
+                type:'post',
+                data:$('#addQuestionForm').serialize(),
+                error:function(){
+                    Ext.Msg.alert('错误','请求错误！' + fix);
+                    loadMarsk.hide();
+                },
+                success:function(back){
+                    if (back.status == 1) {
+                        alert("修改成功");
+                        window.location.href = "__URL__/index";
+                    }else{
+                        alert(back.info);
+                    };
+                }
+            })
+        }
+    });
+    $().ready(function() {
+        $(".form-horizontal").validate();
+    });
+
+    $(document).ready(function(){
+        //在初次进入后对选项数量和参考答案初始化
+        var type = "{$que['type']}";
+        $("#questiontyoe_select").val(type);
+        selectType(type);
+        var num = "{$que['number']}";
+        $("#questionselectnumber").val(num);
+        var answer = [];
+        <foreach name="que['answer']" item="op">
+            answer.push('{$op}');
+        </foreach>
+        for (var i = 0; i < answer.length; i++) {
+            $("input[value='"+answer[i]+"']").attr("checked","checked");
+        };
+    })
 </script>
 </body>
 </html>

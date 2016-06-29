@@ -1,0 +1,42 @@
+<div id="view_list">
+    <!-- 这里是看题的列表 -->
+    <foreach name="questions" item="one" key="num">
+        <div id="question_{$one.id}" class="paperexamcontent">
+        <div class="media well">
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <span class="badge badge-info questionindex">{$num+1}</span>
+                </li>
+            </ul>
+            <div class="media-body well text-warning">
+                {$one.question}
+            </div>
+            <div class="media-body well noborder">
+                <foreach name="one.option" item="op">
+                    <p>{$op}</p>
+                </foreach>
+            </div>
+        </div>
+    </div>
+    </foreach>
+    <if condition='count($questions) eq 0'>
+        <div id="question_" class="paperexamcontent">
+        <div class="media well">
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <span class="badge badge-info questionindex"></span>
+                </li>
+            </ul>
+            <div class="media-body well text-warning">
+                未选择题目
+            </div>
+            <div class="media-body well noborder">
+                <foreach name="one.option" item="op">
+                    <p></p>
+                </foreach>
+            </div>
+        </div>
+    </if>
+    
+    
+</div>

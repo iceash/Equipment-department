@@ -64,202 +64,24 @@ if (restore) selObj.selectedIndex=0;
                     </tr>
                 </thead>
                 <tbody>
-                                        <tr>
-                        <td>
-                            10                      </td>
-                        <td>
-                            123                     </td>
-                         
-                        <td>
-                            手工组卷                        </td>
-                        <td>
-                            2016-06-14                      </td>
-                         
-                        <td>
-                            <div class="btn-group">
-                                <a class="btn" target="_blank" href="__URL__/paper" title="查看试卷"><em class="icon-list-alt"></em></a>
-                                <a class="btn" href="__URL__/editexam" title="修改"><em class="icon-edit"></em></a>
-                                <a class="btn confirm" href="#" title="删除"><em class="icon-remove"></em></a>
-                            </div>
-                        </td>
-                    </tr>
-                                        <tr>
-                        <td>
-                            9                       </td>
-                        <td>
-                            测试试卷                        </td>
-                        
-                        <td>
-                            随机组卷                        </td>
-                        <td>
-                            2016-05-12                      </td>
-                         
-                        <td>
-                            <div class="btn-group">
-                                <a class="btn" target="_blank" href="__URL__/paper" title="查看试卷"><em class="icon-list-alt"></em></a>
-                                <a class="btn confirm" href="#" title="删除"><em class="icon-remove"></em></a>
-                            </div>
-                        </td>
-                    </tr>
-                                        <tr>
-                        <td>
-                            8                       </td>
-                        <td>
-                            300                     </td>
-                        
-                        <td>
-                            手工组卷                        </td>
-                        <td>
-                            2015-11-20                      </td>
-                        
-                        <td>
-                            <div class="btn-group">
+                    <foreach name="exams" item="one">
+                        <tr>
+                            <td>{$one.id}</td>
+                            <td>{$one.name}</td>
+                            <td>{$one.type}</td>
+                            <td><?php echo date("Y-m-d h:i:s", $one["create_time"]); ?></td>
+                            <td>
                                 <div class="btn-group">
-                                <a class="btn" target="_blank" href="__URL__/paper" title="查看试卷"><em class="icon-list-alt"></em></a>
-                                <a class="btn" href="__URL__/editexam" title="修改"><em class="icon-edit"></em></a>
-                                <a class="btn confirm" href="#" title="删除"><em class="icon-remove"></em></a>
-                            </div>
-                            </div>
-                        </td>
-                    </tr>
-                                        <tr>
-                        <td>
-                            7                       </td>
-                        <td>
-                            2222                        </td>
-                        
-                        <td>
-                            手工组卷                        </td>
-                        <td>
-                            2015-11-20                      </td>
-                        
-                        <td>
-                            <div class="btn-group">
-                                <div class="btn-group">
-                                <a class="btn" target="_blank" href="__URL__/paper" title="查看试卷"><em class="icon-list-alt"></em></a>
-                                <a class="btn" href="__URL__/editexam" title="修改"><em class="icon-edit"></em></a>
-                                <a class="btn confirm" href="#" title="删除"><em class="icon-remove"></em></a>
-                            </div>
-                            </div>
-                        </td>
-                    </tr>
-                                        <tr>
-                        <td>
-                            6                       </td>
-                        <td>
-                            测试                      </td>
-                        
-                        <td>
-                            手工组卷                        </td>
-                        <td>
-                            2015-11-20                      </td>
-                        
-                        <td>
-                            <div class="btn-group">
-                                <div class="btn-group">
-                                <a class="btn" target="_blank" href="__URL__/paper" title="查看试卷"><em class="icon-list-alt"></em></a>
-                                <a class="btn" href="__URL__/editexam" title="修改"><em class="icon-edit"></em></a>
-                                <a class="btn confirm" href="#" title="删除"><em class="icon-remove"></em></a>
-                            </div>
-                            </div>
-                        </td>
-                    </tr>
-                                        <tr>
-                        <td>
-                            5                       </td>
-                        <td>
-                            1111                        </td>
-                        
-                        <td>
-                            手工组卷                        </td>
-                        <td>
-                            2015-11-20                      </td>
-                        
-                        <td>
-                            <div class="btn-group">
-                                <div class="btn-group">
-                                <a class="btn" target="_blank" href="__URL__/paper" title="查看试卷"><em class="icon-list-alt"></em></a>
-                                <a class="btn" href="__URL__/editexam" title="修改"><em class="icon-edit"></em></a>
-                                <a class="btn confirm" href="#" title="删除"><em class="icon-remove"></em></a>
-                            </div>
-                            </div>
-                        </td>
-                    </tr>
-                                        <tr>
-                        <td>
-                            4                       </td>
-                        <td>
-                            测试教师组卷                      </td>
-                        
-                        <td>
-                            随机组卷                        </td>
-                        <td>
-                            2015-08-26                      </td>
-                        
-                        <td>
-                            <div class="btn-group">
-                                <a class="btn" target="_blank" href="__URL__/paper" title="查看试卷"><em class="icon-list-alt"></em></a>
-                                <a class="btn confirm" href="#" title="删除"><em class="icon-remove"></em></a>
-                            </div>
-                        </td>
-                    </tr>
-                                        <tr>
-                        <td>
-                            3                       </td>
-                        <td>
-                            测试随机2                       </td>
-                        
-                        <td>
-                            随机组卷                        </td>
-                        <td>
-                            2015-06-11                      </td>
-                        
-                        <td>
-                            <div class="btn-group">
-                                <a class="btn" target="_blank" href="__URL__/paper" title="查看试卷"><em class="icon-list-alt"></em></a>
-                                <a class="btn confirm" href="#" title="删除"><em class="icon-remove"></em></a>
-                            </div>
-                        </td>
-                    </tr>
-                                        <tr>
-                        <td>
-                            2                       </td>
-                        <td>
-                            测试随机试卷                      </td>
-                        
-                        <td>
-                            随机组卷                        </td>
-                        <td>
-                            2015-06-11                      </td>
-                        
-                        <td>
-                            <div class="btn-group">
-                                <a class="btn" target="_blank" href="__URL__/paper" title="查看试卷"><em class="icon-list-alt"></em></a>
-                                <a class="btn confirm" href="#" title="删除"><em class="icon-remove"></em></a>
-                            </div>
-                        </td>
-                    </tr>
-                                        <tr>
-                        <td>
-                            1                       </td>
-                        <td>
-                            测试手工组卷                      </td>
-                        <td>
-                            手工组卷                        </td>
-                        <td>
-                            2015-05-25                      </td>
-                        
-                        <td>
-                            <div class="btn-group">
-                                <div class="btn-group">
-                                <a class="btn" target="_blank" href="__URL__/paper" title="查看试卷"><em class="icon-list-alt"></em></a>
-                                <a class="btn" href="__URL__/editexam" title="修改"><em class="icon-edit"></em></a>
-                                <a class="btn confirm" href="#" title="删除"><em class="icon-remove"></em></a>
-                            </div>
-                            </div>
-                        </td>
-                    </tr>
-                                    </tbody>
+                                    <a class="btn" target="_blank" href="__URL__/paper/id/{$one.id}" title="查看试卷"><em class="icon-list-alt"></em></a>
+                                    <if condition="$one.type eq '手工组卷'">
+                                        <a class="btn" href="__URL__/editexam" title="修改"><em class="icon-edit"></em></a>
+                                    </if>
+                                    <a num="{$one.id}" class="btn confirm" href="javascript:;" title="删除"><em class="icon-remove"></em></a>
+                                </div>
+                            </td>
+                        </tr>
+                    </foreach>
+                </tbody>
             </table>
             <div class="pagination pagination-right">
                 <ul></ul>
@@ -269,8 +91,20 @@ if (restore) selObj.selectedIndex=0;
 </div>
 <script type="text/javascript">
     $(document).on("click","#exam-list .btn.confirm",function(){
-        $(this).parents("tr").remove();
-        alert("删除此题成功");
+        if (!confirm("是否确认删除此试卷")) {
+            return false;
+        };
+        var id = $(this).attr("num");
+        var that = this;
+        $.post("__URL__/delExam",{"id":id},function(back){
+            if (back.status == 1) {
+                $(that).parents("tr").remove();
+                // alert("删除此试卷成功");
+            }else{
+                alert(back.info);
+                console.log(back);
+            };
+        });
     });
 </script>
 </body>

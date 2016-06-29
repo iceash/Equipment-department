@@ -1,6 +1,8 @@
 <admintpl file="header" />
 <!-- 上面调用全局的css、js等 -->
 <link rel="stylesheet" type="text/css" href="__PUBLIC__/Exam/css/exam.css">
+    <script src="__PUBLIC__/validate/jquery.validate.min.js"></script>
+    <script src="__PUBLIC__/validate/messages_zh.js"></script>
 <!-- 这里放文件单独需要引用的东西，所有静态文件都统一放在__PUBLIC__/下，
     即 ../public/ -->
 </head>
@@ -8,86 +10,58 @@
     <div class="span10" id="datacontent">
             <ul class="nav">
             </ul>
-            <form action="?exam-master-exams-autopage" method="post" class="form-horizontal">
+            <form action="#" method="post" class="form-horizontal">
                 <div class="control-group">
                     <label class="control-label" for="content">试卷名称：</label>
                     <div class="controls">
-                        <input type="text" name="args[exam]" value="" needle="needle" msg="您必须为该试卷输入一个名称"/>
+                        <input type="text" name="name" required value="" needle="needle" msg="您必须为该试卷输入一个名称"/>
                     </div>
                 </div>
                 
                 <div class="control-group">
                     <label class="control-label" for="content">考试时间：</label>
                     <div class="controls">
-                        <input type="text" name="args[examsetting][examtime]" value="60" size="4" needle="needle" class="inline"/> 分钟
-                    </div>
-                </div>
-                <div class="control-group">
-                    <label class="control-label" for="content">来源：</label>
-                    <div class="controls">
-                        <input type="text" name="args[examsetting][comfrom]" value="" size="4"/>
+                        <input type="text" name="duration_time" required value="100" size="4" needle="needle" class="inline"/> 分钟
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="content">试卷总分：</label>
                     <div class="controls">
-                        <input type="text" name="args[examsetting][score]" value="" size="4" needle="needle" msg="你要为本考卷设置总分" datatype="number"/>
+                        <input type="text" name="total_score" required value="100" size="4" needle="needle" msg="你要为本考卷设置总分" datatype="number"/>
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="content">及格线：</label>
                     <div class="controls">
-                        <input type="text" name="args[examsetting][passscore]" value="" size="4" needle="needle" msg="你要为本考卷设置一个及格分数线" datatype="number"/>
+                        <input type="text" name="pass_line" required value="60" size="4" needle="needle" msg="你要为本考卷设置一个及格分数线" datatype="number"/>
                     </div>
                 </div>
-                <!-- <div class="control-group">
-                    <label class="control-label">题型排序</label>
-                    <div class="controls">
-                        <div class="sortable btn-group">
-                                <a class="btn questpanel panel_1">单选题<input type="hidden" name="args[examsetting][questypelite][1]" class="questypepanelinput" id="panel_1" value="1"/></a>
-                                <a class="btn questpanel panel_2">多选题<input type="hidden" name="args[examsetting][questypelite][2]" class="questypepanelinput" id="panel_2" value="1"/></a>
-                                <a class="btn questpanel panel_3">判断题<input type="hidden" name="args[examsetting][questypelite][3]" class="questypepanelinput" id="panel_3" value="1"/></a>
-                            </div>
-                        <span class="help-block">拖拽进行题型排序</span>
-                    </div>
-                </div> -->
-                <!-- <div class="control-group">
-                    <label class="control-label">题量配比模式：</label>
-                    <div class="controls">
-                        <label class="radio inline">
-                            <input type="radio" class="input-text" name="args[examsetting][scalemodel]" value="1" onchange="javascript:$('#modeplane').html($('#sptype').html());"/> 开启
-                        </label>
-                        <label class="checkbox inline">
-                            <input type="radio" class="input-text" name="args[examsetting][scalemodel]" value="0" onchange="javascript:$('#modeplane').html($('#normaltype').html());" checked/> 关闭
-                        </label>
-                   </div>
-                </div> -->
                 <div id="modeplane">
-                                        <div class="control-group questpanel panel_1">
+                    <div class="control-group questpanel panel_1">
                         <label class="control-label" for="content">单选题：</label>
                         <div class="controls">
                             <span class="info">共&nbsp;</span>
-                            <input id="iselectallnumber_1" type="text" class="input-mini" needle="needle" name="args[examsetting][questype][1][number]" value="0" size="2" msg="您必须填写总题数"/>
-                            <span class="info">&nbsp;题，每题&nbsp;</span><input class="input-mini" needle="needle" type="text" name="args[examsetting][questype][1][score]" value="0" size="2" msg="您必须填写每题的分值"/>
-                            <span class="info">&nbsp;分
+                            <input id="iselectallnumber_1" required type="text" class="input-mini" needle="needle" name="questype[1][number]" value="0" size="2" msg="您必须填写总题数"/>
+                            <span class="info">&nbsp;题，每题&nbsp;</span><input class="input-mini" needle="needle" id="perscore_1" required type="text" name="questype[1][score]" value="0" size="2" msg="您必须填写每题的分值"/>
+                            <span class="info">&nbsp;分</span>
                         </div>
                     </div>
                                         <div class="control-group questpanel panel_2">
                         <label class="control-label" for="content">多选题：</label>
                         <div class="controls">
                             <span class="info">共&nbsp;</span>
-                            <input id="iselectallnumber_2" type="text" class="input-mini" needle="needle" name="args[examsetting][questype][2][number]" value="0" size="2" msg="您必须填写总题数"/>
-                            <span class="info">&nbsp;题，每题&nbsp;</span><input class="input-mini" needle="needle" type="text" name="args[examsetting][questype][2][score]" value="0" size="2" msg="您必须填写每题的分值"/>
-                            <span class="info">&nbsp;分
+                            <input id="iselectallnumber_2" required type="text" class="input-mini" needle="needle" name="questype[2][number]" value="0" size="2" msg="您必须填写总题数"/>
+                            <span class="info">&nbsp;题，每题&nbsp;</span><input class="input-mini" needle="needle" id="perscore_2" required type="text" name="questype[2][score]" value="0" size="2" msg="您必须填写每题的分值"/>
+                            <span class="info">&nbsp;分</span>
                         </div>
                     </div>
-                                        <div class="control-group questpanel panel_3">
+                        <div class="control-group questpanel panel_3">
                         <label class="control-label" for="content">判断题：</label>
                         <div class="controls">
                             <span class="info">共&nbsp;</span>
-                            <input id="iselectallnumber_3" type="text" class="input-mini" needle="needle" name="args[examsetting][questype][3][number]" value="0" size="2" msg="您必须填写总题数"/>
-                            <span class="info">&nbsp;题，每题&nbsp;</span><input class="input-mini" needle="needle" type="text" name="args[examsetting][questype][2][score]" value="0" size="2" msg="您必须填写每题的分值"/>
-                            <span class="info">&nbsp;分
+                            <input id="iselectallnumber_3" required type="text" class="input-mini" needle="needle" name="questype[3][number]" value="0" size="2" msg="您必须填写总题数"/>
+                            <span class="info">&nbsp;题，每题&nbsp;</span><input class="input-mini" needle="needle" id="perscore_3" required type="text" name="questype[3][score]" value="0" size="2" msg="您必须填写每题的分值"/>
+                            <span class="info">&nbsp;分</span>
                         </div>
                     </div>
                      
@@ -100,5 +74,66 @@
                 </div>
             </form>
         </div>
+<script type="text/javascript">
+    
+    //准备参数settings
+    var settings = { 
+            single :{
+                score:"0",
+                number:"0",
+            },
+            multi :{
+                score:"0",
+                number:"0",
+            },
+            judge :{
+                score:"0",
+                number:"0",
+            }, 
+        };
+    $().ready(function() {
+        $(".form-horizontal").validate({
+            // debug:true,
+            submitHandler: function(form) {
+                settings.single.number = $("#iselectallnumber_1").val();
+                settings.single.score = $("#perscore_1").val();
+                settings.multi.number = $("#iselectallnumber_2").val();
+                settings.multi.score = $("#perscore_2").val();
+                settings.judge.number = $("#iselectallnumber_3").val();
+                settings.judge.score = $("#perscore_3").val();
+                var total_score = parseInt($("input[name='total_score']").val());
+                var sum = 0 + settings.single.number*settings.single.score + settings.multi.number*settings.multi.score + settings.judge.number*settings.judge.score;
+                if (total_score != sum) {
+                    alert("分值不对");
+                    return;
+                };
+                var data = new Object();
+                data["name"] = $("input[name='name']").val();
+                data["settings"] = JSON.stringify(settings);
+                // data["exam_questions"] = JSON.stringify(exam_questions);
+                data["duration_time"] = $("input[name='duration_time']").val();
+                data["total_score"] = $("input[name='total_score']").val();
+                data["pass_line"] = $("input[name='pass_line']").val();
+                $.ajax({
+                    url:'__URL__/ajaxAddRandExam',
+                    dataType:'json',
+                    type:'POST',
+                    data:{"data":data},
+                    error:function(){
+                        alert('错误','请求错误！');
+                    },
+                    success:function(back){
+                        if (back.status == 1) {
+                            alert("添加成功");
+                            window.location.href = "__URL__/index";
+                        }else{
+                            alert(back.info);
+                        };
+                    }
+                })
+            }
+        });
+    });
+</script>
 </body>
 </html>
