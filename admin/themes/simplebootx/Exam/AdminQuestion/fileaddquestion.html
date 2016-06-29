@@ -1,0 +1,85 @@
+<admintpl file="header" />
+<!-- 上面调用全局的css、js等 -->
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Exam/css/exam.css">
+<!-- 这里放文件单独需要引用的东西，所有静态文件都统一放在__PUBLIC__/下，
+    即 ../public/ -->
+</head>
+<body>
+    
+    <div class="span10" id="datacontent">
+        <ul class="nav nav-tabs">
+            
+        </ul>
+        <form action="__URL__/index" method="post" class="form-horizontal">
+                <legend>从CSV导入</legend>
+                <div class="control-group">
+                    <label for="username" class="control-label">示范格式</label>
+                    <div class="controls">
+                        <img src="__PUBLIC__/images/filedemo.png">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label for="lesson_video" class="control-label">待导入文件</label>
+                    <div class="controls">
+                        <span class="input-append">
+                            <input type="text" name="uploadfile" id="uploadfile_value" class="inline uploadvideo" needle="needle" msg="必须先上传CSV文件" autocomplete="off">
+                            <span id="uploadfile_percent" class="add-on">0.00%</span>
+                        </span>
+                        <span class="btn">
+                            上传文件
+                        </span>
+                        <span class="help-block">注意：导入文件必须为csv文件，可用excel另存为csv，为保证程序正常导入，每个CSV文件请不要超过2M，否则可能导入失败</span>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <button class="btn btn-primary" type="submit" autocomplete="off">提交</button>
+                        <input type="hidden" name="page" value="" autocomplete="off">
+                        <input type="hidden" name="type" value="1" autocomplete="off">
+                        <input type="hidden" name="insertquestion" value="1" autocomplete="off">
+                                            </div>
+                </div>
+            </form>
+    </div>
+<script type="text/javascript">
+    $("#questiontyoe_select").change(function(){
+        //选择题型
+        var type = $(this).val();
+        $(".answerbox").hide();
+        $("#selecttext").show();
+        $("#selectnumber").show();
+        switch(type){
+            case "1" :
+                $("#answerbox_radio").show();
+                break;
+            case "2" :
+                $("#answerbox_checkbox").show();
+                break;
+            case "3" :
+                $("#answerbox_judge").show();
+                $("#selecttext").hide();
+                $("#selectnumber").hide();
+                break;
+        }
+    });
+    $("#questionselectnumber").change(function(){
+        //选择备选项数量
+        var num = $(this).val();
+        $("#answerbox_radio").find("label.radio").each(function(){
+            $(this).hide();
+        });
+        $("#answerbox_checkbox").find("label.checkbox").each(function(){
+            $(this).hide();
+        });
+        var strhtml = "";
+        for (var i = 1; i <= num; i++) {
+            $("#radio-" + i).show();
+            $("#checkbox-" + i).show();
+            var str = '<textarea class="ckeditor questionselect" name="questionselect[]"></textarea><span>'+ String.fromCharCode(64 + i) +'</span><br><br>';
+            strhtml += str;
+        };
+        $("#selecttext").find(".controls").html(strhtml);
+    });
+</script>
+</body>
+</html>

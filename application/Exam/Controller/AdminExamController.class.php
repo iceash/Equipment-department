@@ -26,6 +26,12 @@ class AdminExamController extends AdminbaseController {
 	function exam_manual(){
 		$this->display();
 	}
+	function paper(){
+		$this->display();
+	}
+	function editexam(){
+		$this->display();
+	}
 
 	
 }

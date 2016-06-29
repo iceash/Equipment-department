@@ -20,6 +20,15 @@ class AdminQuestionController extends AdminbaseController {
 		// echo "string";
 		$this->display();
 	}
-	
+	function addquestion()
+	{
+		$this->display();
+	}
+	function editquestion(){
+		$this->display();
+	}
+	function fileaddquestion(){
+		$this->display();
+	}
 	
 }

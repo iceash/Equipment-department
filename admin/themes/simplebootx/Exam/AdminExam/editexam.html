@@ -1,6 +1,6 @@
 <admintpl file="header" />
 <!-- 上面调用全局的css、js等 -->
-<link rel="stylesheet" type="text/css" href="__PUBLIC__/Exam/css/exam.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Exam/css/exam.csss">
 <!-- 这里放文件单独需要引用的东西，所有静态文件都统一放在__PUBLIC__/下，
     即 ../public/ -->
 </head>
@@ -40,28 +40,6 @@
                         <input type="text" name="args[examsetting][passscore]" value="" size="4" needle="needle" msg="你要为本考卷设置一个及格分数线" datatype="number"/>
                     </div>
                 </div>
-                <!-- <div class="control-group">
-                    <label class="control-label">题型排序</label>
-                    <div class="controls">
-                        <div class="sortable btn-group">
-                                <a class="btn questpanel panel_1">单选题<input type="hidden" name="args[examsetting][questypelite][1]" class="questypepanelinput" id="panel_1" value="1"/></a>
-                                <a class="btn questpanel panel_2">多选题<input type="hidden" name="args[examsetting][questypelite][2]" class="questypepanelinput" id="panel_2" value="1"/></a>
-                                <a class="btn questpanel panel_3">判断题<input type="hidden" name="args[examsetting][questypelite][3]" class="questypepanelinput" id="panel_3" value="1"/></a>
-                            </div>
-                        <span class="help-block">拖拽进行题型排序</span>
-                    </div>
-                </div> -->
-                <!-- <div class="control-group">
-                    <label class="control-label">题量配比模式：</label>
-                    <div class="controls">
-                        <label class="radio inline">
-                            <input type="radio" class="input-text" name="args[examsetting][scalemodel]" value="1" onchange="javascript:$('#modeplane').html($('#sptype').html());"/> 开启
-                        </label>
-                        <label class="checkbox inline">
-                            <input type="radio" class="input-text" name="args[examsetting][scalemodel]" value="0" onchange="javascript:$('#modeplane').html($('#normaltype').html());" checked/> 关闭
-                        </label>
-                   </div>
-                </div> -->
                 <div id="modeplane">
                                         <div class="control-group questpanel panel_1">
                         <label class="control-label" for="content">单选题：</label>
@@ -70,6 +48,11 @@
                             <input id="iselectallnumber_1" type="text" class="input-mini" needle="needle" name="args[examsetting][questype][1][number]" value="0" size="2" msg="您必须填写总题数"/>
                             <span class="info">&nbsp;题，每题&nbsp;</span><input class="input-mini" needle="needle" type="text" name="args[examsetting][questype][1][score]" value="0" size="2" msg="您必须填写每题的分值"/>
                             <span class="info">&nbsp;分
+                                <span class="info">&nbsp;已选题数：<a id="ialreadyselectnumber_1">0</a>&nbsp;&nbsp;题</span>
+                        <span class="info">&nbsp;<a class="selfmodal btn" href="javascript:;" data-target="#modal" url="index.php?exam-master-exams-selected&questionids={iselectquestions_1}&rowsquestionids={iselectrowsquestions_1}" valuefrom="iselectquestions_1|iselectrowsquestions_1">看题</a></span>
+                        <span class="info">&nbsp;<a class="selfmodal btn" href="javascript:;" data-target="#modal" url="index.php?exam-master-exams-selectquestions&search[questionsubjectid]={selectedsubjectid}&search[questiontype]=1&questionids={iselectquestions_1}&rowsquestionids={iselectrowsquestions_1}&useframe=1" valuefrom="iselectquestions_1|iselectrowsquestions_1|selectedsubjectid">选题</a></span>
+                        <input type="hidden" value="" id="iselectquestions_1" name="args[examquestions][1][questions]" />
+                        <input type="hidden" value="" id="iselectrowsquestions_1" name="args[examquestions][1][rowsquestions]" />
                         </div>
                     </div>
                                         <div class="control-group questpanel panel_2">
@@ -79,6 +62,11 @@
                             <input id="iselectallnumber_2" type="text" class="input-mini" needle="needle" name="args[examsetting][questype][2][number]" value="0" size="2" msg="您必须填写总题数"/>
                             <span class="info">&nbsp;题，每题&nbsp;</span><input class="input-mini" needle="needle" type="text" name="args[examsetting][questype][2][score]" value="0" size="2" msg="您必须填写每题的分值"/>
                             <span class="info">&nbsp;分
+                                <span class="info">&nbsp;已选题数：<a id="ialreadyselectnumber_1">0</a>&nbsp;&nbsp;题</span>
+                        <span class="info">&nbsp;<a class="selfmodal btn" href="javascript:;" data-target="#modal" url="index.php?exam-master-exams-selected&questionids={iselectquestions_1}&rowsquestionids={iselectrowsquestions_1}" valuefrom="iselectquestions_1|iselectrowsquestions_1">看题</a></span>
+                        <span class="info">&nbsp;<a class="selfmodal btn" href="javascript:;" data-target="#modal" url="index.php?exam-master-exams-selectquestions&search[questionsubjectid]={selectedsubjectid}&search[questiontype]=1&questionids={iselectquestions_1}&rowsquestionids={iselectrowsquestions_1}&useframe=1" valuefrom="iselectquestions_1|iselectrowsquestions_1|selectedsubjectid">选题</a></span>
+                        <input type="hidden" value="" id="iselectquestions_1" name="args[examquestions][1][questions]" />
+                        <input type="hidden" value="" id="iselectrowsquestions_1" name="args[examquestions][1][rowsquestions]" />
                         </div>
                     </div>
                                         <div class="control-group questpanel panel_3">
@@ -88,6 +76,11 @@
                             <input id="iselectallnumber_3" type="text" class="input-mini" needle="needle" name="args[examsetting][questype][3][number]" value="0" size="2" msg="您必须填写总题数"/>
                             <span class="info">&nbsp;题，每题&nbsp;</span><input class="input-mini" needle="needle" type="text" name="args[examsetting][questype][2][score]" value="0" size="2" msg="您必须填写每题的分值"/>
                             <span class="info">&nbsp;分
+                                <span class="info">&nbsp;已选题数：<a id="ialreadyselectnumber_1">0</a>&nbsp;&nbsp;题</span>
+                        <span class="info">&nbsp;<a class="selfmodal btn" href="javascript:;" data-target="#modal" url="index.php?exam-master-exams-selected&questionids={iselectquestions_1}&rowsquestionids={iselectrowsquestions_1}" valuefrom="iselectquestions_1|iselectrowsquestions_1">看题</a></span>
+                        <span class="info">&nbsp;<a class="selfmodal btn" href="javascript:;" data-target="#modal" url="index.php?exam-master-exams-selectquestions&search[questionsubjectid]={selectedsubjectid}&search[questiontype]=1&questionids={iselectquestions_1}&rowsquestionids={iselectrowsquestions_1}&useframe=1" valuefrom="iselectquestions_1|iselectrowsquestions_1|selectedsubjectid">选题</a></span>
+                        <input type="hidden" value="" id="iselectquestions_1" name="args[examquestions][1][questions]" />
+                        <input type="hidden" value="" id="iselectrowsquestions_1" name="args[examquestions][1][rowsquestions]" />
                         </div>
                     </div>
                      

@@ -1,0 +1,10 @@
+.span10{
+	min-width: 800px;
+	width: 95%;
+	margin: 0 auto;
+	float: none;
+}
+.nav-tabs{
+	border: 0;
+}
+.btn{background-color: #4dd4ba;}

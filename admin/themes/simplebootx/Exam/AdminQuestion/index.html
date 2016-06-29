@@ -1,6 +1,6 @@
 <admintpl file="header" />
 <!-- 上面调用全局的css、js等 -->
-<link rel="stylesheet" type="text/css" href="__PUBLIC__/Demo/demo.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Exam/css/exam.css">
 <!-- 这里放文件单独需要引用的东西，所有静态文件都统一放在__PUBLIC__/下，
     即 ../public/ -->
 </head>
@@ -14,8 +14,8 @@
                 <div class="dropdown pull-right">
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">添加试题<strong class="caret"></strong></a>
                     <ul class="dropdown-menu">
-                        <li><a href="index.php?exam-master-questions-addquestion&amp;page=">单题添加</a></li>
-                        <li><a href="index.php?exam-master-questions-filebataddquestion&amp;page=">文件批量导入</a></li>
+                        <li><a href="__URL__/addquestion">单题添加</a></li>
+                        <li><a href="__URL__/fileaddquestion">文件批量导入</a></li>
                     </ul>
                 </div>
             <!-- </ul> -->
@@ -90,13 +90,10 @@
                         <td>
                             <select name="search[questiontype]" class="input-medium" autocomplete="off">
                                 <option value="0">类型不限</option>
-                                                                <option value="1">单选题</option>
-                                                                <option value="2">多选题</option>
-                                                                <option value="3">判断题</option>
-                                                                <option value="4">问答题</option>
-                                                                <option value="5">填空题</option>
-                                                                <option value="6">故障题</option>
-                                                            </select>
+                                <option value="1">单选题</option>
+                                <option value="2">多选题</option>
+                                <option value="3">判断题</option>
+                            </select>
                         </td>
                         <!-- <td>
                             难度：
@@ -123,7 +120,7 @@
                     </tr>
                 </tbody></table>
             </form>
-            <form action="index.php?exam-master-questions-batdel" method="post">
+            <form id="question-list" action="#" method="post">
                 <fieldset>
                     <table class="table table-hover">
                         <thead>
@@ -150,7 +147,7 @@
                                     2016-06-14                              </td>
                                 <td>
                                     <div class="btn-group">
-                                        <a class="btn" href="index.php?exam-master-questions-modifyquestion&amp;page=&amp;questionid=8459" title="修改"><em class="icon-edit"></em></a>
+                                        <a class="btn" href="__URL__/editquestion/questionid/8459" title="修改"><em class="icon-edit"></em></a>
                                         <a class="btn confirm" href="javascript:;" title="删除"><em class="icon-remove"></em></a>
                                     </div>
                                 </td>
@@ -160,7 +157,7 @@
                                 <td>
                                     8458                                </td>
                                 <td>
-                                    填空题                             </td>
+                                    多选题                             </td>
                                 <td>
                                     <a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-master-questions-detail&amp;questionid=8458" data-target="#modal">你是（）的是我</a>
                                 </td>
@@ -168,7 +165,7 @@
                                     2016-05-12                              </td>
                                 <td>
                                     <div class="btn-group">
-                                        <a class="btn" href="index.php?exam-master-questions-modifyquestion&amp;page=&amp;questionid=8458" title="修改"><em class="icon-edit"></em></a>
+                                        <a class="btn" href="__URL__/editquestion/questionid/8458" title="修改"><em class="icon-edit"></em></a>
                                         <a class="btn confirm" href="javascript:;" title="删除"><em class="icon-remove"></em></a>
                                     </div>
                                 </td>
@@ -178,7 +175,7 @@
                                 <td>
                                     8457                                </td>
                                 <td>
-                                    填空题                             </td>
+                                    多选题                             </td>
                                 <td>
                                     <a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-master-questions-detail&amp;questionid=8457" data-target="#modal">asdsadsadsadasd</a>
                                 </td>
@@ -188,7 +185,7 @@
                                 
                                 <td>
                                     <div class="btn-group">
-                                        <a class="btn" href="index.php?exam-master-questions-modifyquestion&amp;page=&amp;questionid=8457" title="修改"><em class="icon-edit"></em></a>
+                                        <a class="btn" href="__URL__/editquestion/questionid/8457" title="修改"><em class="icon-edit"></em></a>
                                         <a class="btn confirm" href="javascript:;" title="删除"><em class="icon-remove"></em></a>
                                     </div>
                                 </td>
@@ -207,7 +204,7 @@
                                 
                                 <td>
                                     <div class="btn-group">
-                                        <a class="btn" href="index.php?exam-master-questions-modifyquestion&amp;page=&amp;questionid=8456" title="修改"><em class="icon-edit"></em></a>
+                                        <a class="btn" href="__URL__/editquestion/questionid/8456" title="修改"><em class="icon-edit"></em></a>
                                         <a class="btn confirm" href="javascript:;" title="删除"><em class="icon-remove"></em></a>
                                     </div>
                                 </td>
@@ -227,7 +224,7 @@
                                 
                                 <td>
                                     <div class="btn-group">
-                                        <a class="btn" href="index.php?exam-master-questions-modifyquestion&amp;page=&amp;questionid=8455" title="修改"><em class="icon-edit"></em></a>
+                                        <a class="btn" href="__URL__/editquestion/questionid/8455" title="修改"><em class="icon-edit"></em></a>
                                         <a class="btn confirm" href="javascript:;" title="删除"><em class="icon-remove"></em></a>
                                     </div>
                                 </td>
@@ -237,7 +234,7 @@
                                 <td>
                                     8450                                </td>
                                 <td>
-                                    填空题                             </td>
+                                    多选题                             </td>
                                 <td>
                                     <a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-master-questions-detail&amp;questionid=8450" data-target="#modal">测试填空</a>
                                 </td>
@@ -247,7 +244,7 @@
                                 
                                 <td>
                                     <div class="btn-group">
-                                        <a class="btn" href="index.php?exam-master-questions-modifyquestion&amp;page=&amp;questionid=8450" title="修改"><em class="icon-edit"></em></a>
+                                        <a class="btn" href="__URL__/editquestion/questionid/8450" title="修改"><em class="icon-edit"></em></a>
                                         <a class="btn confirm" href="javascript:;" title="删除"><em class="icon-remove"></em></a>
                                     </div>
                                 </td>
@@ -267,7 +264,7 @@
                                 
                                 <td>
                                     <div class="btn-group">
-                                        <a class="btn" href="index.php?exam-master-questions-modifyquestion&amp;page=&amp;questionid=773" title="修改"><em class="icon-edit"></em></a>
+                                        <a class="btn" href="__URL__/editquestion/questionid/773" title="修改"><em class="icon-edit"></em></a>
                                         <a class="btn confirm" href="javascript:;" title="删除"><em class="icon-remove"></em></a>
                                     </div>
                                 </td>
@@ -286,7 +283,7 @@
                                 
                                 <td>
                                     <div class="btn-group">
-                                        <a class="btn" href="index.php?exam-master-questions-modifyquestion&amp;page=&amp;questionid=770" title="修改"><em class="icon-edit"></em></a>
+                                        <a class="btn" href="__URL__/editquestion/questionid/770" title="修改"><em class="icon-edit"></em></a>
                                         <a class="btn confirm" href="javascript:;" title="删除"><em class="icon-remove"></em></a>
                                     </div>
                                 </td>
@@ -305,7 +302,7 @@
                                 
                                 <td>
                                     <div class="btn-group">
-                                        <a class="btn" href="index.php?exam-master-questions-modifyquestion&amp;page=&amp;questionid=769" title="修改"><em class="icon-edit"></em></a>
+                                        <a class="btn" href="__URL__/editquestion/questionid/769" title="修改"><em class="icon-edit"></em></a>
                                         <a class="btn confirm" href="javascript:;" title="删除"><em class="icon-remove"></em></a>
                                     </div>
                                 </td>
@@ -324,7 +321,7 @@
                                 
                                 <td>
                                     <div class="btn-group">
-                                        <a class="btn" href="index.php?exam-master-questions-modifyquestion&amp;page=&amp;questionid=768" title="修改"><em class="icon-edit"></em></a>
+                                        <a class="btn" href="__URL__/editquestion/questionid/768" title="修改"><em class="icon-edit"></em></a>
                                         <a class="btn confirm" href="javascript:;" title="删除"><em class="icon-remove"></em></a>
                                     </div>
                                 </td>
@@ -334,10 +331,7 @@
                     <div class="control-group">
                         <div class="controls">
                             <label class="radio inline">
-                                <input type="radio" name="action" value="delete" checked="" autocomplete="off">删除
-                            </label>
-                                                        <label class="radio inline">
-                                <button class="btn btn-primary" type="submit" autocomplete="off">提交</button>
+                                <button class="btn btn-primary" type="submit" autocomplete="off">删除</button>
                             </label>
                             <input type="hidden" name="page" value="" autocomplete="off">
                         </div>
@@ -360,6 +354,12 @@
                 </div>
             </div>
         </div>
+<script type="text/javascript">
+    $(document).on("click","#question-list .btn.confirm",function(){
+        $(this).parents("tr").remove();
+        alert("删除此题成功");
+    });
 
+</script>
 </body>
 </html>

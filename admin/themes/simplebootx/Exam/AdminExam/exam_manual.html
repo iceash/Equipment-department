@@ -1,6 +1,8 @@
 <admintpl file="header" />
 <!-- 上面调用全局的css、js等 -->
-<link rel="stylesheet" type="text/css" href="__PUBLIC__/Demo/demo.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Exam/css/exam.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/source/jquery.fancybox.css">
+<script type="text/javascript" src="__PUBLIC__/source/jquery.fancybox.pack.js"></script>
 <!-- 这里放文件单独需要引用的东西，所有静态文件都统一放在__PUBLIC__/下，
     即 ../public/ -->
 </head>
@@ -19,7 +21,7 @@
                 <div class="control-group">
                     <label class="control-label" for="content">考试时间：</label>
                     <div class="controls">
-                        <input type="text" name="args[examsetting][examtime]" value="60" size="4" needle="needle" class="inline"/> 分钟
+                        <input type="text" name="args[examsetting][examtime]" value="100" size="4" needle="needle" class="inline"/> 分钟
                     </div>
                 </div>
                 <div class="control-group">
@@ -31,60 +33,59 @@
                 <div class="control-group">
                     <label class="control-label" for="content">试卷总分：</label>
                     <div class="controls">
-                        <input type="text" name="args[examsetting][score]" value="" size="4" needle="needle" msg="你要为本考卷设置总分" datatype="number"/>
+                        <input type="text" name="args[examsetting][score]" value="100" size="4" needle="needle" msg="你要为本考卷设置总分" datatype="number"/>
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="content">及格线：</label>
                     <div class="controls">
-                        <input type="text" name="args[examsetting][passscore]" value="" size="4" needle="needle" msg="你要为本考卷设置一个及格分数线" datatype="number"/>
+                        <input type="text" name="args[examsetting][passscore]" value="60" size="4" needle="needle" msg="你要为本考卷设置一个及格分数线" datatype="number"/>
                     </div>
                 </div>
                 <div id="modeplane">
-                                        <div class="control-group questpanel panel_1">
+                    <div class="control-group questpanel panel_1">
                         <label class="control-label" for="content">单选题：</label>
                         <div class="controls">
                             <span class="info">共&nbsp;</span>
                             <input id="iselectallnumber_1" type="text" class="input-mini" needle="needle" name="args[examsetting][questype][1][number]" value="0" size="2" msg="您必须填写总题数"/>
                             <span class="info">&nbsp;题，每题&nbsp;</span><input class="input-mini" needle="needle" type="text" name="args[examsetting][questype][1][score]" value="0" size="2" msg="您必须填写每题的分值"/>
-                            <span class="info">&nbsp;分
-                                <span class="info">&nbsp;已选题数：<a id="ialreadyselectnumber_1">0</a>&nbsp;&nbsp;题</span>
-                        <span class="info">&nbsp;<a class="selfmodal btn" href="javascript:;" data-target="#modal" url="index.php?exam-master-exams-selected&questionids={iselectquestions_1}&rowsquestionids={iselectrowsquestions_1}" valuefrom="iselectquestions_1|iselectrowsquestions_1">看题</a></span>
-                        <span class="info">&nbsp;<a class="selfmodal btn" href="javascript:;" data-target="#modal" url="index.php?exam-master-exams-selectquestions&search[questionsubjectid]={selectedsubjectid}&search[questiontype]=1&questionids={iselectquestions_1}&rowsquestionids={iselectrowsquestions_1}&useframe=1" valuefrom="iselectquestions_1|iselectrowsquestions_1|selectedsubjectid">选题</a></span>
-                        <input type="hidden" value="" id="iselectquestions_1" name="args[examquestions][1][questions]" />
-                        <input type="hidden" value="" id="iselectrowsquestions_1" name="args[examquestions][1][rowsquestions]" />
+                            <span class="info">&nbsp;分</span>
+                            <span class="info">&nbsp;已选题数：<a id="ialreadyselectnumber_1">0</a>&nbsp;&nbsp;题</span>
+                            <span class="info">&nbsp;<a class="view_question selfmodal btn" href="#view_list" data-target="#modal" url="#" valuefrom="#">看题</a></span>
+                            <span class="info">&nbsp;<a class="select_question selfmodal btn" href="#select_list" data-target="#modal" url="#select_list" valuefrom="#">选题</a></span>
+                            <input type="hidden" value="" id="iselectquestions_1" name="args[examquestions][1][questions]" />
+                            <input type="hidden" value="" id="iselectrowsquestions_1" name="args[examquestions][1][rowsquestions]" />
                         </div>
                     </div>
-                                        <div class="control-group questpanel panel_2">
+                    <div class="control-group questpanel panel_2">
                         <label class="control-label" for="content">多选题：</label>
                         <div class="controls">
                             <span class="info">共&nbsp;</span>
                             <input id="iselectallnumber_2" type="text" class="input-mini" needle="needle" name="args[examsetting][questype][2][number]" value="0" size="2" msg="您必须填写总题数"/>
                             <span class="info">&nbsp;题，每题&nbsp;</span><input class="input-mini" needle="needle" type="text" name="args[examsetting][questype][2][score]" value="0" size="2" msg="您必须填写每题的分值"/>
-                            <span class="info">&nbsp;分
-                                <span class="info">&nbsp;已选题数：<a id="ialreadyselectnumber_1">0</a>&nbsp;&nbsp;题</span>
-                        <span class="info">&nbsp;<a class="selfmodal btn" href="javascript:;" data-target="#modal" url="index.php?exam-master-exams-selected&questionids={iselectquestions_1}&rowsquestionids={iselectrowsquestions_1}" valuefrom="iselectquestions_1|iselectrowsquestions_1">看题</a></span>
-                        <span class="info">&nbsp;<a class="selfmodal btn" href="javascript:;" data-target="#modal" url="index.php?exam-master-exams-selectquestions&search[questionsubjectid]={selectedsubjectid}&search[questiontype]=1&questionids={iselectquestions_1}&rowsquestionids={iselectrowsquestions_1}&useframe=1" valuefrom="iselectquestions_1|iselectrowsquestions_1|selectedsubjectid">选题</a></span>
-                        <input type="hidden" value="" id="iselectquestions_1" name="args[examquestions][1][questions]" />
-                        <input type="hidden" value="" id="iselectrowsquestions_1" name="args[examquestions][1][rowsquestions]" />
+                            <span class="info">&nbsp;分</span>
+                            <span class="info">&nbsp;已选题数：<a id="ialreadyselectnumber_1">0</a>&nbsp;&nbsp;题</span>
+                            <span class="info">&nbsp;<a class="view_question selfmodal btn" href="#view_list" data-target="#modal" url="#" valuefrom="iselectquestions_1|iselectrowsquestions_1">看题</a></span>
+                            <span class="info">&nbsp;<a class="select_question selfmodal btn" href="#select_list" data-target="#modal" url="#select_list" valuefrom="#">选题</a></span>
+                            <input type="hidden" value="" id="iselectquestions_1" name="args[examquestions][1][questions]" />
+                            <input type="hidden" value="" id="iselectrowsquestions_1" name="args[examquestions][1][rowsquestions]" />
                         </div>
                     </div>
-                                        <div class="control-group questpanel panel_3">
+                    <div class="control-group questpanel panel_3">
                         <label class="control-label" for="content">判断题：</label>
                         <div class="controls">
                             <span class="info">共&nbsp;</span>
                             <input id="iselectallnumber_3" type="text" class="input-mini" needle="needle" name="args[examsetting][questype][3][number]" value="0" size="2" msg="您必须填写总题数"/>
                             <span class="info">&nbsp;题，每题&nbsp;</span><input class="input-mini" needle="needle" type="text" name="args[examsetting][questype][2][score]" value="0" size="2" msg="您必须填写每题的分值"/>
                             <span class="info">&nbsp;分
-                                <span class="info">&nbsp;已选题数：<a id="ialreadyselectnumber_1">0</a>&nbsp;&nbsp;题</span>
-                        <span class="info">&nbsp;<a class="selfmodal btn" href="javascript:;" data-target="#modal" url="index.php?exam-master-exams-selected&questionids={iselectquestions_1}&rowsquestionids={iselectrowsquestions_1}" valuefrom="iselectquestions_1|iselectrowsquestions_1">看题</a></span>
-                        <span class="info">&nbsp;<a class="selfmodal btn" href="javascript:;" data-target="#modal" url="index.php?exam-master-exams-selectquestions&search[questionsubjectid]={selectedsubjectid}&search[questiontype]=1&questionids={iselectquestions_1}&rowsquestionids={iselectrowsquestions_1}&useframe=1" valuefrom="iselectquestions_1|iselectrowsquestions_1|selectedsubjectid">选题</a></span>
-                        <input type="hidden" value="" id="iselectquestions_1" name="args[examquestions][1][questions]" />
-                        <input type="hidden" value="" id="iselectrowsquestions_1" name="args[examquestions][1][rowsquestions]" />
+                            <span class="info">&nbsp;已选题数：<a id="ialreadyselectnumber_1">0</a>&nbsp;&nbsp;题</span>
+                            <span class="info">&nbsp;<a class="view_question selfmodal btn" href="#view_list" data-target="#modal" url="#" valuefrom="iselectquestions_1|iselectrowsquestions_1">看题</a></span>
+                            <span class="info">&nbsp;<a class="select_question selfmodal btn" href="#select_list" data-target="#modal" url="#select_list" valuefrom="#">选题</a></span>
+                            <input type="hidden" value="" id="iselectquestions_1" name="args[examquestions][1][questions]" />
+                            <input type="hidden" value="" id="iselectrowsquestions_1" name="args[examquestions][1][rowsquestions]" />
                         </div>
                     </div>
-                     
-                                    </div>
+                </div>
                 <div class="control-group">
                     <div class="controls">
                         <button class="btn btn-primary" type="submit">提交</button>
@@ -93,5 +94,314 @@
                 </div>
             </form>
         </div>
+<div id="view_list" style="display:none;">
+    <!-- 这里是看题的列表 -->
+    <div id="question_268" class="paperexamcontent">
+        <div class="media well">
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <span class="badge badge-info questionindex">1</span>
+                </li>
+            </ul>
+            <div class="media-body well text-warning">
+                <a name="question_268"></a>邓小平提出在我国社会主义建设中，判断各方面工作是非得失的标准，归根到底看其是否有利于（）<input id="time_268" type="hidden" name="time[268]" autocomplete="off">
+            </div>
+            <div class="media-body well noborder">
+                <p>A、提高全民族的科学文化素质</p><p>B、发展社会主义社会的生产力</p><p>C、增强社会主义国家的综合国力</p><p>D、提高人民的生活水平</p>
+            </div>
+            <div class="media-body well">
+            </div>
+        </div>
+    </div>
+    <div id="question_269" class="paperexamcontent">
+        <div class="media well">
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <span class="badge badge-info questionindex">2</span>
+                </li>
+            </ul>
+            <div class="media-body well text-warning">
+                <a name="question_268"></a>全面建设小康社会，必须毫不放松地加强和改善党的领导，全面推进党的建设新的伟大工程，保证我们党（）<input id="time_268" type="hidden" name="time[268]" autocomplete="off">
+            </div>
+            <div class="media-body well noborder">
+                <p>A、始终是中国工人阶级的先锋队，同时是中国人民和中华民族的先锋队</p><p>B、始终是中国特色社会主义事业领导核心</p><p>C、始终代表中国先进生产力的发展要求，代表中国先进文化的前进方向，代表中国最广大人民的根本利益</p><p>D、始终坚持马克思列宁主义和别国经验在中国全面、具体的运用</p>
+            </div>
+            <div class="media-body well">
+            </div>
+        </div>
+    </div>
+</div>
+<div id="select_list" style="display:none;">
+    <form action="index.php?exam-master-questions" method="post">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th colspan="2">搜索</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody><tr>
+                <td>
+                    试题ID：
+                </td>
+                <td>
+                    <input name="search[questionid]" class="input-small" size="25" type="text" value="" autocomplete="off">
+                </td>
+                <td>
+                    录入时间：
+                </td>
+                <td>
+                    <input class="input-small datetimepicker" data-date="2016-06-16" data-date-format="yyyy-mm-dd" type="text" name="search[stime]" size="10" id="stime" value="" autocomplete="off"> - <input class="input-small datetimepicker" data-date="2016-06-16" data-date-format="yyyy-mm-dd" size="10" type="text" name="search[etime]" id="etime" value="" autocomplete="off">
+                </td>
+                <td>
+                    关键字：
+                </td>
+                <td>
+                    <input class="input-small" name="search[keyword]" size="25" type="text" value="" autocomplete="off">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    试题类型：
+                </td>
+                <td>
+                    <select name="search[questiontype]" class="input-medium" autocomplete="off">
+                        <option value="0">类型不限</option>
+                        <option value="1">单选题</option>
+                        <option value="2">多选题</option>
+                        <option value="3">判断题</option>
+                    </select>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button class="btn btn-primary" type="submit" autocomplete="off">搜索</button>
+                    <input type="hidden" value="1" name="search[argsmodel]" autocomplete="off">
+                </td>
+                <td colspan="4"></td>
+            </tr>
+        </tbody></table>
+    </form>
+    <form id="question-list" action="#" method="post">
+        <fieldset>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" class="checkall" target="delids" autocomplete="off"></th>
+                        <th>ID</th>
+                        <th>试题内容</th>
+                        <th>录入时间</th>
+                    </tr>
+                </thead>
+                <tbody>
+                                                <tr>
+                        <td><input type="checkbox" name="delids[8459]" value="1" autocomplete="off"></td>
+                        <td>
+                            8459                                </td>
+                        
+                        <td>
+                            <a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-master-questions-detail&amp;questionid=8459" data-target="#modal">测试测试测试，答案是A</a>
+                        </td>
+                        <td>
+                            2016-06-14                              </td>
+                        <td>
+                            <div class="btn-group">
+                                <a class="btn" href="__URL__/editquestion/questionid/8459" title="修改"><em class="icon-edit"></em></a>
+                                <a class="btn confirm" href="javascript:;" title="删除"><em class="icon-remove"></em></a>
+                            </div>
+                        </td>
+                    </tr>
+                                                <tr>
+                        <td><input type="checkbox" name="delids[8458]" value="1" autocomplete="off"></td>
+                        <td>
+                            8458                                </td>
+                        
+                        <td>
+                            <a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-master-questions-detail&amp;questionid=8458" data-target="#modal">你是（）的是我</a>
+                        </td>
+                        <td>
+                            2016-05-12                              </td>
+                        <td>
+                            <div class="btn-group">
+                                <a class="btn" href="__URL__/editquestion/questionid/8458" title="修改"><em class="icon-edit"></em></a>
+                                <a class="btn confirm" href="javascript:;" title="删除"><em class="icon-remove"></em></a>
+                            </div>
+                        </td>
+                    </tr>
+                                                <tr>
+                        <td><input type="checkbox" name="delids[8457]" value="1" autocomplete="off"></td>
+                        <td>
+                            8457                                </td>
+                        
+                        <td>
+                            <a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-master-questions-detail&amp;questionid=8457" data-target="#modal">asdsadsadsadasd</a>
+                        </td>
+                        
+                        <td>
+                            2015-10-17                              </td>
+                        
+                        <td>
+                            <div class="btn-group">
+                                <a class="btn" href="__URL__/editquestion/questionid/8457" title="修改"><em class="icon-edit"></em></a>
+                                <a class="btn confirm" href="javascript:;" title="删除"><em class="icon-remove"></em></a>
+                            </div>
+                        </td>
+                    </tr>
+                                                <tr>
+                        <td><input type="checkbox" name="delids[8456]" value="1" autocomplete="off"></td>
+                        <td>
+                            8456                                </td>
+                        
+                        <td>
+                            <a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-master-questions-detail&amp;questionid=8456" data-target="#modal">啊啊啊啊啊</a>
+                        </td>
+                        <td>
+                            2015-10-12                              </td>
+                        
+                        <td>
+                            <div class="btn-group">
+                                <a class="btn" href="__URL__/editquestion/questionid/8456" title="修改"><em class="icon-edit"></em></a>
+                                <a class="btn confirm" href="javascript:;" title="删除"><em class="icon-remove"></em></a>
+                            </div>
+                        </td>
+                    </tr>
+                                                <tr>
+                        <td><input type="checkbox" name="delids[8455]" value="1" autocomplete="off"></td>
+                        <td>
+                            8455                                </td>
+                        
+                        <td>
+                            <a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-master-questions-detail&amp;questionid=8455" data-target="#modal">问题测试</a>
+                        </td>
+                        
+                        <td>
+                            2015-10-02                              </td>
+                        
+                        <td>
+                            <div class="btn-group">
+                                <a class="btn" href="__URL__/editquestion/questionid/8455" title="修改"><em class="icon-edit"></em></a>
+                                <a class="btn confirm" href="javascript:;" title="删除"><em class="icon-remove"></em></a>
+                            </div>
+                        </td>
+                    </tr>
+                                                <tr>
+                        <td><input type="checkbox" name="delids[8450]" value="1" autocomplete="off"></td>
+                        <td>
+                            8450                                </td>
+                        
+                        <td>
+                            <a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-master-questions-detail&amp;questionid=8450" data-target="#modal">测试填空</a>
+                        </td>
+                        
+                        <td>
+                            2015-08-26                              </td>
+                        
+                        <td>
+                            <div class="btn-group">
+                                <a class="btn" href="__URL__/editquestion/questionid/8450" title="修改"><em class="icon-edit"></em></a>
+                                <a class="btn confirm" href="javascript:;" title="删除"><em class="icon-remove"></em></a>
+                            </div>
+                        </td>
+                    </tr>
+                                                <tr>
+                        <td><input type="checkbox" name="delids[773]" value="1" autocomplete="off"></td>
+                        <td>
+                            773                             </td>
+                        
+                        <td>
+                            <a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-master-questions-detail&amp;questionid=773" data-target="#modal">描述抗战史著名战役和时间</a>
+                        </td>
+                        
+                        <td>
+                            2013-08-20                              </td>
+                        
+                        <td>
+                            <div class="btn-group">
+                                <a class="btn" href="__URL__/editquestion/questionid/773" title="修改"><em class="icon-edit"></em></a>
+                                <a class="btn confirm" href="javascript:;" title="删除"><em class="icon-remove"></em></a>
+                            </div>
+                        </td>
+                    </tr>
+                                                <tr>
+                        <td><input type="checkbox" name="delids[770]" value="1" autocomplete="off"></td>
+                        <td>
+                            770                             </td>
+                        
+                        <td>
+                            <a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-master-questions-detail&amp;questionid=770" data-target="#modal">健全全民医保体系，建立重特大疾病保障和救助机制，全面开展儿童白血病等30种重大疾病保障试点工...</a>
+                        </td>
+                        <td>
+                            2013-06-26                              </td>
+                        
+                        <td>
+                            <div class="btn-group">
+                                <a class="btn" href="__URL__/editquestion/questionid/770" title="修改"><em class="icon-edit"></em></a>
+                                <a class="btn confirm" href="javascript:;" title="删除"><em class="icon-remove"></em></a>
+                            </div>
+                        </td>
+                    </tr>
+                                                <tr>
+                        <td><input type="checkbox" name="delids[769]" value="1" autocomplete="off"></td>
+                        <td>
+                            769                             </td>
+                        
+                        <td>
+                            <a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-master-questions-detail&amp;questionid=769" data-target="#modal">收入分配制度是经济社会发展中一项根本性、基础性的制度，是社会主义市场经济体制的重要基石。</a>
+                        </td>
+                        <td>
+                            2013-06-26                              </td>
+                        
+                        <td>
+                            <div class="btn-group">
+                                <a class="btn" href="__URL__/editquestion/questionid/769" title="修改"><em class="icon-edit"></em></a>
+                                <a class="btn confirm" href="javascript:;" title="删除"><em class="icon-remove"></em></a>
+                            </div>
+                        </td>
+                    </tr>
+                                                <tr>
+                        <td><input type="checkbox" name="delids[768]" value="1" autocomplete="off"></td>
+                        <td>
+                            768                             </td>
+                        
+                        <td>
+                            <a title="查看试题" class="selfmodal" href="javascript:;" url="index.php?exam-master-questions-detail&amp;questionid=768" data-target="#modal">坚持厉行勤俭节约，反对铺张浪费，严格贯彻中央八条规定。</a>
+                        </td>
+                        <td>
+                            2013-06-26                              </td>
+                        
+                        <td>
+                            <div class="btn-group">
+                                <a class="btn" href="__URL__/editquestion/questionid/768" title="修改"><em class="icon-edit"></em></a>
+                                <a class="btn confirm" href="javascript:;" title="删除"><em class="icon-remove"></em></a>
+                            </div>
+                        </td>
+                    </tr>
+                                            </tbody>
+            </table>
+            <div class="control-group">
+                <div class="controls">
+                    <label class="radio inline">
+                        <button class="btn btn-primary" type="submit" autocomplete="off">删除</button>
+                    </label>
+                    <input type="hidden" name="page" value="" autocomplete="off">
+                </div>
+            </div>
+            <div class="pagination pagination-right">
+                <ul><li><a target="" href="index.php?exam-master-questions&amp;page=&amp;page=1">|‹</a></li><li><a href="#" class="current">1</a></li><li><a target="" href="index.php?exam-master-questions&amp;page=&amp;page=2">2</a></li><li><a target="" href="index.php?exam-master-questions&amp;page=&amp;page=3">3</a></li><li><a target="" href="index.php?exam-master-questions&amp;page=&amp;page=4">4</a></li><li><a target="" href="index.php?exam-master-questions&amp;page=&amp;page=5">5</a></li><li><a target="" href="index.php?exam-master-questions&amp;page=&amp;page=6">6</a></li><li><a target="" href="index.php?exam-master-questions&amp;page=&amp;page=7">7</a></li><li><a target="" href="index.php?exam-master-questions&amp;page=&amp;page=8">8</a></li><li><a target="" href="index.php?exam-master-questions&amp;page=&amp;page=9">9</a></li><li><a target="" href="index.php?exam-master-questions&amp;page=&amp;page=10">10</a></li><li><a target="" href="index.php?exam-master-questions&amp;page=&amp;page=11"> &gt;&gt; </a></li><li><a target="" href="index.php?exam-master-questions&amp;page=&amp;page=78">›|</a></li><li><a>共773条数据</a></li></ul>
+            </div>
+        </fieldset>
+    </form>
+</div>
+<script type="text/javascript">
+    $(".view_question").fancybox();
+    $(".select_question").fancybox();
+</script>
 </body>
 </html>

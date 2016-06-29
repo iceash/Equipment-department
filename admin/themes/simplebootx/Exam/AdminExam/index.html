@@ -1,8 +1,17 @@
 <admintpl file="header" />
 <!-- 上面调用全局的css、js等 -->
-<link rel="stylesheet" type="text/css" href="__PUBLIC__/Demo/demo.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Exam/css/exam.css">
 <!-- 这里放文件单独需要引用的东西，所有静态文件都统一放在__PUBLIC__/下，
     即 ../public/ -->
+    <script type="text/javascript">
+<!--
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+var url = selObj.options[selObj.selectedIndex].value;
+window.open(url);
+if (restore) selObj.selectedIndex=0;
+}
+//-->
+</script>
 </head>
 <body>
     <div class="container-fluid">
@@ -44,7 +53,7 @@
                     </tr>
                 </table>
             </form>
-            <table class="table table-hover">
+            <table id="exam-list" class="table table-hover">
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -68,8 +77,9 @@
                          
                         <td>
                             <div class="btn-group">
-                                                                <a class="btn" target="_blank" href="index.php?exam-master-exams-preview&examid=10" title="查看试卷"><em class="icon-list-alt"></em></a>
-                                <a class="btn confirm" href="index.php?exam-master-exams-del&page=&examid=10" title="删除"><em class="icon-remove"></em></a>
+                                <a class="btn" target="_blank" href="__URL__/paper" title="查看试卷"><em class="icon-list-alt"></em></a>
+                                <a class="btn" href="__URL__/editexam" title="修改"><em class="icon-edit"></em></a>
+                                <a class="btn confirm" href="#" title="删除"><em class="icon-remove"></em></a>
                             </div>
                         </td>
                     </tr>
@@ -86,7 +96,8 @@
                          
                         <td>
                             <div class="btn-group">
-                                <a class="btn confirm" href="index.php?exam-master-exams-del&page=&examid=9" title="删除"><em class="icon-remove"></em></a>
+                                <a class="btn" target="_blank" href="__URL__/paper" title="查看试卷"><em class="icon-list-alt"></em></a>
+                                <a class="btn confirm" href="#" title="删除"><em class="icon-remove"></em></a>
                             </div>
                         </td>
                     </tr>
@@ -103,9 +114,11 @@
                         
                         <td>
                             <div class="btn-group">
-                                                                <a class="btn" target="_blank" href="index.php?exam-master-exams-preview&examid=8" title="查看试卷"><em class="icon-list-alt"></em></a>
-                                                                <a class="btn" href="index.php?exam-master-exams-modify&page=&examid=8" title="修改"><em class="icon-edit"></em></a>
-                                <a class="btn confirm" href="index.php?exam-master-exams-del&page=&examid=8" title="删除"><em class="icon-remove"></em></a>
+                                <div class="btn-group">
+                                <a class="btn" target="_blank" href="__URL__/paper" title="查看试卷"><em class="icon-list-alt"></em></a>
+                                <a class="btn" href="__URL__/editexam" title="修改"><em class="icon-edit"></em></a>
+                                <a class="btn confirm" href="#" title="删除"><em class="icon-remove"></em></a>
+                            </div>
                             </div>
                         </td>
                     </tr>
@@ -122,9 +135,11 @@
                         
                         <td>
                             <div class="btn-group">
-                                                                <a class="btn" target="_blank" href="index.php?exam-master-exams-preview&examid=7" title="查看试卷"><em class="icon-list-alt"></em></a>
-                                                                <a class="btn" href="index.php?exam-master-exams-modify&page=&examid=7" title="修改"><em class="icon-edit"></em></a>
-                                <a class="btn confirm" href="index.php?exam-master-exams-del&page=&examid=7" title="删除"><em class="icon-remove"></em></a>
+                                <div class="btn-group">
+                                <a class="btn" target="_blank" href="__URL__/paper" title="查看试卷"><em class="icon-list-alt"></em></a>
+                                <a class="btn" href="__URL__/editexam" title="修改"><em class="icon-edit"></em></a>
+                                <a class="btn confirm" href="#" title="删除"><em class="icon-remove"></em></a>
+                            </div>
                             </div>
                         </td>
                     </tr>
@@ -141,9 +156,11 @@
                         
                         <td>
                             <div class="btn-group">
-                                                                <a class="btn" target="_blank" href="index.php?exam-master-exams-preview&examid=6" title="查看试卷"><em class="icon-list-alt"></em></a>
-                                                                <a class="btn" href="index.php?exam-master-exams-modify&page=&examid=6" title="修改"><em class="icon-edit"></em></a>
-                                <a class="btn confirm" href="index.php?exam-master-exams-del&page=&examid=6" title="删除"><em class="icon-remove"></em></a>
+                                <div class="btn-group">
+                                <a class="btn" target="_blank" href="__URL__/paper" title="查看试卷"><em class="icon-list-alt"></em></a>
+                                <a class="btn" href="__URL__/editexam" title="修改"><em class="icon-edit"></em></a>
+                                <a class="btn confirm" href="#" title="删除"><em class="icon-remove"></em></a>
+                            </div>
                             </div>
                         </td>
                     </tr>
@@ -160,9 +177,11 @@
                         
                         <td>
                             <div class="btn-group">
-                                                                <a class="btn" target="_blank" href="index.php?exam-master-exams-preview&examid=5" title="查看试卷"><em class="icon-list-alt"></em></a>
-                                                                <a class="btn" href="index.php?exam-master-exams-modify&page=&examid=5" title="修改"><em class="icon-edit"></em></a>
-                                <a class="btn confirm" href="index.php?exam-master-exams-del&page=&examid=5" title="删除"><em class="icon-remove"></em></a>
+                                <div class="btn-group">
+                                <a class="btn" target="_blank" href="__URL__/paper" title="查看试卷"><em class="icon-list-alt"></em></a>
+                                <a class="btn" href="__URL__/editexam" title="修改"><em class="icon-edit"></em></a>
+                                <a class="btn confirm" href="#" title="删除"><em class="icon-remove"></em></a>
+                            </div>
                             </div>
                         </td>
                     </tr>
@@ -179,7 +198,8 @@
                         
                         <td>
                             <div class="btn-group">
-                                <a class="btn confirm" href="index.php?exam-master-exams-del&page=&examid=4" title="删除"><em class="icon-remove"></em></a>
+                                <a class="btn" target="_blank" href="__URL__/paper" title="查看试卷"><em class="icon-list-alt"></em></a>
+                                <a class="btn confirm" href="#" title="删除"><em class="icon-remove"></em></a>
                             </div>
                         </td>
                     </tr>
@@ -196,7 +216,8 @@
                         
                         <td>
                             <div class="btn-group">
-                                <a class="btn confirm" href="index.php?exam-master-exams-del&page=&examid=3" title="删除"><em class="icon-remove"></em></a>
+                                <a class="btn" target="_blank" href="__URL__/paper" title="查看试卷"><em class="icon-list-alt"></em></a>
+                                <a class="btn confirm" href="#" title="删除"><em class="icon-remove"></em></a>
                             </div>
                         </td>
                     </tr>
@@ -213,7 +234,8 @@
                         
                         <td>
                             <div class="btn-group">
-                                <a class="btn confirm" href="index.php?exam-master-exams-del&page=&examid=2" title="删除"><em class="icon-remove"></em></a>
+                                <a class="btn" target="_blank" href="__URL__/paper" title="查看试卷"><em class="icon-list-alt"></em></a>
+                                <a class="btn confirm" href="#" title="删除"><em class="icon-remove"></em></a>
                             </div>
                         </td>
                     </tr>
@@ -229,8 +251,11 @@
                         
                         <td>
                             <div class="btn-group">
-                                                                <a class="btn" target="_blank" href="index.php?exam-master-exams-preview&examid=1" title="查看试卷"><em class="icon-list-alt"></em></a>
-                                <a class="btn confirm" href="index.php?exam-master-exams-del&page=&examid=1" title="删除"><em class="icon-remove"></em></a>
+                                <div class="btn-group">
+                                <a class="btn" target="_blank" href="__URL__/paper" title="查看试卷"><em class="icon-list-alt"></em></a>
+                                <a class="btn" href="__URL__/editexam" title="修改"><em class="icon-edit"></em></a>
+                                <a class="btn confirm" href="#" title="删除"><em class="icon-remove"></em></a>
+                            </div>
                             </div>
                         </td>
                     </tr>
@@ -242,6 +267,11 @@
         </div>
     </div>
 </div>
-
+<script type="text/javascript">
+    $(document).on("click","#exam-list .btn.confirm",function(){
+        $(this).parents("tr").remove();
+        alert("删除此题成功");
+    });
+</script>
 </body>
 </html>
