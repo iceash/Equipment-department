@@ -1,4 +1,7 @@
 <admintpl file="header"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Notice/notice.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Notice/colpick/css/colpick.css">
+<script type="text/javascript" src="__PUBLIC__/Notice/colpick/js/colpick.js"></script>
 </head>
 <body>
 	<div class="wrap js-check-wrap">
@@ -14,21 +17,25 @@
 							<th>标题</th>
 							<td>
 								<input type="text" style="width: 400px;" name="screen_title" value="" placeholder="请输入公告标题"/>
-								<span class="form-required">*</span>
 							</td>
 						</tr>
 						<tr>
 							<th>公告内容</th>
 							<td><textarea name="screen_content" style="width: 98%; height: 200px;"></textarea></td>
 						</tr>
-					</table>
-				</div>
-				<div class="span3">
-					<table class="table table-bordered">
 						<tr>
-							<th>缩略图</th>
+							<th>文字颜色</th>
+							<td id="font_picker"><input id="font_color_input" type="hidden" name="font_color" value="#000"></td>
 						</tr>
 						<tr>
+							<th>背景类型</th>
+							<td>
+								<label id="pic_radio"><input type="radio" name="bg_type" value="0" checked>背景图片</label>
+								<label id="col_radio"><input type="radio" name="bg_type" value="1">纯色</label>
+							</td>
+						</tr>
+						<tr id="pic_tr">
+							<th>缩略图</th>
 							<td>
 								<div style="text-align: center;">
 									<input type="hidden" name="screen_background" id="thumb" value="">
@@ -39,8 +46,16 @@
 								</div>
 							</td>
 						</tr>
+						<tr id="color_tr" style="display:none">
+							<th>背景色</th><td id="picker"><input type="hidden" name="screen_background" value="#3289c7" id="color_input" disabled="disabled"></td>
+						</tr>
+						<tr><th>展示状态</th><td>
+							<label><input type="radio" name="screen_status" value="0" checked>隐藏</label>
+								<label><input type="radio" name="screen_status" value="1">显示</label>
+						</td></tr>
 					</table>
 				</div>
+
 			</div>
 			<div class="form-actions">
 				<button class="btn btn-primary js-ajax-submit" type="submit">{:L("ADD")}</button>
@@ -51,6 +66,38 @@
 	<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
 	<script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
 	<script type="text/javascript">
+	$(function () {
+		$("#picker").colpick({
+			flat:true,
+			layout:'hex',
+			submit:0,
+			onChange:function(hsb,hex,rgb,el,bySetColor){
+				$("#color_input").val('#'+hex);
+			}
+		});
+		$("#font_picker").colpick({
+			flat:true,
+			layout:'hex',
+			color:'#000',
+			submit:0,
+			onChange:function(hsb,hex,rgb,el,bySetColor){
+				$("#font_color_input").val('#'+hex);
+			}
+		});
+		$("#pic_radio").click(function () {
+			$("#color_tr").hide();
+			$("#color_input").attr("disabled","disabled");
+			$("#thumb").removeAttr("disabled");
+			$("#pic_tr").show();
+
+		});
+		$("#col_radio").click(function () {
+			$("#color_input").removeAttr("disabled");
+			$("#color_tr").show();
+			$("#thumb").attr("disabled","disabled");
+			$("#pic_tr").hide();
+		});
+	})
 		$(function() {
 			$(".js-ajax-close-btn").on('click', function(e) {
 				e.preventDefault();
@@ -119,15 +166,9 @@
 					},
 					//验证规则
 					rules : {
-						'slide_name' : {
-							required : 1
-						}
 					},
 					//验证未通过提示消息
 					messages : {
-						'slide_name' : {
-							required : '请输入名称'
-						}
 					},
 					//给未通过验证的元素加效果,闪烁等
 					highlight : false,
