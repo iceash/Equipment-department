@@ -34,10 +34,9 @@ if (restore) selObj.selectedIndex=0;
                         </td>
                         <td>
                             <select name="search[examtype]">
-                                <option value="0">不限</option>
-                                <option value="1">随机抽题</option>
-                                <option value="2">手动抽题</option>
-                                <option value="2">手工组卷</option>
+                                <option value="">不限</option>
+                                <option value="随机组卷">随机组卷</option>
+                                <option value="手工组卷">手工组卷</option>
                             </select>
                         </td>
                         <td>
@@ -74,7 +73,7 @@ if (restore) selObj.selectedIndex=0;
                                 <div class="btn-group">
                                     <a class="btn" target="_blank" href="__URL__/paper/id/{$one.id}" title="查看试卷"><em class="icon-list-alt"></em></a>
                                     <if condition="$one.type eq '手工组卷'">
-                                        <a class="btn" href="__URL__/editexam" title="修改"><em class="icon-edit"></em></a>
+                                        <a class="btn" href="__URL__/editexam/id/{$one.id}" title="修改"><em class="icon-edit"></em></a>
                                     </if>
                                     <a num="{$one.id}" class="btn confirm" href="javascript:;" title="删除"><em class="icon-remove"></em></a>
                                 </div>

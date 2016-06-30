@@ -27,17 +27,18 @@
     <div class="container-fluid examcontent">
         <div class="exambox" id="datacontent">
             <form class="examform form-horizontal" id="form1" name="form1" action="index.php?exam-app-exampaper-score" method="post">
-                <h3 class="text-center">{$exam.name}</h3>
+                <input type="hidden" name="examid" value="{$exam.id}">
+                <h3 class="text-center">{$exam.examname}</h3>
                 <?php $type_num = 1; ?>
-                    <?php if($settings->single->number > 0): ?>
+                    <?php if(count($exam_questions["single"]) > 0): ?>
                     <ul class="breadcrumb">
                         <li>
-                            <h5>{$type_num}、单选题（共{$settings->single->number}题，每题{$settings->single->score}分）</h5>
+                            <h5>{$type_num}、单选题</h5>
                         </li>
                     </ul>
                     <?php $num = 1; ?>
-                    <foreach name="exam_questions:single" item="one">
-                        <div id="question_{$one}" class="paperexamcontent">
+                    <foreach name="exam_questions['single']" item="one">
+                        <div id="" class="paperexamcontent">
                         <div class="media well">
                             <ul class="nav nav-tabs">
                                 <li class="active">
@@ -45,18 +46,24 @@
                                 </li>
                             </ul>
                             <div class="media-body well text-warning">
-                                {$list.$one.question}
+                                {$one->question}
                             </div>
                             <div class="media-body well noborder">
                                 <?php 
-                                    $option = explode("|", $list[$one]["option"]);
+                                    $option = explode("|", $one->option);
                                     for ($i=0; $i < count($option); $i++) { 
                                         echo "<p>".chr(65 + $i)."、".$option[$i]."</p>";
                                     }
                                  ?>
                             </div>
                             <div class="media-body well">
-                                答案：{$list.$one.answer}
+                                <if condition="$one:bingo eq 1">
+                                    <span class="bingo">答案：{$one->selected}； {$one->score}分</span>
+                                <else/>
+                                    <span class="wrong">错误：{$one->selected}；</span>
+                                    <span class="right">正确：{$one->answer}；</span>
+                                    <span class="wrong"> 0分</span>
+                                </if>
                             </div>
                         </div>
                     </div>
@@ -66,15 +73,15 @@
                 $type_num++;endif;
                  ?>
 
-                <?php if($settings->multi->number > 0): ?>
+                <?php if(count($exam_questions["multi"]) > 0): ?>
                     <ul class="breadcrumb">
                         <li>
-                            <h5>{$type_num}、多选题（共{$settings->multi->number}题，每题{$settings->multi->score}分）</h5>
+                            <h5>{$type_num}、多选题</h5>
                         </li>
                     </ul>
                     <?php $num = 1; ?>
-                    <foreach name="exam_questions:multi" item="one">
-                        <div id="question_{$one}" class="paperexamcontent">
+                    <foreach name="exam_questions['multi']" item="one">
+                        <div id="question_" class="paperexamcontent">
                         <div class="media well">
                             <ul class="nav nav-tabs">
                                 <li class="active">
@@ -82,36 +89,42 @@
                                 </li>
                             </ul>
                             <div class="media-body well text-warning">
-                                {$list.$one.question}
+                                {$one->question}
                             </div>
                             <div class="media-body well noborder">
                                 <?php 
-                                    $option = explode("|", $list[$one]["option"]);
+                                    $option = explode("|", $one->option);
                                     for ($i=0; $i < count($option); $i++) { 
                                         echo "<p>".chr(65 + $i)."、".$option[$i]."</p>";
                                     }
                                  ?>
                             </div>
                             <div class="media-body well">
-                                答案：{$list.$one.answer}
+                                <if condition="$one:bingo eq 1">
+                                    <span class="bingo">答案：{$one->selected}； {$one->score}分</span>
+                                <else/>
+                                    <span class="wrong">错误：{$one->selected}；</span>
+                                    <span class="right">正确：{$one->answer}；</span>
+                                    <span class="wrong"> 0分</span>
+                                </if>
                             </div>
                         </div>
                     </div>
-                    <?php  
-                    $type_num++;$num++;
+                    <?php  $num++;
                 ?>
                     </foreach>
-                <?php endif; ?>
+                <?php 
+                    $type_num++;endif; ?>
 
-                <?php if($settings->judge->number > 0): ?>
+                <?php if(count($exam_questions["judge"]) > 0): ?>
                     <ul class="breadcrumb">
                         <li>
-                            <h5>{$type_num}、判断题（共{$settings->judge->number}题，每题{$settings->judge->score}分）</h5>
+                            <h5>{$type_num}、判断题</h5>
                         </li>
                     </ul>
                     <?php $num = 1; ?>
-                    <foreach name="exam_questions:judge" item="one">
-                        <div id="question_{$one}" class="paperexamcontent">
+                    <foreach name="exam_questions['judge']" item="one">
+                        <div id="question_" class="paperexamcontent">
                         <div class="media well">
                             <ul class="nav nav-tabs">
                                 <li class="active">
@@ -119,27 +132,33 @@
                                 </li>
                             </ul>
                             <div class="media-body well text-warning">
-                                {$list.$one.question}
+                                {$one->question}
                             </div>
-                            <div class="media-body well noborder">
+                            <!-- <div class="media-body well noborder">
                                 <p>A、对</p>
                                 <p>B、错</p>
-                            </div>
+                            </div> -->
                             <div class="media-body well">
-                                答案：{$list.$one.answer}
+                                <if condition="$one:bingo eq 1">
+                                    <span class="bingo">答案：{$one->selected}； {$one->score}分</span>
+                                <else/>
+                                    <span class="wrong">错误：{$one->selected}；</span>
+                                    <span class="right">正确：{$one->answer}；</span>
+                                    <span class="wrong"> 0分</span>
+                                </if>
                             </div>
                         </div>
                     </div>
-                    <?php 
-                $type_num++;$num++; 
+                    <?php $num++; 
                     ?>
                     </foreach>
-                <?php endif; ?>
+                <?php 
+                $type_num++;endif; ?>
             </form>
         </div>
     </div>
 </div>
-<div aria-hidden="true" id="fenlumodal" class="modal hide fade" role="dialog" aria-labelledby="#myFenluModalLabel">
+<!-- <div aria-hidden="true" id="fenlumodal" class="modal hide fade" role="dialog" aria-labelledby="#myFenluModalLabel">
     <div class="modal-header">
         <button aria-hidden="true" class="close" type="button" data-dismiss="modal">×</button>
         <h3 id="myFenluModalLabel">
@@ -172,146 +191,30 @@
                     <li><h6>总分：<span class="orange">{$exam.total_score}</span>分 合格分数线：<span class="orange">{$exam.pass_line}</span>分 考试时间：<span class="orange">{$exam.duration_time}</span>分钟</h6></li>
                 </ul>
             </div>
-            <!-- <div class="span2">
+            <div class="span2">
                 <ul class="unstyled">
-                    <li class="text-right"><a href="#submodal" role="button" class="btn btn-primary" data-toggle="modal"> 交 卷 </a></li>
+                    <li class="text-right"><a href="#submodal" role="button" class="btn btn-primary" data-toggle="modal" id="submit"> 交 卷 </a></li>
                 </ul>
-            </div> -->
+            </div>
         </div>
     </div>
-</div>
+</div> -->
 <script type="text/javascript">
+var answers = [];
+function submitall(){
+    answers = $("#form1").serialize();
+    $.post("__URL__/submit_paper",answers,function(back){
+        if (back.status == 1) {
+            alert(back.info);
+            window.location.href = "__URL__/index";
+        }else{
+            alert(back.info);
+        };
+    });
+}
 $(document).ready(function(){
-    $.get('index.php?exam-app-index-ajax-lefttime&rand'+Math.random(),function(data){
-        var setting = {
-                        time:60,
-                        hbox:$("#timer_h"),
-            mbox:$("#timer_m"),
-            sbox:$("#timer_s"),
-            finish:function(){submitPaper();}
-        }
-        setting.lefttime = parseInt(data);
-        countdown(setting);
-    });
-    //setInterval(refreshRecord,5000);
-    setInterval(saveanswer,300000);
-
-    $('.allquestionnumber').html($('.paperexamcontent').length);
-    $('.yesdonumber').html($('#modal-body .badge-info').length);
-
-    initData = $.parseJSON(storage.getItem('questions'));
-    if(initData){
-        for(var p in initData){
-            if(p!='set')
-            formData[p]=initData[p];
-            $("#time_"+$('[name="'+p+'"]').attr('rel')).val(initData[p].time);
-        }
-
-        var textarea = $('#form1 textarea');
-        $.each(textarea,function(){
-            var _this = $(this);
-            if(initData[_this.attr('name')])
-            {
-                _this.val(initData[_this.attr('name')].value);
-                CKEDITOR.instances[_this.attr('id')].setData(initData[_this.attr('name')].value);
-                if(initData[_this.attr('name')].value && initData[_this.attr('name')].value != '')
-                batmark(_this.attr('rel'),initData[_this.attr('name')].value);
-            }
-        });
-
-        var texts = $('#form1 :input[type=text]');
-        $.each(texts,function(){
-            var _this = $(this);
-            if(initData[_this.attr('name')])
-            {
-                _this.val(initData[_this.attr('name')]?initData[_this.attr('name')].value:'');
-                if(initData[_this.attr('name')].value && initData[_this.attr('name')].value != '')
-                batmark(_this.attr('rel'),initData[_this.attr('name')].value);
-            }
-        });
-
-        var radios = $('#form1 :input[type=radio]');
-        $.each(radios,function(){
-            var _= this, v = initData[_.name]?initData[_.name].value:null;
-            var _this = $(this);
-            if(v!=''&&v==_.value){
-                _.checked = true;
-                batmark(_this.attr('rel'),initData[_this.attr('name')].value);
-            }else{
-                _.checked=false;
-            }
-        });
-
-        var checkboxs=$('#form1 :input[type=checkbox]');
-        $.each(checkboxs,function(){
-            var _=this,v=initData[_.name]?initData[_.name].value:null;
-            var _this = $(this);
-            if(v!=''&&v==_.value){
-                _.checked=true;
-                batmark(_this.attr('rel'),initData[_this.attr('name')].value);
-            }else{
-                _.checked=false;
-            }
-        });
-    }
-
-    $('#form1 :input[type=text]').change(function(){
-        var _this=$(this);
-        var p=[];
-        p.push(_this.attr('name'));
-        p.push(_this.val());
-        p.push(Date.parse(new Date())/1000);
-        $('#time_'+_this.attr('rel')).val(Date.parse(new Date())/1000);
-        set.apply(formData,p);
-        markQuestion(_this.attr('rel'),true);
-    });
-
-    $('#form1 :input[type=radio]').change(function(){
-        var _=this;
-        var _this=$(this);
-        var p=[];
-        p.push(_.name);
-        if(_.checked){
-            p.push(_.value);
-            p.push(Date.parse(new Date())/1000);
-            $('#time_'+_this.attr('rel')).val(Date.parse(new Date())/1000);
-            set.apply(formData,p);
-        }else{
-            p.push('');
-            p.push(null);
-            set.apply(formData,p);
-        }
-        markQuestion(_this.attr('rel'));
-    });
-
-    $('#form1 textarea').change(function(){
-        var _= this;
-        var _this=$(this);
-        var p=[];
-        p.push(_.name);
-        p.push(_.value);
-        p.push(Date.parse(new Date())/1000);
-        $('#time_'+_this.attr('rel')).val(Date.parse(new Date())/1000);
-        set.apply(formData,p);
-        markQuestion(_this.attr('rel'),true);
-    });
-
-    $('#form1 :input[type=checkbox]').change(function(){
-        var _= this;
-        var _this = $(this);
-        var p=[];
-        p.push(_.name);
-        if(_.checked){
-            p.push(_.value);
-            p.push(Date.parse(new Date())/1000);
-            $('#time_'+_this.attr('rel')).val(Date.parse(new Date())/1000);
-            set.apply(formData,p);
-        }else{
-            p.push('');
-            p.push(null);
-            set.apply(formData,p);
-        }
-        markQuestion(_this.attr('rel'));
+    $("#submit").click(function(){
+        submitall();
     });
 });
 </script>
@@ -325,8 +228,8 @@ $(document).ready(function(){
             <li><a href="http://phpems.net/bbs/">隐私协议</a></li>
             <li>|</li>
             <li><a href="http://phpems.net/bbs/">网站论坛</a></li>
-            <li>|</li>
-            <li>豫ICP备13016752号-1</li>
+            <!-- <li>|</li>
+            <li>豫ICP备13016752号-1</li> -->
         </ul>
     </div>
 </div>
