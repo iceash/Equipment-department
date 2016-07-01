@@ -29,9 +29,28 @@ class AdminExamController extends AdminbaseController {
 		$this->display();
 	}
 	function paper(){
+		$map["id"] = $_GET["id"];
+		$exam = M("exams")->where($map)->find();
+		$settings = json_decode($exam["settings"]);
+		$exam_questions = json_decode($exam["exam_questions"]);
+		$ids = array_merge($exam_questions->single, $exam_questions->multi, $exam_questions->judge);
+		$map["id"] = array("in",$ids);
+		$questions = M("questions")->where($map)->select();
+		for ($i=0; $i < count($questions); $i++) { 
+			$list[$questions[$i]["id"]] = $questions[$i];
+		}
+		$this->assign("settings",$settings);
+		$this->assign("exam_questions",$exam_questions);
+		$this->assign("exam",$exam);
+		$this->assign("list",$list);
 		$this->display();
 	}
 	function editexam(){
+		$map["id"] = $_GET["id"];
+		$exam = M("exams")->where($map)->find();
+		$settings = json_decode($exam["settings"]);
+		$this->assign("exam",$exam);
+		$this->assign("settings",$settings);
 		$this->display();
 	}
 	function select_question(){
@@ -97,6 +116,16 @@ class AdminExamController extends AdminbaseController {
 		}else{
 			$return["status"] = 0;
 			$return["info"] = "新增出错";
+		}
+		$this->ajaxReturn($return);
+	}
+	function ajaxEditExam(){
+		$data = $_POST["data"];
+		if (M("exams")->save($data)) {
+			$return["status"] = 1;
+		}else{
+			$return["status"] = 0;
+			$return["info"] = "无修改";
 		}
 		$this->ajaxReturn($return);
 	}

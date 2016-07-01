@@ -1,10 +1,169 @@
 <admintpl file="header" />
 <!-- 上面调用全局的css、js等 -->
-<link rel="stylesheet" type="text/css" href="__PUBLIC__/Demo/demo.css">
-<!-- 这里放文件单独需要引用的东西，所有静态文件都统一放在__PUBLIC__/下，
-    即 ../public/ -->
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Exam/css/exam.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/source/jquery.fancybox.css">
+<script type="text/javascript" src="__PUBLIC__/source/jquery.fancybox.pack.js"></script>
+<script src="__PUBLIC__/validate/jquery.validate.min.js"></script>
+<script src="__PUBLIC__/validate/messages_zh.js"></script>
 </head>
 <body>
-    <p>这是测试</p>
+	<div class="wrap">
+            <form action="index.php?exam-master-questions" method="post">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th colspan="2">搜索</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody><tr>
+                        <td>
+                            考试名称：
+                        </td>
+                        <td>
+                            <input name="search[questionid]" class="input-small" size="25" type="text" value="" autocomplete="off">
+                        </td>
+                        <td>
+                            交卷时间：
+                        </td>
+                        <td>
+                            <input class="input-small datetimepicker" data-date="2016-06-16" data-date-format="yyyy-mm-dd" type="text" name="search[stime]" size="10" id="stime" value="" autocomplete="off"> - <input class="input-small datetimepicker" data-date="2016-06-16" data-date-format="yyyy-mm-dd" size="10" type="text" name="search[etime]" id="etime" value="" autocomplete="off">
+                        </td>
+                        <td>
+                            考生姓名：
+                        </td>
+                        <td>
+                            <input class="input-small" name="search[keyword]" size="25" type="text" value="" autocomplete="off">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            所在部门：
+                        </td>
+                        <td>
+                            <select name="search[questiontype]" class="input-medium" autocomplete="off">
+                                <option value="0">不限</option>
+                                <option value="1">部门1</option>
+                                <option value="2">部门2</option>
+                                <option value="3">部门3</option>
+                            </select>
+                        </td>
+                        <td>
+                            成绩：
+                        </td>
+                        <td>
+                            <input class="input-small datetimepicker" type="text" value=""> - <input class="input-small datetimepicker" type="text" value="">
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button class="btn btn-primary" type="submit" autocomplete="off">搜索</button>
+                            <input type="hidden" value="1" name="search[argsmodel]" autocomplete="off">
+                        </td>
+                        <td colspan="4"></td>
+                    </tr>
+                </tbody></table>
+            </form>
+		<form method="post" class="js-ajax-form">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th align="center">ID</th>
+						<th>考试名称</th>
+						<th>考生姓名</th>
+						<th>考试成绩</th>
+						<th>是否及格</th>
+						<th>交卷时间</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<foreach name="scores" item="vo">
+					<tr>
+						<td align="center">{$vo.id}</td>
+						<td>{$vo.examname}</td>
+						<td>{$vo.username}</td>
+						<td>{$vo.score}</td>
+						<td>
+							<?php if ($vo["is_pass"] == "1") {
+								echo "及格";
+							}else{
+								echo '<span class="not_pass">不及格</span>';
+							} ?>
+						</td>
+						<td>{$vo.submit_time}</td>
+						<td align="center">
+							<a class="btn" target="_blank" href="__URL__/view_score/id/{$vo.id}" title="查看试卷"><em class="icon-list-alt"></em></a>
+							<a class="btn fancybox" href="#new_score" score_id="{$vo.id}"><em class="icon-edit"></em></a>
+						</td>
+					</tr>
+					</foreach>
+				</tbody>
+			</table>
+			<div class="pagination">{$page}</div>
+		</form>
+	</div>
+	<div id="new_score" style="display:none;">
+		<form action="#" method="post">
+                <table class="table">
+                    <thead>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            新的分数：
+                        </td>
+                        <td>
+                            <input name="" class="input-small" size="25" type="text" value="" id="score">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        	修改分数请慎重：
+                        </td>
+                        <td>
+                            <button id="change_score" class="btn btn-primary" type="button" autocomplete="off">确定</button>
+                        </td>
+                    </tr>
+	                </tbody>
+	            </table>
+            </form>
+	</div>
+<script src="__PUBLIC__/js/common.js"></script>
+<script type="text/javascript">
+	var score_id = 0;
+    $(".fancybox").fancybox({
+        width: 480,
+        height: 240,
+        autoSize: false,
+    });
+    $(".fancybox").click(function(){
+        score_id = $(this).attr("score_id");
+    })
+    $("#change_score").click(function(){
+    	var score = $("#score").val();
+    	if (score != "0" && !score) {
+    		alert("请填写新的分数");
+    		return;
+    	};
+    	var data = {
+    		"id" : score_id,
+    		"score" : score
+    	}
+    	$.post("__URL__/change_score",{"data":data},function(back){
+    		if (back.status == 1) {
+    			alert("修改成功");
+    			window.location.reload();
+    		}else{
+    			alert(back.info);
+    		};
+    	});
+    });
+</script>
 </body>
 </html>

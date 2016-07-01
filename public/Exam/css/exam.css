@@ -10,3 +10,14 @@
 .btn{background-color: #4dd4ba;}
 #selecttext .controls>span{margin-left: -20px;margin-right: 12px;}
 .well{padding: 10px 0 0 20px;}
+.media.well:hover {
+    border-color: #43af9a;
+}
+.badge-info{
+	background-color: #43af9a;
+}
+.well.media-body{margin-bottom: 20px!important}
+.not_pass{color: red;}
+.bingo{color: #43af9a;}
+.wrong{color: red;}
+.right{color: #43af9a;}
