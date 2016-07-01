@@ -23,6 +23,16 @@ class AdminController extends AdminbaseController {
 	public function create(){
 		$this->display();
 	}
-	
-	
+
+	public function result(){
+		$this->display();
+	}
+
+	public function getresult(){
+		$this->display();
+	}
+
 }
+
+
+
