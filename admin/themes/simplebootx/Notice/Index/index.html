@@ -6,12 +6,17 @@
 			<li class="active"><a href="{:U('index/index')}">公告管理</a></li>
 			<li><a href="{:U('index/add')}">添加公告</a></li>
 		</ul>
-		<form class="well form-search" method="post" id="status-form">
+		<div style="margin-bottom:20px">
+		<form class="well form-search" method="post" id="status-form" style="display:inline;">
 			<select class="select_2" name="status" style="width: 100px;" id="selected-status">
 				<option value="1"{$status?"selected":""}>显示</option>
 				<option value="0"{$status?"":"selected"}>隐藏</option>
 			</select>
 		</form>
+		<form method="post" action="{:U('index/changeInterval')}" class="well js-ajax-form" style="display:inline;">
+			<span>轮屏时间：</span><input type="text" style="width:50px" name="interval" value="{$interval}"><span>&nbsp;秒&nbsp;&nbsp;</span><button class="btn btn-primary js-ajax-submit" type="submit">修改</button>
+		</form>
+		</div>
 		<form class="js-ajax-form" method="post">
 			<div class="table-actions">
 				<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="{:U('index/listorders')}">{:L('SORT')}</button>

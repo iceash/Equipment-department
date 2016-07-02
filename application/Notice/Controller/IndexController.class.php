@@ -10,6 +10,7 @@ class IndexController extends AdminbaseController{
 	function _initialize() {
 		parent::_initialize();
 		$this->screen_model = D("Common/NoticeScreen");
+		$this->notice_model = D("Common/Notice");
 		//$this->slidecat_model = D("Common/SlideCat");
 		
 	}
@@ -24,7 +25,22 @@ class IndexController extends AdminbaseController{
 		$this->assign("status",$status);
 		$screen=$this->screen_model->where($where)->order("listorder ASC")->select();
 		$this->assign('screen',$screen);
+		$interval=$this->notice_model->where("department='测试'")->getField("interval");
+		$this->assign('interval',$interval);
 		$this->display();
+	}
+	function changeInterval(){
+		if(IS_POST){
+			if($this->notice_model->create()){
+				if ($this->notice_model->where("department='测试'")->save()!==false) {
+					$this->success("修改成功！", U("index/index"));
+				} else {
+					$this->error("修改失败！");
+				}
+			} else {
+				$this->error($this->notice_model->getError());
+			}
+		}
 	}
 	
 	function add(){
