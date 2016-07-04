@@ -6,7 +6,7 @@
 // +----------------------------------------------------------------------
 // | Author: Tuolaji <479923197@qq.com>
 // +----------------------------------------------------------------------
-namespace Demo\Controller;
+namespace Department\Controller;
 use Common\Controller\AdminbaseController;
 class AdminController extends AdminbaseController {
 	function _initialize() {
@@ -16,10 +16,34 @@ class AdminController extends AdminbaseController {
 		$this->terms_model = D("Portal/Terms");
 		$this->term_relationships_model = D("Portal/TermRelationships");*/
 	}
+
 	function index(){
 		// echo "string";
 		$this->display();
 	}
-	
-	
+
+	public function create(){
+		$department=M('department')->where($map)->order("id DESC")->select();
+		$this->assign("department",$department);
+        $this->display();
+
+	}
+
+	public function add(){
+
+		$Form   =   D('department');
+		if($Form->create()) {
+			$department =   $Form->add();
+			if($department) {$this->success('数据添加成功！');}
+			else{$this->error('数据添加错误！');}
+
+		}
+			$this->display();
+
+
+	}
+
 }
+
+
+

@@ -1,0 +1,32 @@
+<admintpl file="header"/>
+</head>
+<style>
+    li{margin-top: 10px;margin-bottom: 10px;}
+</style>
+<body>
+<div class="wrap js-check-wrap">
+    <form action="{:U('admin/add_post')}" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
+        <div class="row-fluid">
+            <div class="span11">
+                <table class="table table-bordered">
+                    <tr>
+                        <th>新建部门</th>
+                    </tr>
+                    <tr>
+                        <td><ol style="font-size: 16px;">
+                            <li><textarea name="screen_content" id="description" style="width: 98%; height: 30px;"></textarea></li>
+                        </ol></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="form-actions">
+            <button class="btn btn-primary js-ajax-submit" type="submit">{:L("ADD")}</button>
+            <a class="btn" href="{:U('index/index')}">{:L('BACK')}</a>
+        </div>
+    </form>
+</div>
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+</body>
+</html>
