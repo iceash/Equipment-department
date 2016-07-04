@@ -6,12 +6,17 @@
 			<li class="active"><a href="{:U('index/index')}">公告管理</a></li>
 			<li><a href="{:U('index/add')}">添加公告</a></li>
 		</ul>
-		<form class="well form-search" method="post" id="status-form">
+		<div style="margin-bottom:20px">
+		<form class="well form-search" method="post" id="status-form" style="display:inline;">
 			<select class="select_2" name="status" style="width: 100px;" id="selected-status">
 				<option value="1"{$status?"selected":""}>显示</option>
 				<option value="0"{$status?"":"selected"}>隐藏</option>
 			</select>
 		</form>
+		<form method="post" action="{:U('index/changeInterval')}" class="well js-ajax-form" style="display:inline;">
+			<span>轮屏时间：</span><input type="text" style="width:50px" name="interval" value="{$interval}"><span>&nbsp;秒&nbsp;&nbsp;</span><button class="btn btn-primary js-ajax-submit" type="submit">修改</button>
+		</form>
+		</div>
 		<form class="js-ajax-form" method="post">
 			<div class="table-actions">
 				<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="{:U('index/listorders')}">{:L('SORT')}</button>
@@ -37,8 +42,12 @@
 					<td><input type="checkbox" class="js-check" data-yid="js-check-y" data-xid="js-check-x" name="ids[]" value="{$vo.screen_id}"></td>
 					<td><input name='listorders[{$vo.screen_id}]' class="input input-order mr5" type='text' size='3' value='{$vo.listorder}'></td>
 					<td>{$vo.screen_title}</td>
-					<td>{$vo.screen_content}</td>
-					<td>{$vo.screen_background}</td>
+					<td>{$vo.screen_content|msubstr=0,20,'utf-8',false}</td>
+					<eq name="vo['bg_type']" value="0">
+						<td><a href="{$vo.screen_background}" target="_blank">查看图片</a></td>
+						<else />
+						<td style="background:{$vo.screen_background}">&nbsp;</td>
+					</eq>
 					<td>{$status[$vo['screen_status']]}</td>
 					<td>
 						<a href="{:U('index/edit',array('id'=>$vo['screen_id']))}">{:L('EDIT')}</a>

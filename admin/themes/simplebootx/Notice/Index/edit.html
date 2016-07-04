@@ -1,4 +1,7 @@
 <admintpl file="header"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Notice/notice.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Notice/colpick/css/colpick.css">
+<script type="text/javascript" src="__PUBLIC__/Notice/colpick/js/colpick.js"></script>
 </head>
 <body>
 	<div class="wrap js-check-wrap">
@@ -10,25 +13,29 @@
 							<th width="80">标题</th>
 							<td>
 								<input type="text" style="width: 400px;" name="screen_title" value="{$screen_title}" placeholder="请输入公告标题"/>
-								<span class="form-required">*</span>
 								<input type="hidden" name="screen_id" value="{$screen_id}"/>
 							</td>
 						</tr>
 							<th width="80">公告内容</th>
 							<td><textarea name="screen_content" id="description" style="width: 98%; height: 200px;">{$screen_content}</textarea></td>
 						</tr>
-					</table>
-				</div>
-				<div class="span3">
-					<table class="table table-bordered">
 						<tr>
-							<td><b>缩略图</b></td>
+							<th>文字颜色</th>
+							<td id="font_picker"><input id="font_color_input" type="hidden" name="font_color" value="{$font_color}"></td>
 						</tr>
 						<tr>
+							<th>背景类型</th>
+							<td>
+								<label id="pic_radio"><input type="radio" name="bg_type" value="0" <eq name="bg_type" value="0">checked</eq>>背景图片</label>
+								<label id="col_radio"><input type="radio" name="bg_type" value="1" <eq name="bg_type" value="1">checked</eq>>纯色</label>
+							</td>
+						</tr>
+						<tr id="pic_tr" <eq name="bg_type" value="1">style="display:none"</eq>>
+							<th>缩略图</th>
 							<td>
 								<div style="text-align: center;">
 									<input type="hidden" name="screen_background" id="thumb" value="{$screen_background}"> <a href="javascript:void(0);" onclick="flashupload('thumb_images', '附件上传','thumb',thumb_images,'1,jpg|jpeg|gif|png|bmp,1,,,1','','','');return false;">
-										<if condition="empty($screen_background)">
+										<if condition="empty($screen_background)||$bg_type==1">
 											<img src="__TMPL__Public/assets/images/default-thumbnail.png" id="thumb_preview" width="135" style="cursor: hand"/>
 										<else />
 											<img src="{:sp_get_asset_upload_path($screen_background)}" id="thumb_preview" width="135" style="cursor: hand; height: 113px;"/>
@@ -38,6 +45,13 @@
 								</div>
 							</td>
 						</tr>
+						<tr id="color_tr" <eq name="bg_type" value="0">style="display:none"</eq>>
+							<th>背景色</th><td id="picker"><input type="hidden" name="screen_background" value="<eq name='bg_type' value='0'>#3289c7</eq><eq name='bg_type' value='1'>{$screen_background}</eq>" id="color_input"></td>
+						</tr>
+						<tr><th>展示状态</th><td>
+							<label><input type="radio" name="screen_status" value="0" <eq name="screen_status" value="0">checked</eq>>隐藏</label>
+							<label><input type="radio" name="screen_status" value="1" <eq name="screen_status" value="1">checked</eq>>显示</label>
+						</td></tr>
 					</table>
 				</div>
 			</div>
@@ -50,6 +64,39 @@
 	<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
 	<script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
 	<script type="text/javascript">
+	$(function () {
+		$("#picker").colpick({
+			flat:true,
+			layout:'hex',
+			<eq name="bg_type" value="1">color:'{$screen_background}',</eq>	
+			submit:0,
+			onChange:function(hsb,hex,rgb,el,bySetColor){
+				$("#color_input").val('#'+hex);
+			}
+		});
+		$("#font_picker").colpick({
+			flat:true,
+			layout:'hex',
+			color:'{$font_color}',
+			submit:0,
+			onChange:function(hsb,hex,rgb,el,bySetColor){
+				$("#font_color_input").val('#'+hex);
+			}
+		});
+		$("#pic_radio").click(function () {
+			$("#color_tr").hide();
+			$("#color_input").attr("disabled","disabled");
+			$("#thumb").removeAttr("disabled");
+			$("#pic_tr").show();
+
+		});
+		$("#col_radio").click(function () {
+			$("#color_input").removeAttr("disabled");
+			$("#color_tr").show();
+			$("#thumb").attr("disabled","disabled");
+			$("#pic_tr").hide();
+		});
+	})
 		$(function() {
 			$(".js-ajax-close-btn").on('click', function(e) {
 				e.preventDefault();

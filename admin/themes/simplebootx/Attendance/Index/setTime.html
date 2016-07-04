@@ -1,103 +1,39 @@
 <admintpl file="header"/>
-<link rel="stylesheet" type="text/css" href="__PUBLIC__/Notice/notice.css">
-<link rel="stylesheet" type="text/css" href="__PUBLIC__/Notice/colpick/css/colpick.css">
-<script type="text/javascript" src="__PUBLIC__/Notice/colpick/js/colpick.js"></script>
 </head>
 <body>
 	<div class="wrap js-check-wrap">
 		<ul class="nav nav-tabs">
-			<li><a href="{:U('index/index')}">公告管理</a></li>
-			<li class="active"><a href="{:U('index/add')}">添加公告</a></li>
+			<li><a href="{:U('index/index')}">考勤记录</a></li>
+			<li class="active"><a href="{:U('index/setTime')}">设置考勤时间</a></li>
 		</ul>
-		<form action="{:U('index/add_post')}" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
+		<form action="{:U('index/setTime_post')}" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
 			<div class="row-fluid">
 				<div class="span9">
 					<table class="table table-bordered">
+						<tr>时间格式为数字加英文冒号，如08:00</tr>
 						<tr>
-							<th>标题</th>
+							<th>上班时间</th>
 							<td>
-								<input type="text" style="width: 400px;" name="screen_title" value="" placeholder="请输入公告标题"/>
+								<input type="text" style="width: 400px;" name="on_time_rule" placeholder="请输上班时间" value="{$on_time_rule}" />
 							</td>
 						</tr>
 						<tr>
-							<th>公告内容</th>
-							<td><textarea name="screen_content" style="width: 98%; height: 200px;"></textarea></td>
+							<th>下班时间</th>
+							<td><input type="text" style="width: 400px;" name="off_time_rule" placeholder="请输入下班时间" value="{$off_time_rule}" /></td>
 						</tr>
-						<tr>
-							<th>文字颜色</th>
-							<td id="font_picker"><input id="font_color_input" type="hidden" name="font_color" value="#000"></td>
-						</tr>
-						<tr>
-							<th>背景类型</th>
-							<td>
-								<label id="pic_radio"><input type="radio" name="bg_type" value="0" checked>背景图片</label>
-								<label id="col_radio"><input type="radio" name="bg_type" value="1">纯色</label>
-							</td>
-						</tr>
-						<tr id="pic_tr">
-							<th>缩略图</th>
-							<td>
-								<div style="text-align: center;">
-									<input type="hidden" name="screen_background" id="thumb" value="">
-									<a href="javascript:void(0);" onclick="flashupload('thumb_images', '附件上传','thumb',thumb_images,'1,jpg|jpeg|gif|png|bmp,1,,,1','','','');return false;">
-										<img src="__TMPL__Public/assets/images/default-thumbnail.png" id="thumb_preview" width="135" style="cursor: hand" />
-									</a>
-									<input type="button" class="btn btn-small" onclick="$('#thumb_preview').attr('src','__TMPL__Public/assets/images/default-thumbnail.png');$('#thumb').val('');return false;" value="取消图片">
-								</div>
-							</td>
-						</tr>
-						<tr id="color_tr" style="display:none">
-							<th>背景色</th><td id="picker"><input type="hidden" name="screen_background" value="#3289c7" id="color_input" disabled="disabled"></td>
-						</tr>
-						<tr><th>展示状态</th><td>
-							<label><input type="radio" name="screen_status" value="0" checked>隐藏</label>
-								<label><input type="radio" name="screen_status" value="1">显示</label>
-						</td></tr>
 					</table>
 				</div>
 
 			</div>
 			<div class="form-actions">
-				<button class="btn btn-primary js-ajax-submit" type="submit">{:L("ADD")}</button>
-				<a class="btn" href="{:U('index/index')}">{:L('BACK')}</a>
+				<button class="btn btn-primary js-ajax-submit" type="submit">确定</button>
+				<a class="btn" href="{:U('index/index')}">返回</a>
 			</div>
 		</form>
 	</div>
 	<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
 	<script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
 	<script type="text/javascript">
-	$(function () {
-		$("#picker").colpick({
-			flat:true,
-			layout:'hex',
-			submit:0,
-			onChange:function(hsb,hex,rgb,el,bySetColor){
-				$("#color_input").val('#'+hex);
-			}
-		});
-		$("#font_picker").colpick({
-			flat:true,
-			layout:'hex',
-			color:'#000',
-			submit:0,
-			onChange:function(hsb,hex,rgb,el,bySetColor){
-				$("#font_color_input").val('#'+hex);
-			}
-		});
-		$("#pic_radio").click(function () {
-			$("#color_tr").hide();
-			$("#color_input").attr("disabled","disabled");
-			$("#thumb").removeAttr("disabled");
-			$("#pic_tr").show();
-
-		});
-		$("#col_radio").click(function () {
-			$("#color_input").removeAttr("disabled");
-			$("#color_tr").show();
-			$("#thumb").attr("disabled","disabled");
-			$("#pic_tr").hide();
-		});
-	})
 		$(function() {
 			$(".js-ajax-close-btn").on('click', function(e) {
 				e.preventDefault();
@@ -199,14 +135,14 @@
 											opacity : 0,
 											content : data.info,
 											button : [ {
-												name : '继续添加？',
+												name : '确定',
 												callback : function() {
 													reloadPage(window);
 													return true;
 												},
 												focus : true
 											}, {
-												name : '返回列表',
+												name : '返回',
 												callback : function() {
 													location.href = "{:U('index/index')}";
 													return true;
@@ -226,4 +162,3 @@
 		});
 	</script>
 </body>
-</html>
