@@ -12,6 +12,7 @@
 		<form action="{:U('index/add_post')}" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
 			<div class="row-fluid">
 				<div class="span9">
+				<input type="hidden" name="department" value="{$department}">
 					<table class="table table-bordered">
 						<tr>
 							<th>标题</th>
