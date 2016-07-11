@@ -9,7 +9,7 @@ class IndexController extends AdminbaseController{
 	//protected $slidecat_model;
 	
 	function _initialize() {
-		parent::_initialize();
+		//parent::_initialize();
 		$this->dictionary_model = D("Common/Dictionary");
 		$this->attend_model = D("Common/Attend");
 		//$this->slidecat_model = D("Common/SlideCat");
@@ -114,7 +114,7 @@ class IndexController extends AdminbaseController{
 		}
 	}
 	function add_attend(){
-		$users=M('users')->Field('user_nicename,department_name')->select();
+		$users=M('users_role')->where('role_id=3')->Field('user_nicename,department_name')->select();
 		$Attend=M('attend');
 		$today=date('Y-m-d');
 		$week=date('w');
@@ -169,5 +169,6 @@ class IndexController extends AdminbaseController{
 			$Attend->where($data)->save($data2);
 			$data2='';
 		}
+		echo('success');
 	}
 }
