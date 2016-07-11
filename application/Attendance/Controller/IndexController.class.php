@@ -37,7 +37,7 @@ class IndexController extends AdminbaseController{
 			$where['_string']='(name like "%'.$keyword.'%")OR(badge_number like "%'.$keyword.'%")';
 			$this->assign("keyword",$keyword);
 		}
-		$attend=M('checkinout')->where($where)->order("CHECKTIME ASC")->select();
+		$attend=M('checkinout')->where($where)->order("CHECKTIME desc")->select();
 		$this->assign('attend',$attend);
 		$department_list=M('department')->Field('department_name')->select();
 		$this->assign("dep_list",$department_list);
