@@ -1,4 +1,14 @@
-
+<admintpl file="header" />
+<!-- 上面调用全局的css、js等 -->
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Exam/css/exam.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/source/jquery.fancybox.css">
+<script type="text/javascript" src="__PUBLIC__/source/jquery.fancybox.pack.js"></script>
+    <script src="__PUBLIC__/validate/jquery.validate.min.js"></script>
+    <script src="__PUBLIC__/validate/messages_zh.js"></script>
+<!-- 这里放文件单独需要引用的东西，所有静态文件都统一放在__PUBLIC__/下，
+    即 ../public/ -->
+</head>
+<body>
 <div id="select_list">
     <form action="#" method="post">
         <table class="table">
@@ -11,26 +21,27 @@
                     <th></th>
                 </tr>
             </thead>
-            <tbody><tr>
-                <td>
-                    试题ID：
-                </td>
-                <td>
-                    <input name="search[questionid]" class="input-small" size="25" type="text" value="" autocomplete="off">
-                </td>
-                <td>
-                    录入时间：
-                </td>
-                <td>
-                    <input class="input-small datetimepicker" data-date="2016-06-16" data-date-format="yyyy-mm-dd" type="text" name="search[stime]" size="10" id="stime" value="" autocomplete="off"> - <input class="input-small datetimepicker" data-date="2016-06-16" data-date-format="yyyy-mm-dd" size="10" type="text" name="search[etime]" id="etime" value="" autocomplete="off">
-                </td>
-                <td>
-                    关键字：
-                </td>
-                <td>
-                    <input class="input-small" name="search[keyword]" size="25" type="text" value="" autocomplete="off">
-                </td>
-            </tr>
+            <tbody>
+            <tr>
+                        <td>
+                            试题ID：
+                        </td>
+                        <td>
+                            <input name="questionid" class="input-small" size="25" type="text" value="{$id}" autocomplete="off">
+                        </td>
+                        <td>
+                            录入时间：
+                        </td>
+                        <td>
+                            <input type="text" name="start_time" class="js-datetime" value="{$start_time}" style="width: 150px;" autocomplete="off"> - <input type="text" name="end_time" class="js-datetime" value="{$end_time}" style="width: 150px;" autocomplete="off">
+                        </td>
+                        <td>
+                            试题内容关键字：
+                        </td>
+                        <td>
+                            <input class="input-small" name="keyword" size="25" type="text" value="{$keyword}" autocomplete="off">
+                        </td>
+                    </tr>
             <tr>
                 <td colspan="2">
                     <button class="btn btn-primary" type="submit" autocomplete="off">搜索</button>
@@ -62,7 +73,7 @@
                                 <a class="selfmodal" href="javascript:;">{$one.question}</a>
                             </td>
                             <td>
-                                <?php echo date("Y-m-d h:i:s", $one["time"]); ?>
+                                <?php echo date("Y-m-d H:i:s", $one["time"]); ?>
                             </td>
                         </tr>
                     </foreach>
@@ -86,7 +97,9 @@
         </fieldset>
     </form>
 </div>
+<script src="__PUBLIC__/js/common.js"></script>
 <script type="text/javascript">
+    var exam_questions = window.parent.exam_questions;
     var type = {$type};
     switch(type){
         case 1 :
@@ -120,7 +133,10 @@
                 };
             };
         });
-        $.fancybox.close();
-        $("#ialreadyselectnumber_" + type).text(exam_questions[type].length);
+        window.parent.exam_questions = exam_questions;
+        window.parent.$.fancybox.close();
+         $(window.parent.document.body).find("#ialreadyselectnumber_" + type).text(exam_questions[type].length);
     })
 </script>
+</body>
+</html>

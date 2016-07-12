@@ -18,7 +18,32 @@ class AdminQuestionController extends AdminbaseController {
 	}
 	function index(){
 		$questions = M('questions');
-		$map = [];
+		//起始结束时间
+		$start_time="2000-01-01 00:00";
+		if(isset($_POST['start_time']) && $_POST['start_time']!=""){
+			$start_time=$_POST['start_time'];
+			$this->assign("start_time",$start_time);
+		}
+		$map["time"][0] = array('gt',strtotime($start_time.":00"));
+		$end_time="2030-12-30 00:00";
+		if(isset($_POST['end_time']) && $_POST['end_time']!=""){
+			$end_time=$_POST['end_time'];
+			$this->assign("end_time",$end_time);
+		}
+		$map["time"][1] = array('lt',strtotime($end_time.":00"));
+		if(isset($_POST['questionid']) && $_POST['questionid']!=""){
+			$map["id"]=$_POST['questionid'];
+			$this->assign("id",$map["id"]);
+		}
+		if(isset($_POST['keyword']) && $_POST['keyword']!=""){
+			$keyword=$_POST['keyword'];
+			$map["question"] = array("like","%$keyword%");
+			$this->assign("keyword",$keyword);
+		}
+		if(isset($_POST['type']) && $_POST['type']!="" && $_POST["type"]!="0"){
+			$map["type"] = $_POST['type'];
+			$this->assign("type",$map["type"]);
+		}
 		$count      = $questions->where($map)->count();
 		$Page       = new \Think\Page($count,25);
 		$show       = $Page->show();
@@ -38,7 +63,7 @@ class AdminQuestionController extends AdminbaseController {
 					$list[$i]["type"] = "单选题";
 					break;
 			}
-			$list[$i]["time"] = date("Y-m-d h:i:s", $va["time"]);
+			$list[$i]["time"] = date("Y-m-d H:i:s", $va["time"]);
 		}
 		$this->assign('list',$list);
 		$this->assign('page',$show);
