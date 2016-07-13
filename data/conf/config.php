@@ -1,8 +1,8 @@
 <?php	return array (
   'SP_SITE_ADMIN_URL_PASSWORD' => '',
-  'SP_DEFAULT_THEME' => 'simplebootx - 2',
-  'DEFAULT_THEME' => 'simplebootx - 2',
-  'SP_ADMIN_STYLE' => 'bluesky',
+  'SP_DEFAULT_THEME' => 'solo-2',
+  'DEFAULT_THEME' => 'solo-2',
+  'SP_ADMIN_STYLE' => 'flat',
   'URL_MODEL' => '0',
   'URL_HTML_SUFFIX' => '',
   'UCENTER_ENABLED' => 0,

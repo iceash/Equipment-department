@@ -5,7 +5,7 @@
 </style>
 <body>
 <div class="wrap js-check-wrap">
-    <form action="{:U('admin/add_post')}" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
+    <form action="{:U('admin/add')}" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
         <div class="row-fluid">
             <div class="span11">
                 <table class="table table-bordered">
@@ -14,7 +14,7 @@
                     </tr>
                     <tr>
                         <td><ol style="font-size: 16px;">
-                            <li><textarea name="screen_content" id="description" style="width: 98%; height: 30px;"></textarea></li>
+                            <li>部门名称<textarea name="department_name" id="description" style="width: 80%; height: 30px;"></textarea></li>
                         </ol></td>
                     </tr>
                 </table>
@@ -22,7 +22,6 @@
         </div>
         <div class="form-actions">
             <button class="btn btn-primary js-ajax-submit" type="submit">{:L("ADD")}</button>
-            <a class="btn" href="{:U('index/index')}">{:L('BACK')}</a>
         </div>
     </form>
 </div>

@@ -32,9 +32,9 @@
 	</head>
 <body>
 	<div class="wrap">
-		<h1><a href="__ROOT__">ThinkCMF {:L('ADMIN_CENTER')}</a></h1>
+		<h2 style="color: white;text-align: center;font-family:宋体">装备部综合网管理系统</h2>
 		<form method="post" name="login" action="{:U('public/dologin')}" autoComplete="off" class="js-ajax-form">
-			<div class="login">
+			<div class="login" >
 				<ul>
 					<li>
 						<input class="input" id="js-admin-name" required name="username" type="text" placeholder="{:L('USERNAME_OR_EMAIL')}" title="{:L('USERNAME_OR_EMAIL')}" value="{$_COOKIE['admin_username']}"/>

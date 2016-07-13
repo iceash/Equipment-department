@@ -42,6 +42,16 @@ class AdminController extends AdminbaseController {
 
 
 	}
+	function delete(){
+
+			$id = intval(I("get.id"));
+			if (M('department')->delete($id)!==false) {
+				$this->success("删除成功！");
+			} else {
+				$this->error("删除失败！");
+			}
+		}
+
 
 }
 

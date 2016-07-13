@@ -18,8 +18,9 @@
                                 $department
                             </php>
                             <foreach name="department"  item="vo">
-                            <p>{$vo.department_name}<button class="btn btn-primary"  name="dele" style="margin-left: 500px;" type="submit">删除</button>
-                                <input type="hidden" name="delt" value="{$vo.id}"/>
+                            <p>{$vo.department_name}<a href="{:U('admin/delete',array('id'=>$vo['id']))}" class="js-ajax-delete">删除</a>
+                                <!--<button class="btn btn-primary"  style="margin-left: 500px;" type="submit">删除</button>-->
+                                <input type="hidden" name="id" value="{$vo.id}"/>
                             </p>
                             </foreach>
 
@@ -32,8 +33,6 @@
 <script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
 <script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
 <script type="text/javascript">
-    $(".delt").on('click', function() {
-        e.preventDefault();
 </script>
 </body>
 </html>
