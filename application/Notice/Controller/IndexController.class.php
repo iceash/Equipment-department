@@ -14,7 +14,6 @@ class IndexController extends AdminbaseController{
 		//$this->slidecat_model = D("Common/SlideCat");
 		
 	}
-	
 	function index(){
 		$status=1;
 		$department="'".$_SESSION['name']."'";

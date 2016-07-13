@@ -9,7 +9,7 @@
 		<form class="form-horizontal js-ajax-form" method="post" action="{:U('User/userinfo_post')}">
 			<fieldset>
 				<div class="control-group">
-					<label class="control-label" for="input-user_nicename">{:L('NICENAME')}</label>
+					<label class="control-label" for="input-user_nicename">姓名</label>
 					<div class="controls">
 						<input type="hidden" name="id" value="{$id}">
 						<input type="text" id="input-user_nicename" name="user_nicename" value="{$user_nicename}">
@@ -34,9 +34,9 @@
 					</div>
 				</div>
 				<div class="control-group">
-					<label class="control-label" for="input-user_url">{:L('WEBSITE')}</label>
+					<label class="control-label" for="input-department_name">部门</label>
 					<div class="controls">
-						<input type="text" id="input-user_url" placeholder="http://thinkcmf.com" name="user_url" value="{$user_url}">
+						<input type="text" id="input-department_name" placeholder="你的部门" name="department_name" value="{$department_name}">
 					</div>
 				</div>
 				<div class="control-group">

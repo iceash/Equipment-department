@@ -1,0 +1,901 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta content="//" name="Keywords">
+        <meta content="//" name="Description">
+        <title>
+            //
+        </title>
+        </script>
+        <link href="样式2/index.css" type="text/css" rel="stylesheet">
+        <script type="text/javascript">
+            var siteSetup = {
+                sitePath: '/',
+                ajaxPath: '/ajax.aspx',
+                skinPath: '/Template/Default/Skin/'
+            };
+        </script>
+        <script language="javascript" type="text/javascript" src="Public/js/jquery.pack.js">
+        </script>
+        <script language="javascript" type="text/javascript" src="Public/js/jquery.peex.js">
+        </script>
+        <script type="text/javascript" src="Public/js/jquery.SuperSlide.js">
+        </script>
+    </head>
+    <!--[if IE 6]>
+        <script type="text/javascript" src="/Template/Default/Skin/dingzhi/js/bx_png.js">
+        </script>
+        <script>
+            DD_belatedPNG.fix('*,background,img');
+        </script>
+    <![endif]-->
+    
+    <body>
+    	<div>
+    		<div class="wrap">
+    		<div class="topPlan"style="background-color:#FFFFFF;width: 1230px;margin: 0 auto;">
+                        <div class="fr">
+                            <div class="siteSearch">
+                                <a href="javascript:gSearch()" class="searchBtn">
+                                </a>
+                                <div class="sl">
+                                    <input type="text" maxlength="50" id="topKeyWord" class="keyWord" onfocus="this.value=&#39;&#39;;this.style.color=&#39;#333&#39;">
+                                </div>
+                            </div>
+                            <script type="text/javascript">
+                                if ('' != '') {
+                                    document.getElementById('topKeyWord').value = '';
+                                }
+                                document.getElementById("topKeyWord").onkeydown = function(e) {
+                                    e = e || window.event;
+                                    if (e.keyCode == 13) {
+                                        gSearch();
+                                    }
+                                }
+
+                                function gSearch() {
+                                    var keyword = document.getElementById('topKeyWord').value;
+                                    if (keyword == '' || keyword == "请输入搜索关键字") {
+                                        alert("请输入搜索关键字");
+                                    } else {
+                                        window.location = '/search.aspx?searchtype=0&fieldOption=title&Keyword=' + encodeURI(keyword);
+                                    }
+                                }
+                            </script>
+                            <a href="#">
+                            	    登录
+                            </a>
+                            |
+                            <a href="#">
+                              	  注册
+                            </a>
+                            |
+                            <a href="#" target="_blank">
+                               	 搜索
+                            </a>
+                        </div>
+                        <div class="fl">
+                            <a href="#">
+                           	欢迎访问装备部综合网！
+                            </a>
+                        </div>
+                    </div>
+        	 </div>
+    	</div>
+        <div class="wrap">
+            <div class="headerBox" style="background-color: #0976B4;">
+                <div class="flashBox w">
+                    <div class="logoBox">
+                        <div class="logo">
+                            <a href="#">
+                                <img src="Public/images/logo.png">
+                            </a>
+                        </div>
+                        <a href="#" class="backs">
+                        </a>
+                    </div>
+                </div>
+                <div class="w">
+                    <div class="navBox">
+                        <ul id="mainNav" class="mainNav">
+                            <li class="li1 first1 on1" id="liID-2">
+                                <h4 class="h1" id="hID-2">
+                                    <a target="_self" class="a1" id="aID-2" href="#">
+                                     	   网站首页
+                                    </a>
+                                </h4>
+                            </li>
+                            <li class="li1 hasUl1" id="liID68">
+                                <h4 class="h1" id="hID68">
+                                    <a target="_self" class="a1" id="aID68" href="#">
+                                     	   装备要闻
+                                    </a>
+                                </h4>
+                            </li>
+                            
+                            <li class="li1 hasUl1" id="liID68">
+                                <h4 class="h1" id="hID68">
+                                    <a target="_self" class="a1" id="aID68" href="#">
+                                     	   工作动态
+                                    </a>
+                                </h4>
+                            </li>
+                            
+                                <li class="li1 hasUl1" id="liID68">
+                                <h4 class="h1" id="hID68">
+                                    <a target="_self" class="a1" id="aID68" href="#">
+                                     	   通知公告
+                                    </a>
+                                </h4>
+                            </li>
+                            
+                            <li class="li1 hasUl1" id="liID69">
+                                <h4 class="h1" id="hID69">
+                                    <a target="_self" class="a1" id="aID69" href="#">
+                                     	   机关工作
+                                    </a>
+                                </h4>
+                                <ul class="ul1" id="ulID69">
+                                    <li class="li2 first2" id="liID90">
+                                        <h4 class="h2" id="hID90">
+                                            <a target="_self" class="a2" id="aID90" href="#">
+                                             	   战备值班
+                                            </a>
+                                        </h4>
+                                    </li>
+                                    <li class="li2" id="liID91">
+                                        <h4 class="h2" id="hID91">
+                                            <a target="_self" class="a2" id="aID91" href="#">
+                                             	职业/
+                                            </a>
+                                        </h4>
+                                    </li>
+                                    <li class="li2" id="liID92">
+                                        <h4 class="h2" id="hID92">
+                                            <a target="_self" class="a2" id="aID92" href="#">
+                                                	考核训练
+                                            </a>
+                                        </h4>
+                                    </li>
+                                    <li class="li2 last2" id="liID93">
+                                        <h4 class="h2" id="hID93">
+                                            <a target="_self" class="a2" id="aID93" href="#">
+                                             	人员考勤
+                                            </a>
+                                        </h4>
+                                    </li>
+                                     <li class="li2 first2" id="liID90">
+                                        <h4 class="h2" id="hID90">
+                                            <a target="_self" class="a2" id="aID90" href="#">
+                                             	 首长批示落实情款
+                                            </a>
+                                        </h4>
+                                    </li>
+                                    <li class="li2" id="liID91">
+                                        <h4 class="h2" id="hID91">
+                                            <a target="_self" class="a2" id="aID91" href="#">
+                                             	规章制度
+                                            </a>
+                                        </h4>
+                                    </li>
+                                    <li class="li2" id="liID91">
+                                        <h4 class="h2" id="hID91">
+                                            <a target="_self" class="a2" id="aID91" href="#">
+                                             	机关工作问题抄告
+                                            </a>
+                                        </h4>
+                                    </li>
+                                    <li class="li2" id="liID91">
+                                        <h4 class="h2" id="hID91">
+                                            <a target="_self" class="a2" id="aID91" href="#">
+                                             	双学活动
+                                            </a>
+                                        </h4>
+                                    </li>
+                                    <li class="li2" id="liID91">
+                                        <h4 class="h2" id="hID91">
+                                            <a target="_self" class="a2" id="aID91" href="#">
+                                             	优秀理论文章赏析
+                                            </a>
+                                        </h4>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                              <li class="li1 hasUl1" id="liID69">
+                                <h4 class="h1" id="hID69">
+                                    <a target="_self" class="a1" id="aID69" href="#">
+                                     	   部队工作
+                                    </a>
+                                </h4>
+                                <ul class="ul1" id="ulID69">
+                                    <li class="li2 first2" id="liID90">
+                                        <h4 class="h2" id="hID90">
+                                            <a target="_self" class="a2" id="aID90" href="#">
+                                             	   部队重点问题监控
+                                            </a>
+                                        </h4>
+                                    </li>
+                                    <li class="li2" id="liID91">
+                                        <h4 class="h2" id="hID91">
+                                            <a target="_self" class="a2" id="aID91" href="#">
+                                             	重点工作进展情款
+                                            </a>
+                                        </h4>
+                                    </li>
+                                    <li class="li2" id="liID92">
+                                        <h4 class="h2" id="hID92">
+                                            <a target="_self" class="a2" id="aID92" href="#">
+                                               	 飞行动态
+                                            </a>
+                                        </h4>
+                                    </li>
+                                    <li class="li2 last2" id="liID93">
+                                        <h4 class="h2" id="hID93">
+                                            <a target="_self" class="a2" id="aID93" href="#">
+                                             	飞机不完好情况
+                                            </a>
+                                        </h4>
+                                    </li>
+                                    <li class="li2" id="liID91">
+                                        <h4 class="h2" id="hID91">
+                                            <a target="_self" class="a2" id="aID91" href="#">
+                                             	规章制度
+                                            </a>
+                                        </h4>
+                                    </li>
+                                </ul>
+                            </li> 
+                        </ul>
+                        
+
+                        <script type="text/javascript">
+                            jQuery(function($) {
+                                var navST;
+                                var name = 'mainNav';
+                                var t = 200;
+                                var type = '1';
+                                var removeOn = 'false';
+                                var effect = 'slide';
+                                var appendItem = '#';
+                                var li = "#" + name + " li";
+
+                                if (!$("#" + name + " .li1").hasClass("on1")) {
+                                    $("#" + name + " .li1").first().addClass("on1");
+                                } //默认第一个加.on1类
+                                if (type == '1') {
+                                    li = "#" + name + " .li1";
+                                }
+                                if (appendItem != '#') { //插入内容
+                                    var appendHtml = $(appendItem).html();
+                                    $(li).first().append(appendHtml);
+                                    $(appendItem).remove();
+                                }
+
+                                if (type == '3') {
+                                    $("#" + name + " .on1").find("ul").first().show();
+                                }
+
+                                $(li).hover(function() {
+                                    var curItem = $(this);
+                                    var onNum = (curItem.attr("class").split(" "))[0].replace("li", "");
+                                    $(li).removeClass("on" + onNum);
+                                    curItem.addClass("on" + onNum);
+                                    navST = setTimeout(function() { //延时触发
+                                        if ($("ul:first", curItem).css("display") != "block") {
+                                            $(li + " .ul" + onNum).hide();
+                                            if (effect == 'fade') $("ul:first", curItem).fadeIn(t);
+                                            else $("ul:first", curItem).slideDown(t);
+                                        };
+                                        navST = null;
+                                    },
+                                    t);
+                                },
+                                function() {
+                                    if (navST != null) clearTimeout(navST);
+                                    if (type == '1' || type == '2') {
+                                        if (effect == 'fade') $(this).find("ul").first().fadeOut(t);
+                                        else $(this).find("ul").first().slideUp(t);
+                                    }
+                                    if (removeOn == 'true') {
+                                        $(this).removeClass("on1");
+                                    }
+                                },
+                                t); //end hover
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="content pad"style="height: 540px;padding-top: 20px;">
+                <div class="contA">
+                    <div class="fr box" id="ans">
+                        <div class="hd">
+                            <h3 class="on">
+                                <a href="#">
+                                  	  通知公告
+                                </a>
+                            </h3>
+                            <h3>
+                                <a href="#">
+                                   	最新动态
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="bd"style="height: 540px;">
+                            <div class="bdA" id="an">
+                                <div class="bdc"style="height: 540px;">
+                                	<ul class="infoList">
+                                        <li class="first">
+                                            <span class="date">
+                                                07-07
+                                            </span>
+                                            <a href="#" target="_blank" title="标题：亚热带农业生物资源保护与利用国家重点实验室学术报告
+                                        	    点击数：32
+                                          	  发表时间：16年07月07日">
+                                                亚热带农业生物资源保护与利用国家重点实…
+                                            </a>
+                                            &nbsp;
+                                          
+                                        </li>
+                                                                                   <li style="height: 30px;">
+                                                <span class="date">
+                                                    07-04
+                                                </span>
+                                                <a href="#" target="_blank" title="标题：暑假期间安全注意事项
+                                           	     点击数：598
+                                              	  发表时间：16年07月04日">
+                                                    暑假期间安全注意事项
+                                                </a>
+                                            </li>
+                                            <li style="height: 30px;">
+                                                <span class="date">
+                                                    07-04
+                                                </span>
+                                                <a href="#" target="_blank" title="标题：2016年秋季学期西大孙辈新生报名公示
+                                            	    点击数：1639
+                                           	     发表时间：16年07月04日">
+                                                    2016年秋季学期西大孙辈新生报名公示
+                                                </a>
+                                            </li>
+                                            <li style="height: 30px;">
+                                                <span class="date">
+                                                    07-04
+                                                </span>
+                                                <a href="#" target="_blank" title="标题：关于实施2016年夏季杀虫灭鼠工作的通知
+                                               	 点击数：249
+                                               	 发表时间：16年07月04日">
+                                                    关于实施2016年夏季杀虫灭鼠工作的通知
+                                                </a>
+                                            </li>
+                                            <li style="height: 30px;">
+                                                <span class="date">
+                                                    07-01
+                                                </span>
+                                                <a href="#" target="_blank" title="标题：//萃苑餐厅二楼监控系统采购公告
+                                              	  点击数：515
+                                             	   发表时间：16年07月01日">
+                                                    //萃苑餐厅二楼监控系统采购公告
+                                                </a>
+                                            </li>
+                                            <li class="last" style="height: 30px;">
+                                                <span class="date">
+                                                    06-30
+                                                </span>
+                                                <a href="#" target="_blank" title="标题：关于征集//大门（南门）创意设计方案的通知
+                                              	  点击数：1951
+                                              	  发表时间：16年06月30日">
+                                                    关于征集//大门（南门）创意设计方…
+                                                </a>
+                                            </li>
+                                            <li class="first clone" style="height: 30px;">
+                                                <span class="date">
+                                                    07-04
+                                                </span>
+                                                <a href="#" target="_blank" title="标题：关于采集科技成果项目信息的通知
+                                              	  点击数：636
+                                            	    发表时间：16年07月04日">
+                                                    关于采集科技成果项目信息的通知
+                                                </a>
+                                            </li>
+                                            <li class="clone" style="height: 30px;">
+                                                <span class="date">
+                                                    06-12
+                                                </span>
+                                                <a href="#" target="_blank" title="标题：//2016年公开招聘硕士及以下学历（位）人员简章
+                                             	   点击数：15394
+                                             	   发表时间：16年06月12日">
+                                                    //2016年公开招聘硕士及以下学历（…
+                                                </a>
+                                            </li>
+                                            <li class="clone" style="height: 30px;">
+                                                <span class="date">
+                                                    05-24
+                                                </span>
+                                                <a href="#" target="_blank" title="标题：关于征集“千人计划”海外高级专家来桂服务需求的通知
+                                                	点击数：2288
+                                                	发表时间：16年05月24日">
+                                                    关于征集“千人计划”海外高级专家来桂服…
+                                                </a>
+                                            </li>
+                                            <li class="clone" style="height: 30px;">
+                                                <span class="date">
+                                                    04-20
+                                                </span>
+                                                <a href="#" target="_blank" title="标题：关于对冒用“//”名义从事继续教育招生宣传的声明
+                                              	  点击数：5025
+                                             	   发表时间：16年04月20日">
+                                                    关于对冒用“//”名义从事继续教育…
+                                                </a>
+                                            </li>
+                                            <li class="clone" style="height: 30px;">
+                                                <span class="date">
+                                                    07-07
+                                                </span>
+                                                <a href="#" target="_blank" title="标题：欢迎报名参加2016年下半年全国计算机等级考试
+                                               	 点击数：3164
+                                              	  发表时间：16年07月07日">
+                                                    欢迎报名参加2016年下半年全国计算机等级…
+                                                </a>
+                                                &nbsp;
+                                                
+                                            </li>
+                                            <li class="clone" style="height: 30px;">
+                                                <span class="date">
+                                                    07-07
+                                                </span>
+                                                <a href="#" target="_blank" title="标题：//金属资源高效利用及环境保护协同创新中心“国家千人计划”韦悦周教授团队招聘启事
+                                               	 点击数：100
+                                             	   发表时间：16年07月07日">
+                                                    //金属资源高效利用及环境保护协同…
+                                                </a>
+                                                &nbsp;
+                                              
+                                            </li>
+
+                                        <li>
+                                            <span class="date">
+                                                07-05
+                                            </span>
+                                            <a href="#" target="_blank" title="标题：君武大讲坛——计算机与电子信息学院学术报告
+                                           	 点击数：187
+                                          	  发表时间：16年07月05日">
+                                                君武大讲坛——计算机与电子信息学院学术…
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <span class="date">
+                                                06-29
+                                            </span>
+                                            <a href="#" target="_blank" title="标题：数学与信息科学学院学术报告
+                                          	  点击数：240
+                                           	 发表时间：16年06月29日">
+                                                数学与信息科学学院学术报告
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <span class="date">
+                                                06-24
+                                            </span>
+                                            <a href="#" target="_blank" title="标题：土木建筑工程学院学术报告
+                                            	点击数：353
+                                           	 发表时间：16年06月24日">
+                                                土木建筑工程学院学术报告
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <span class="date">
+                                                06-23
+                                            </span>
+                                            <a href="#" target="_blank" title="标题：机械工程学院学术报告
+                                           	 点击数：274
+                                          	  发表时间：16年06月23日">
+                                                机械工程学院学术报告
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <span class="date">
+                                                06-20
+                                            </span>
+                                            <a href="#" target="_blank" title="标题：君武大讲坛——化学化工学院学术报告
+                                          	  点击数：333
+                                           	 发表时间：16年06月20日">
+                      	                          君武大讲坛——化学化工学院学术报告
+                                            </a>
+                                        </li>
+                                       
+                                    </ul>
+                                </div>
+                            </div>
+                                    
+                            <div class="bdA" id="an2" style="display: none;">
+                                <div class="bdc"style="height: 540px;">
+                                    <ul class="infoList">
+                                        <li class="first">
+                                            <span class="date">
+                                                07-07
+                                            </span>
+                                            <a href="#" target="_blank" title="标题：亚热带农业生物资源保护与利用国家重点实验室学术报告
+                                         	   点击数：32
+                                          	  发表时间：16年07月07日">
+                                                亚热带农业生物资源保护与利用国家重点实…
+                                            </a>
+                                            &nbsp;
+                                           
+                                        </li>
+                                                                                   <li style="height: 30px;">
+                                                <span class="date">
+                                                    07-04
+                                                </span>
+                                                <a href="#" target="_blank" title="标题：暑假期间安全注意事项
+                                              	  点击数：598
+                                             	   发表时间：16年07月04日">
+                                                    暑假期间安全注意事项
+                                                </a>
+                                            </li>
+                                            <li style="height: 30px;">
+                                                <span class="date">
+                                                    07-04
+                                                </span>
+                                                <a href="#" target="_blank" title="标题：2016年秋季学期西大孙辈新生报名公示
+                                              	  点击数：1639
+                                                	发表时间：16年07月04日">
+                                                    2016年秋季学期西大孙辈新生报名公示
+                                                </a>
+                                            </li>
+                                            <li style="height: 30px;">
+                                                <span class="date">
+                                                    07-04
+                                                </span>
+                                                <a href="#" target="_blank" title="标题：关于实施2016年夏季杀虫灭鼠工作的通知
+                                               	 点击数：249
+                                               	 发表时间：16年07月04日">
+                                                    关于实施2016年夏季杀虫灭鼠工作的通知
+                                                </a>
+                                            </li>
+                                            <li style="height: 30px;">
+                                                <span class="date">
+                                                    07-01
+                                                </span>
+                                                <a href="#" target="_blank" title="标题：//萃苑餐厅二楼监控系统采购公告
+                                               	 点击数：515
+                                               	 发表时间：16年07月01日">
+                                                    //萃苑餐厅二楼监控系统采购公告
+                                                </a>
+                                            </li>
+                                            <li class="last" style="height: 30px;">
+                                                <span class="date">
+                                                    06-30
+                                                </span>
+                                                <a href="#" target="_blank" title="标题：关于征集//大门（南门）创意设计方案的通知
+                                                	点击数：1951
+                                               	 发表时间：16年06月30日">
+                                                    关于征集//大门（南门）创意设计方…
+                                                </a>
+                                            </li>
+                                            <li class="first clone" style="height: 30px;">
+                                                <span class="date">
+                                                    07-04
+                                                </span>
+                                                <a href="#" target="_blank" title="标题：关于采集科技成果项目信息的通知
+                                               	 点击数：636
+                                              	  发表时间：16年07月04日">
+                                                    关于采集科技成果项目信息的通知
+                                                </a>
+                                            </li>
+                                            <li class="clone" style="height: 30px;">
+                                                <span class="date">
+                                                    06-12
+                                                </span>
+                                                <a href="#" target="_blank" title="标题：//2016年公开招聘硕士及以下学历（位）人员简章
+                                               	 点击数：15394
+                                              	  发表时间：16年06月12日">
+                                                    //2016年公开招聘硕士及以下学历（…
+                                                </a>
+                                            </li>
+                                            <li class="clone" style="height: 30px;">
+                                                <span class="date">
+                                                    05-24
+                                                </span>
+                                                <a href="#" target="_blank" title="标题：关于征集“千人计划”海外高级专家来桂服务需求的通知
+                                                	点击数：2288
+                       	                        	 发表时间：16年05月24日">
+                                                    关于征集“千人计划”海外高级专家来桂服…
+                                                </a>
+                                            </li>
+                                            <li class="clone" style="height: 30px;">
+                                                <span class="date">
+                                                    04-20
+                                                </span>
+                                                <a href="#" target="_blank" title="标题：关于对冒用“//”名义从事继续教育招生宣传的声明
+                                               	 点击数：5025
+                                               	 发表时间：16年04月20日">
+                                                    关于对冒用“//”名义从事继续教育…
+                                                </a>
+                                            </li>
+                                            <li class="clone" style="height: 30px;">
+                                                <span class="date">
+                                                    07-07
+                                                </span>
+                                                <a href="#" target="_blank" title="标题：欢迎报名参加2016年下半年全国计算机等级考试
+                                              	  点击数：3164
+                                              	  发表时间：16年07月07日">
+                                                    欢迎报名参加2016年下半年全国计算机等级…
+                                                </a>
+                                                &nbsp;
+                                             
+                                            </li>
+                                            <li class="clone" style="height: 30px;">
+                                                <span class="date">
+                                                    07-07
+                                                </span>
+                                                <a href="#" target="_blank" title="标题：//金属资源高效利用及环境保护协同创新中心“国家千人计划”韦悦周教授团队招聘启事
+                                              	  点击数：100
+                                              	  发表时间：16年07月07日">
+                                                    //金属资源高效利用及环境保护协同…
+                                                </a>
+                                                &nbsp;
+                                          
+                                            </li>
+
+                                        <li>
+                                            <span class="date">
+                                                07-05
+                                            </span>
+                                            <a href="#" target="_blank" title="标题：君武大讲坛——计算机与电子信息学院学术报告
+                                           	 点击数：187
+                                           	 发表时间：16年07月05日">
+                                                君武大讲坛——计算机与电子信息学院学术…
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <span class="date">
+                                                06-29
+                                            </span>
+                                            <a href="#" target="_blank" title="标题：数学与信息科学学院学术报告
+                                            	点击数：240
+                                          	  发表时间：16年06月29日">
+                                                数学与信息科学学院学术报告
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <span class="date">
+                                                06-24
+                                            </span>
+                                            <a href="#" target="_blank" title="标题：土木建筑工程学院学术报告
+                                            	点击数：353
+                                           	 发表时间：16年06月24日">
+                                                土木建筑工程学院学术报告
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <span class="date">
+                                                06-23
+                                            </span>
+                                            <a href="#" target="_blank" title="标题：机械工程学院学术报告
+                                            	点击数：274
+                                           	 发表时间：16年06月23日">
+                                                机械工程学院学术报告
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <span class="date">
+                                                06-20
+                                            </span>
+                                            <a href="#" target="_blank" title="标题：君武大讲坛——化学化工学院学术报告
+                                           	 点击数：333
+                                           	 发表时间：16年06月20日">
+                                                君武大讲坛——化学化工学院学术报告
+                                            </a>
+                                        </li>
+                                       
+                                    </ul>
+                                </div>
+                                <!--<script type="text/javascript">jQuery("#an2").slide({ titCell: ".hdc ul li",mainCell:".bdc ul",effect:"topLoop",interTime:6000,delayTime:800,autoPlay:true,vis:9,scroll:9});</script>-->
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                            jQuery("#ans").slide({
+                                titCell: ".hd h3",
+                                mainCell: ".bd",
+                                delayTime: 300
+                            });
+                        </script>
+                    </div>
+                    
+<!--  图片     -->             
+                    <div class="fl" id="focus2"style="height: 540px;">
+                        <ul class="slideNav">
+                            <li class="on">
+                                <a class=" a1">
+                                    1
+                                </a>
+                            </li>
+                            <li>
+                                <a class=" a2">
+                                    2
+                                </a>
+                            </li>
+                            <li>
+                                <a class=" a3">
+                                    3
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="slideCon" style="position: relative; width: 809px; height: 540px;">
+                            <li style="position: absolute; width: 809px; left: 0px; top: 0px;">
+                                <div class="pic"style=" width: 809px; height: 540px;">
+                                    <a href="#" target="_blank">
+                                        <img src="Public/images/hgjgjk.jpg" alt="庆祝中国共产党成立95周年（2016-07-01）" style="width:100%;hight:auto;">
+                                    </a>
+                                </div>
+                                <p class="title">
+                                    <a href="#" target="_blank">
+                                        庆祝中国共产党成立95周年（2016-07-01）
+                                    </a>
+                                </p>
+                            </li>
+                            <li style="position: absolute; width: 809px; height: 540px;left: 0px; top: 0px; display: none;">
+                                <div class="pic">
+                                    <a href="#" target="_blank">
+                                        <img src="Public/images/546565.jpg" width="809px" height="540px" alt="我校2016届研究生毕业典礼举行（2016-06-28）">
+                                    </a>
+                                </div>
+                                <p class="title">
+                                    <a href="#" target="_blank">
+                                        我校2016届研究生毕业典礼举行（2016-06-28）
+                                    </a>
+                                </p>
+                            </li>
+                            <li style="position: absolute; width: 809px; height: 540px; left: 0px; top: 0px; display: none;">
+                                <div class="pic">
+                                    <a href="#" target="_blank">
+                                        <img src="Public/images/rtrh.JPG" width="809px" height="540px" alt="2016级考生，欢迎报读//！">
+                                    </a>
+                                </div>
+                                <p class="title">
+                                    <a href="#" target="_blank">
+                                        2016级考生，欢迎报读//！
+                                    </a>
+                                </p>
+                            </li>
+                        </ul>
+                        <script type="text/javascript">
+                            jQuery("#focus2").slide({
+                                titCell: ".slideNav li",
+                                mainCell: ".slideCon",
+                                effect: "fold",
+                                interTime: 3800,
+                                delayTime: 600,
+                                autoPlay: true
+                            });
+                        </script>
+                    </div>
+                </div>
+                <!--第二部分-->
+                <div class="contB mtop">
+                    <div class="fr box kLink">
+                    </div>
+                    <div class="fm box mti">
+                    </div>
+                    <div class="fl box news">
+                    </div>
+                </div>
+            </div>
+            <!--第二部分s-->
+            <!--第三部分s-->
+            <style>
+            	#mainNav2 li{float: left;display: block;margin: 10px;tab-size: 12px;color: #333333;}
+
+            </style>
+            <div class="footer" style="background-color: #0976B4;">
+                <div class="ftNav"style="background-color: #0976B4;">
+                    <div class="w">
+                        <ul id="mainNav2" class="mainNav2" style="float: left;">
+                                    <li class="li2 first2" id="kliID77">
+                                        <h4 class="h2" id="khID77">
+                                            <a target="_self" class="a2" id="kaID77" href="#">
+                                            	    友情链接
+                                            </a>
+                                        </h4>
+                                    </li>
+                                    <li class="spe2"style="color: #FFFFFF;">
+                                        |
+                                    </li>
+                                    <li class="li2" id="kliID161">
+                                        <h4 class="h2" id="khID161">
+                                            <a target="_self" class="a2" id="kaID161" href="#">
+                                              	  链接一
+                                            </a>
+                                        </h4>
+                                    </li>
+                                    <li class="spe2"style="color: #FFFFFF;">
+                                        |
+                                    </li>
+                                    <li class="li2" id="kliID78">
+                                        <h4 class="h2" id="khID78">
+                                            <a target="_self" class="a2" id="kaID78" href="#">
+                                             	   链接二
+                                            </a>
+                                        </h4>
+                                    </li>
+                                    <li class="spe2"style="color: #FFFFFF;">
+                                        |
+                                    </li>
+                                    <li class="li2" id="kliID79">
+                                        <h4 class="h2" id="khID79">
+                                            <a target="_self" class="a2" id="kaID79" href="#">
+                                            	    链接三
+                                            </a>
+                                        </h4>
+                                    </li>
+                                    <li class="spe2"style="color: #FFFFFF;">
+                                        |
+                                    </li>
+                                    <li class="li2" id="kliID166">
+                                        <h4 class="h2" id="khID166">
+                                            <a target="_self" class="a2" id="kaID166" href="#">
+                                             	   链接四
+                                            </a>
+                                        </h4>
+                                    </li>
+                                    <li class="spe2"style="color: #FFFFFF;">
+                                        |
+                                    </li>
+                                    <li class="li2" id="kliID169">
+                                        <h4 class="h2" id="khID169">
+                                            <a target="_self" class="a2" id="kaID169" href="#">
+                                             	   链接五
+                                            </a>
+                                        </h4>
+                                    </li>
+                                    <li class="spe2"style="color: #FFFFFF;">
+                                        |
+                                    </li>
+                                    <li class="li2" id="kliID170">
+                                        <h4 class="h2" id="khID170">
+                                            <a target="_blank" class="a2" id="kaID170" href="#">
+                                             	   链接六
+                                            </a>
+                                        </h4>
+                                    </li>
+                                    <li class="spe2"style="color: #FFFFFF;">
+                                        |
+                                    </li>
+                                    <li class="li2" id="kliID80">
+                                        <h4 class="h2" id="khID80">
+                                            <a target="_self" class="a2" id="kaID80" href="#">
+                                              	 链接七
+                                            </a>
+                                        </h4>
+                                    </li>
+                                    <li class="spe2"style="color: #FFFFFF;">
+                                        |
+                                    </li>
+                                    <li class="li2" id="kliID81">
+                                        <h4 class="h2" id="khID81">
+                                            <a target="_self" class="a2" id="kaID81" href="#">
+                                                	链接八
+                                            </a>
+                                        </h4>
+                                    </li>
+                                    <li class="spe2"style="color: #FFFFFF;">
+                                        |
+                                    </li>
+                                    <li class="li2 last2" id="kliID171">
+                                        <h4 class="h2" id="khID171">
+                                            <a target="_self" class="a2" id="kaID171" href="#">
+                                                	链接九
+                                            </a>
+                                        </h4>
+                                    </li>
+                                </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,23 @@
+<div style="width: 100%;height: auto;background-color:#f3f3f3;margin-bottom: 0px;">
+	<div class="w" style="margin-top: 10px;padding-top: 20px;padding-bottom:30px;">
+		<hr>
+			<ul id="mainNav2" class="mainNav2">
+				<li class="li3">
+					<h4 class="h2" id="khID77">
+						<span class="a2">
+							友情链接
+						</span>
+					</h4>
+				</li>
+
+				<php>$links=sp_getlinks();</php>
+				<foreach name="links" item="vo">
+				<li class="li3">
+					<h4 class="h2" id="khID161">
+						<a  class="a2" href="{$vo.link_url}" target="{$vo.link_target}">{$vo.link_name}</a>
+					</h4>
+				</li>
+				</foreach>
+			</ul>
+	</div>
+</div>

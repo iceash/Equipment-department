@@ -10,28 +10,85 @@ class RegisterController extends HomebaseController {
 	    if(sp_is_user_login()){ //已经登录时直接跳到首页
 	        redirect(__ROOT__."/");
 	    }else{
+			$roles=M('role')->where($map)->order("id DESC")->select();
+			$this->assign("roles",$roles);
+			/*		$roles=$this->role_model->where("status=1")->order("id desc")->select();
+                    $this->assign("roles",$roles);
+                    $this->display();*/
 	        $this->display(":register");
 	    }
 	}
-	
+
 	function doregister(){
-    	
+
     	if(isset($_POST['email'])){
-    	    
+
     	    //邮箱注册
     	    $this->_do_email_register();
-    	    
+
     	}elseif(isset($_POST['mobile'])){
-    	    
+
     	    //手机号注册
     	    $this->_do_mobile_register();
-    	    
+
     	}else{
     	    $this->error("注册方式不存在！");
     	}
-    	
+
 	}
-	
+
+
+
+	function register(){
+		$department=M('role')->where($map)->order("id DESC")->select();
+		$this->assignassign("roles",$roles);
+		$this->display();
+/*		$roles=$this->role_model->where("status=1")->order("id desc")->select();
+		$this->assign("roles",$roles);
+		$this->display();*/
+	}
+
+
+	function add_post(){
+			if(!empty($_POST['role_id'])){
+				$role_ids=$_POST['role_id'];
+				unset($_POST['role_id']);
+				$data["user_login"] = $_POST["user_login"];
+				$data["user_nicename"]=$_POST["user_nicename"];
+				$data["department_name"]=$_POST["department_name"];
+				$pw=$_POST["user_pass"];
+				$data["user_pass"] =sp_password($pw);
+				$data["user_email"] = $_POST["user_email"];
+				$role["user_id"] = M("users")->add($data);
+				$role["role_id"] = 3;
+				M("role_user")->add($role);
+
+
+
+				$this->success("添加成功！", U("user/login"));
+				/*if ($this->users_model->create()) {
+					$result=$this->users_model->add();
+					if ($result!==false) {
+						$role_user_model=M("RoleUser");
+						foreach ($role_ids as $role_id){
+							$role_user_model->add(array("role_id"=>$role_id,"user_id"=>$result));
+						}
+						$this->success("添加成功！", U("user/index"));
+					} else {
+						$this->error("添加失败！");
+					}
+				} else {
+					$this->error($this->users_model->getError());
+				}*/
+
+		}
+	}
+
+
+
+
+
+
 	private function _do_mobile_register(){
 	     
 	    if(!sp_check_mobile_verify_code()){
