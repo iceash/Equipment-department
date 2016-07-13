@@ -33,5 +33,5 @@ $sql="INSERT IGNORE INTO `cmf_checkinout` (`USERID`,`badge_number`,`NAME`,`CHECK
 mysql_query($sql); //执行语句！！！ 
 $rs->MoveNext();
 }
-echo('success!');
+// echo('success!');
 ?>

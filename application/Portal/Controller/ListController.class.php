@@ -17,7 +17,7 @@ class ListController extends HomebaseController {
 	public function index() {
 		$term=sp_get_term($_GET['id']);
 		
-		if(empty($term)){
+		/*if(empty($term)){
 		    header('HTTP/1.1 404 Not Found');
 		    header('Status:404 Not Found');
 		    if(sp_template_file_exists(MODULE_NAME."/404")){
@@ -25,7 +25,7 @@ class ListController extends HomebaseController {
 		    }
 		    	
 		    return ;
-		}
+		}*/
 		
 		$tplname=$term["list_tpl"];
     	$tplname=sp_get_apphome_tpl($tplname, "list");
