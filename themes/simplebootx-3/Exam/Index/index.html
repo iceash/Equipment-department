@@ -1,0 +1,127 @@
+<admintpl file="header" />
+<!-- 上面调用全局的css、js等 -->
+<link href="__PUBLIC__/Exam/css/bootstrap.css" rel="stylesheet">
+<link href="__PUBLIC__/Exam/css/bootstrap-responsive.css" rel="stylesheet">
+<link href="__PUBLIC__/Exam/css/plugin.css" rel="stylesheet">
+<link href="__PUBLIC__/Exam/css/theme.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Exam/css/datetimepicker.css" rel="stylesheet">
+<script type="text/javascript" src="__PUBLIC__/Exam/js/jquery-1.9.1.min.js"></script>
+<link rel="stylesheet" href="__PUBLIC__/Exam/css/mathquill.css" type="text/css">
+<script type="text/javascript" src="__PUBLIC__/Exam/js/jquery-ui.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Exam/js/jquery.json.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Exam/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Exam/js/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Exam/js/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Exam/js/swfu/swfupload.js"></script>
+<!--
+<script type="text/javascript" src="__PUBLIC__/Exam/js/fingerprint/fingerprint.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Exam/js/fingerprint/plugin.js"></script>
+-->
+<script type="text/javascript" src="__PUBLIC__/Exam/js/plugin.js"></script>
+<script src="__PUBLIC__/Exam/js/plugin.js"></script>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Exam/css/exam.css">
+<title>在线考试系统</title>
+</head><body>
+
+
+<div class="row-fluid topLine">
+    <div class="container-fluid">
+        <div class="span4"></div>
+        <div class="span8">
+            <!-- <span class="pull-right">
+                        您好（peadmin）&nbsp;&nbsp;<a href="index.php?user-center"><em class="icon-user"></em> 用户中心</a>&nbsp;&nbsp;<em class="icon-edit"></em> <a href="index.php?core-master">后台管理</a>&nbsp;&nbsp;<a class="ajax" href="index.php?user-app-logout"><em class="icon-lock"></em> 退出</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+            </span> -->
+        </div>
+    </div>
+</div>
+<div class="row-fluid top">
+    <!-- <div class="container-fluid">
+        <div class="span4"><a name="top"></a><h2><img src="__PUBLIC__/Exam/img/theme/logo.png" /></h2></div>
+        <div class="span8">
+            <div class="navbar" id="menuNav">
+                <div class="">
+                    <div class="nav-collapse">
+                        <ul class="nav pull-right">
+                            <li class="mainmenu">
+                                <a href="index.php">主页</a>
+                            </li>
+                            <li class="active mainmenu">
+                                <a href="index.php?exam">在线考试</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</div><div class="row-fluid">
+    <div class="container-fluid examcontent">
+        <div class="exambox" id="datacontent">
+            <div class="examform">
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#panel-461715" data-toggle="tab">可选考试</a>
+                    </li>
+                </ul>
+                <ul class="thumbnails">
+                    <foreach name="exams" item="one">
+                        <li class="span2">
+                            <div class="thumbnail">
+                                <img alt="300x200" src="__PUBLIC__/Exam/images/icons/Book.png"/>
+                                <div class="caption">
+                                    <p class="text-center">
+                                        <a class="btn btn-success" href="__URL__/paper/id/{$one.id}" title="">{$one.name}</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </foreach>
+                </ul>
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#panel-461715" data-toggle="tab">历史试卷</a>
+                    </li>
+                </ul>
+                <ul class="thumbnails">
+                    <foreach name="scores" item="one">
+                        <li class="span2">
+                            <div class="thumbnail">
+                                <img alt="300x200" src="__PUBLIC__/Exam/images/icons/Book.png"/>
+                                <div class="caption">
+                                    <p class="text-center">
+                                        <a class="btn btn-info" href="__URL__/history/id/{$one.id}" title="">{$one.examname}</a>
+                                    </p>
+                                </div>
+                                <div class="caption">
+                                    <p>
+                                        <?php echo date("Y-m-d h:i:s", $one["time"]); ?>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </foreach>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row-fluid">
+    <div class="container-fluid logfooter">
+        <ul class="inline unstyled">
+            <li><a href="http://phpems.net">网站首页</a></li>
+            <li>|</li>
+            <li><a href="http://phpems.net/bbs/">用户须知</a></li>
+            <li>|</li>
+            <li><a href="http://phpems.net/bbs/">隐私协议</a></li>
+            <li>|</li>
+            <li><a href="http://phpems.net/bbs/">网站论坛</a></li>
+            <!-- <li>|</li> -->
+            <!-- <li>豫ICP备13016752号-1</li> -->
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+$(".thumbnails img").bind("error",function(){$(this).attr("src","__PUBLIC__/Exam/images/icons/Book.png?"+Math.random());});
+</script></body>
+</html>
