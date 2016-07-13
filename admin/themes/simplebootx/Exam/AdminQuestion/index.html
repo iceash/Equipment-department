@@ -19,7 +19,7 @@
                     </ul>
                 </div>
             <!-- </ul> -->
-            <form action="index.php?exam-master-questions" method="post">
+            <form action="__URL__/index" method="post">
                 <table class="table">
                     <thead>
                         <tr>
@@ -30,24 +30,25 @@
                             <th></th>
                         </tr>
                     </thead>
-                    <tbody><tr>
+                    <tbody>
+                    <tr>
                         <td>
                             试题ID：
                         </td>
                         <td>
-                            <input name="search[questionid]" class="input-small" size="25" type="text" value="" autocomplete="off">
+                            <input name="questionid" class="input-small" size="25" type="text" value="{$id}" autocomplete="off">
                         </td>
                         <td>
                             录入时间：
                         </td>
                         <td>
-                            <input class="input-small datetimepicker" data-date="2016-06-16" data-date-format="yyyy-mm-dd" type="text" name="search[stime]" size="10" id="stime" value="" autocomplete="off"> - <input class="input-small datetimepicker" data-date="2016-06-16" data-date-format="yyyy-mm-dd" size="10" type="text" name="search[etime]" id="etime" value="" autocomplete="off">
+                            <input type="text" name="start_time" class="js-datetime" value="{$start_time}" style="width: 150px;" autocomplete="off"> - <input type="text" name="end_time" class="js-datetime" value="{$end_time}" style="width: 150px;" autocomplete="off">
                         </td>
                         <td>
-                            关键字：
+                            试题内容关键字：
                         </td>
                         <td>
-                            <input class="input-small" name="search[keyword]" size="25" type="text" value="" autocomplete="off">
+                            <input class="input-small" name="keyword" size="25" type="text" value="{$keyword}" autocomplete="off">
                         </td>
                     </tr>
                     <tr>
@@ -55,11 +56,11 @@
                             试题类型：
                         </td>
                         <td>
-                            <select name="search[questiontype]" class="input-medium" autocomplete="off">
+                            <select name="type" class="input-medium" autocomplete="off">
                                 <option value="0">类型不限</option>
-                                <option value="1">单选题</option>
-                                <option value="2">多选题</option>
-                                <option value="3">判断题</option>
+                                <option value="1" <if condition="$type eq 1">selected="selected"</if> >单选题</option>
+                                <option value="2" <if condition="$type eq 2">selected="selected"</if> >多选题</option>
+                                <option value="3" <if condition="$type eq 3">selected="selected"</if> >判断题</option>
                             </select>
                         </td>
                         <td></td>
@@ -143,6 +144,7 @@
                 </div>
             </div>
         </div>
+<script src="__PUBLIC__/js/common.js"></script>
 <script type="text/javascript">
     $(document).on("click","#question-list .btn.confirm",function(){
         var id = [];

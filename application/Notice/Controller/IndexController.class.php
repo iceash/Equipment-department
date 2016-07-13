@@ -16,22 +16,28 @@ class IndexController extends AdminbaseController{
 	}
 	function index(){
 		$status=1;
-		$where="";
+		$department="'".$_SESSION['name']."'";
+		$where['department']=$_SESSION['name'];
 		if(isset($_POST['status']) && $_POST['status']!=""){
 			$status=$_POST['status'];
 		}
-		$where="screen_status=$status";
+		$where['screen_status']=$status;
 		$this->assign("status",$status);
 		$screen=$this->screen_model->where($where)->order("listorder ASC")->select();
 		$this->assign('screen',$screen);
-		$interval=$this->notice_model->where("department='测试'")->getField("interval");
+		$interval=$this->notice_model->where("department=".$department)->getField("interval");
 		$this->assign('interval',$interval);
 		$this->display();
 	}
 	function changeInterval(){
+		$department="'".$_SESSION['name']."'";
+		$check=$this->notice_model->where("department=".$department)->select();
+		if(!$check)
+		{$data['department']=$_SESSION['name'];
+		$this->notice_model->add($data);}
 		if(IS_POST){
 			if($this->notice_model->create()){
-				if ($this->notice_model->where("department='测试'")->save()!==false) {
+				if ($this->notice_model->where("department=".$department)->save()!==false) {
 					$this->success("修改成功！", U("index/index"));
 				} else {
 					$this->error("修改失败！");
@@ -43,6 +49,8 @@ class IndexController extends AdminbaseController{
 	}
 	
 	function add(){
+		$department=$_SESSION['name'];
+		$this->assign('department',$department);
 		$this->display();
 	}
 	

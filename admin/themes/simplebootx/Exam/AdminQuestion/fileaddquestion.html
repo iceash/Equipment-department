@@ -10,7 +10,7 @@
         <ul class="nav nav-tabs">
             
         </ul>
-        <form action="__URL__/index" method="post" class="form-horizontal">
+        <form action="__URL__/uploadfile" method="post" class="form-horizontal" enctype="multipart/form-data">
                 <legend>从CSV导入</legend>
                 <div class="control-group">
                     <label for="username" class="control-label">示范格式</label>
@@ -21,23 +21,23 @@
                 <div class="control-group">
                     <label for="lesson_video" class="control-label">待导入文件</label>
                     <div class="controls">
-                        <span class="input-append">
+                        <!-- <span class="input-append">
                             <input type="text" name="uploadfile" id="uploadfile_value" class="inline uploadvideo" needle="needle" msg="必须先上传CSV文件" autocomplete="off">
                             <span id="uploadfile_percent" class="add-on">0.00%</span>
                         </span>
                         <span class="btn">
                             上传文件
                         </span>
-                        <span class="help-block">注意：导入文件必须为csv文件，可用excel另存为csv，为保证程序正常导入，每个CSV文件请不要超过2M，否则可能导入失败</span>
+                        <br> -->
+                        <input type="file" class="btn" name="file"  charset="utf-8" > 
+                        <a href="__ROOT__/public/Exam/试题模板.csv">点击下载试题模板</a>
+                        <span class="help-block">注意：导入文件必须为csv文件，可用excel另存为csv，为保证程序正常导入，每个CSV文件请不要超过2M，否则可能导入失败。请注意选项答案等有多个的以“|”分隔。</span>
                     </div>
                 </div>
                 <div class="control-group">
                     <div class="controls">
-                        <button class="btn btn-primary" type="submit" autocomplete="off">提交</button>
-                        <input type="hidden" name="page" value="" autocomplete="off">
-                        <input type="hidden" name="type" value="1" autocomplete="off">
-                        <input type="hidden" name="insertquestion" value="1" autocomplete="off">
-                                            </div>
+                        <button class="btn btn-primary" type="submit" autocomplete="off">导入</button>
+                    </div>
                 </div>
             </form>
     </div>

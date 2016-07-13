@@ -1,0 +1,94 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('index/index')}">考勤记录</a></li>
+			<li class="active"><a href="{:U('index/attend')}">出勤状态</a></li>
+			<li><a href="{:U('index/setTime')}">设置考勤时间</a></li>
+		</ul>
+		<form class="well form-search" method="post" action="{:U('Index/attend')}">
+			部门： 
+			<select class="select_2" name="department">
+				<option value=''>全部</option>
+				<volist name="dep_list" id="dp">
+				<eq name="dp['department_name']" value="$department">
+				<option value="{$dp.department_name}" selected="selected">{$dp.department_name}</option>
+				<else/>
+				<option value="{$dp.department_name}">{$dp.department_name}</option>
+				</eq>
+				</volist>
+			</select> &nbsp;&nbsp;
+			日期：
+			<input type="text" name="attend_date" class="js-date" value="{$attend_date}" style="width: 100px;" autocomplete="off">&nbsp; &nbsp;
+			<input type="text" name="keyword" style="width: 200px;" value="{$keyword}" placeholder="请输入姓名或工号...">
+			<input type="submit" class="btn btn-primary" value="搜索" />
+		</form>
+		<div class="well" style="font-size:25px">统计信息:{$attend_date}&nbsp;&nbsp;{$department}&nbsp;有&nbsp;{$ijo_count}&nbsp;人考勤状态异常</div>
+		<form class="js-ajax-form" method="post">
+			<div class="table-actions">
+				考勤状态：
+				<select class="select_2" name="status">
+					<option value='正常'>正常</option>
+					<option value="异常">异常</option>
+				</select> &nbsp;&nbsp;
+				备注:&nbsp;<input type="text" name="content">&nbsp;&nbsp;
+				<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="{:U('index/edit_index')}" data-subcheck="true">修改</button>
+			</div>
+			<table class="table table-hover table-bordered table-list">
+				<thead>
+					<tr>
+						<th width="15"><label><input type="checkbox" class="js-check-all" data-direction="x" data-checklist="js-check-x"></label></th>
+						<th>姓名</th>
+						<th>工号</th>
+						<th>上班时间</th>
+						<th>下班时间</th>
+						<th>考勤状态</th>
+						<th>备注</th>
+					</tr>
+				</thead>
+				<foreach name="attend" item="vo">
+				<tr>
+					<td><input type="checkbox" class="js-check" data-yid="js-check-y" data-xid="js-check-x" name="ids[]" value="{$vo.id}"></td>
+					<td>{$vo.name}</td>
+					<td>{$vo.badge_number}</td>
+					<td>{$vo.on_time}</td>
+					<td>{$vo.off_time}</td>
+					<td>{$vo.status}</td>
+					<td>{$vo.content}</td>
+				</tr>
+				</foreach>
+				<tfoot>
+					<tr>
+						<th width="15"><label><input type="checkbox" class="js-check-all" data-direction="x" data-checklist="js-check-x"></label></th>
+						<th>姓名</th>
+						<th>工号</th>
+						<th>上班时间</th>
+						<th>下班时间</th>
+						<th>考勤状态</th>
+						<th>备注</th>
+					</tr>
+				</tfoot>
+			</table>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<script>
+		setCookie('refersh_time', 0);
+		function refersh_window() {
+			var refersh_time = getCookie('refersh_time');
+			if (refersh_time == 1) {
+				window.location.reload();
+			}
+		}
+		setInterval(function() {
+			refersh_window()
+		}, 3000);
+		$(function() {
+			$("#selected-status").change(function() {
+				$("#status-form").submit();
+			});
+		});
+	</script>
+</body>
+</html>

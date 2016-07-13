@@ -17,6 +17,27 @@ class AdminExamController extends AdminbaseController {
 		$this->term_relationships_model = D("Portal/TermRelationships");*/
 	}
 	function index(){
+		//起始结束时间
+		$start_time="2000-01-01 00:00";
+		if(isset($_POST['start_time']) && $_POST['start_time']!=""){
+			$start_time=$_POST['start_time'];
+			$this->assign("start_time",$start_time);
+		}
+		$map["create_time"][0] = array('gt',strtotime($start_time.":00"));
+		$end_time="2030-12-30 00:00";
+		if(isset($_POST['end_time']) && $_POST['end_time']!=""){
+			$end_time=$_POST['end_time'];
+			$this->assign("end_time",$end_time);
+		}
+		$map["create_time"][1] = array('lt',strtotime($end_time.":00"));
+		if(isset($_POST['questionid']) && $_POST['questionid']!=""){
+			$map["id"]=$_POST['questionid'];
+			$this->assign("id",$map["id"]);
+		}
+		if(isset($_POST['type']) && $_POST['type']!=""){
+			$map["type"] = $_POST['type'];
+			$this->assign("type",$map["type"]);
+		}
 		$exams = M("exams")->where($map)->order("id DESC")->field("id,name,type,create_time")->select();
 		$this->assign("exams",$exams);
 		// dump($exams);
@@ -55,6 +76,27 @@ class AdminExamController extends AdminbaseController {
 	}
 	function select_question(){
 		$map["type"] = $_GET["type"];
+		$start_time="2000-01-01 00:00";
+		if(isset($_POST['start_time']) && $_POST['start_time']!=""){
+			$start_time=$_POST['start_time'];
+			$this->assign("start_time",$start_time);
+		}
+		$map["time"][0] = array('gt',strtotime($start_time.":00"));
+		$end_time="2030-12-30 00:00";
+		if(isset($_POST['end_time']) && $_POST['end_time']!=""){
+			$end_time=$_POST['end_time'];
+			$this->assign("end_time",$end_time);
+		}
+		$map["time"][1] = array('lt',strtotime($end_time.":00"));
+		if(isset($_POST['questionid']) && $_POST['questionid']!=""){
+			$map["id"]=$_POST['questionid'];
+			$this->assign("id",$map["id"]);
+		}
+		if(isset($_POST['keyword']) && $_POST['keyword']!=""){
+			$keyword=$_POST['keyword'];
+			$map["question"] = array("like","%$keyword%");
+			$this->assign("keyword",$keyword);
+		}
 		$questions = M("questions");
 		$count      = $questions->where($map)->count();
 		$Page       = new \Think\Page($count,25);
