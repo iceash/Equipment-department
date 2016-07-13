@@ -1,0 +1,1220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a046f257-0f22-4f79-bfca-8d1cd8d7d3fe" name="默认的" comment="">
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Comment\comment.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Comment\index.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Demo\Index\index.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Exam\Index\index.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Exam\Index\paper.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Gonggao\Index\index.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Portal\article.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Portal\contact.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Portal\index.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Portal\list.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Portal\list_masonry.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Portal\page.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Portal\search.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\css\slippry\assets\img\arrows.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\css\slippry\assets\img\arrows.svg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\css\slippry\assets\img\sy-loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\css\slippry\slippry.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\css\style.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\footer.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\head.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\images\default-thumbnail.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\images\default_tupian1.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\images\default_tupian4.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\images\demo\1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\images\demo\2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\images\demo\3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\images\favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\images\headicon.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\images\headicon_128.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\images\headicon_30.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\images\headicon_40.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\images\headicon_50.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\images\logo.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\js\imagesloaded.pkgd.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\js\masonry.pkgd.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\js\qrcode.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\js\slippry.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\nav.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\scripts.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\simpleboot\bootstrap\css\bootstrap-responsive.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\simpleboot\bootstrap\js\bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\simpleboot\font-awesome\4.2.0\css\font-awesome-ie7.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\simpleboot\font-awesome\4.2.0\css\font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\simpleboot\font-awesome\4.2.0\fonts\FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\simpleboot\font-awesome\4.2.0\fonts\fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\simpleboot\font-awesome\4.2.0\fonts\fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\simpleboot\font-awesome\4.2.0\fonts\fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\simpleboot\font-awesome\4.2.0\fonts\fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\simpleboot\font-awesome\4.4.0\css\font-awesome-ie7.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\simpleboot\font-awesome\4.4.0\css\font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\simpleboot\font-awesome\4.4.0\fonts\FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\simpleboot\font-awesome\4.4.0\fonts\fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\simpleboot\font-awesome\4.4.0\fonts\fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\simpleboot\font-awesome\4.4.0\fonts\fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\simpleboot\font-awesome\4.4.0\fonts\fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\simpleboot\font-awesome\4.4.0\fonts\fontawesome-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\simpleboot\themes\simplebootx\img\glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\simpleboot\themes\simplebootx\img\glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\simpleboot\themes\simplebootx\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\simpleboot\themes\simplebootx\loadingbg.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\simpleboot\themes\simplebootx\simplebootadminindex.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\simpleboot\themes\simplebootx\theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\Public\usernav.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\User\Profile\avatar.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\User\Profile\bang.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\User\Profile\edit.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\User\Profile\password.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\User\active.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\User\center.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\User\disable.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\User\favorite.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\User\forgot_password.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\User\index.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\User\login.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\User\password_reset.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\User\register.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\config.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\error.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\function.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\hooks.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\jump.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\success.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\simplebootx-3\前台view.txt" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Comment\comment.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Comment\index.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Demo\Index\index.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Exam\Index\index.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Exam\Index\paper.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Gonggao\Index\index.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Portal\article.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Portal\contact.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Portal\index.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Portal\list.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Portal\list_masonry.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Portal\page.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Portal\search.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\bootstrap\css\bootstrap-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\bootstrap\css\bootstrap-theme.css.map" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\bootstrap\css\bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\bootstrap\css\bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\bootstrap\css\bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\bootstrap\css\bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\bootstrap\fonts\glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\bootstrap\fonts\glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\bootstrap\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\bootstrap\fonts\glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\bootstrap\js\bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\bootstrap\js\bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\css\animate.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\css\animations.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\css\custom.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\css\skins\blue.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\css\skins\brown.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\css\skins\dark_cyan.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\css\skins\dark_gray.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\css\skins\dark_red.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\css\skins\green.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\css\skins\light_blue.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\css\skins\light_green.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\css\skins\orange.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\css\skins\pink.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\css\skins\purple.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\css\skins\red.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\css\skins\yellow.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\css\slippry\assets\img\arrows.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\css\slippry\assets\img\arrows.svg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\css\slippry\assets\img\sy-loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\css\slippry\slippry.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\css\style.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\font-awesome\css\font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\font-awesome\css\font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\font-awesome\fonts\FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\font-awesome\fonts\fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\font-awesome\fonts\fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\font-awesome\fonts\fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\font-awesome\fonts\fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\font-awesome\less\bordered-pulled.less" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\font-awesome\less\core.less" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\font-awesome\less\fixed-width.less" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\font-awesome\less\font-awesome.less" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\font-awesome\less\icons.less" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\font-awesome\less\larger.less" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\font-awesome\less\list.less" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\font-awesome\less\mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\font-awesome\less\path.less" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\font-awesome\less\rotated-flipped.less" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\font-awesome\less\spinning.less" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\font-awesome\less\stacked.less" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\font-awesome\less\variables.less" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\font-awesome\scss\_bordered-pulled.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\font-awesome\scss\_core.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\font-awesome\scss\_fixed-width.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\font-awesome\scss\_icons.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\font-awesome\scss\_larger.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\font-awesome\scss\_list.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\font-awesome\scss\_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\font-awesome\scss\_path.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\font-awesome\scss\_rotated-flipped.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\font-awesome\scss\_spinning.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\font-awesome\scss\_stacked.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\font-awesome\scss\_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\font-awesome\scss\font-awesome.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\fontello\LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\fontello\README.txt" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\fontello\config.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\fontello\css\animation.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\fontello\css\fontello-codes.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\fontello\css\fontello-embedded.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\fontello\css\fontello-ie7-codes.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\fontello\css\fontello-ie7.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\fontello\css\fontello.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\fontello\demo.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\fontello\font\fontello.eot" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\fontello\font\fontello.svg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\fontello\font\fontello.ttf" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\fonts\fontello\font\fontello.woff" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\footer.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\head.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\1336224253049.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\1418357011722.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\32434234.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\5I0FSMI900AN0001.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\635669352672711930.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\avatar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\blog-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\blog-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\blog-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\blog-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\blog-sidebar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\client-1.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\client-2.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\client-3.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\client-4.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\client-5.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\client-6.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\client-7.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\client-8.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\coming-soon-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\default-thumbnail.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\default_tupian1.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\default_tupian4.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\demo\1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\demo\2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\demo\3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\gallery-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\gallery-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\gallery-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\gallery-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\gallery-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\gallery-6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\gallery-7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\gallery-8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\gallery-9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\headicon.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\headicon_128.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\headicon_30.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\headicon_40.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\headicon_50.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\logo.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\logo_blue.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\logo_brown.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\logo_dark_cyan.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\logo_dark_gray.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\logo_dark_red.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\logo_green.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\logo_light_blue.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\logo_light_green.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\logo_orange.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\logo_pink.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\logo_purple.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\logo_red.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\logo_red_footer.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\logo_yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\onepage-slider-slide-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\onepage-slider-slide-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\page-about-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\page-about-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\page-about-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\page-about-banner-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\page-about-banner-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\page-contact-banner.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\page-services-banner.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\parallax-bg-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\parallax-bg-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\parallax-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\pattern-1.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\pattern-2.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\pattern-3.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\pattern-4.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\pattern-5.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\pattern-6.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\pattern-7.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\pattern-8.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\pattern-9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\portfolio-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\portfolio-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\portfolio-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\portfolio-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\portfolio-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\portfolio-6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\portfolio-7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\portfolio-8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\portfolio-item-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\portfolio-item-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\portfolio-item-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\portfolio-item-banner.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\product-1-1.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\product-1-2.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\product-1-3.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\product-1.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\product-2.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\product-3.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\product-4.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\product-5.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\product-6.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\product-7.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\product-8.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\section-image-1.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\section-image-2.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\section-image-3.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\section-image-4.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\section-image-5.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\services-1.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\slider-1-layer-1.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\slider-1-layer-2.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\slider-1-slide-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\slider-1-slide-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\slider-1-slide-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\slider-2-slide-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\slider-2-slide-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\slider-3-slide-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\slider-3-slide-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\slider-5-slide-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\slider-5-slide-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\team-member-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\team-member-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\team-member-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\team-member-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\testimonial-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\testimonial-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\images\testimonial-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\js.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\js\coming.soon.config.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\js\custom.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\js\google.map.config.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\js\html5shiv.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\js\imagesloaded.pkgd.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\js\masonry.pkgd.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\js\qrcode.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\js\selectivizr-min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\js\selectivizr.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\js\slippry.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\js\slippry.min.map" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\js\template.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\nav.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\php\contact-form.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\isotope\isotope.pkgd.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\isotope\isotope.pkgd.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery-1.11.1.min.map" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.appear.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countTo.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\countdownBasic.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\countdownGlowing.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\countdownLED.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-ar.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-bg.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-bn.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-bs.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-cs.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-cy.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-da.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-de.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-el.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-es.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-et.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-fa.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-fi.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-fo.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-fr.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-gl.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-gu.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-he.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-hr.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-hu.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-hy.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-id.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-is.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-it.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-ja.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-kn.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-ko.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-lt.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-lv.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-ml.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-ms.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-my.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-nb.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-nl.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-pl.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-pt-BR.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-ro.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-ru.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-sk.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-sl.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-sq.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-sr-SR.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-sr.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-sv.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-th.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-tr.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-uk.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-ur.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-uz.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-vi.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-zh-CN.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown-zh-TW.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.countdown.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.countdown\jquery.plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.knob.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.parallax-1.1.3.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.sharrre.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\jquery.validate.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\magnific-popup\jquery.magnific-popup.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\magnific-popup\jquery.magnific-popup.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\magnific-popup\magnific-popup.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\modernizr.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\owl-carousel\AjaxLoader.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\owl-carousel\grabbing.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\owl-carousel\owl.carousel.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\owl-carousel\owl.carousel.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\owl-carousel\owl.carousel.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\owl-carousel\owl.theme.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\owl-carousel\owl.transitions.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\arrow_large_left.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\arrow_large_right.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\arrow_left.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\arrow_left2.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\arrow_right.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\arrow_right2.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\arrowleft.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\arrowright.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\arrows.psd" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\black50.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\boxed_bgtile.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\bullet.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\bullet_boxed.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\bullets.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\bullets.psd" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\bullets2.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\coloredbg.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\grain.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\gridtile.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\gridtile_3x3.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\gridtile_3x3_white.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\gridtile_white.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\large_left.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\large_right.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\loader2.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\navigdots.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\navigdots_bgtile.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\shadow1.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\shadow2.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\shadow3.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\small_arrows.psd" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\small_left.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\small_left_boxed.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\small_right.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\small_right_boxed.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\timer.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\timerdot.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\transparent.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\assets\white50.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\css\extralayers.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\css\settings-ie8.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\css\settings.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\font\revicons.eot" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\font\revicons.svg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\font\revicons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\font\revicons.woff" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\images\decor_inside.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\images\decor_inside_white.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\images\decor_testimonial.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\images\gradient\g30.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\images\gradient\g40.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\js\jquery.themepunch.revolution.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\js\jquery.themepunch.revolution.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\plugins\rs-plugin\js\jquery.themepunch.tools.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\scripts.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\simpleboot\bootstrap\css\bootstrap-responsive.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\simpleboot\bootstrap\js\bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\simpleboot\font-awesome\4.2.0\css\font-awesome-ie7.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\simpleboot\font-awesome\4.2.0\css\font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\simpleboot\font-awesome\4.2.0\fonts\FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\simpleboot\font-awesome\4.2.0\fonts\fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\simpleboot\font-awesome\4.2.0\fonts\fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\simpleboot\font-awesome\4.2.0\fonts\fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\simpleboot\font-awesome\4.2.0\fonts\fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\simpleboot\font-awesome\4.4.0\css\font-awesome-ie7.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\simpleboot\font-awesome\4.4.0\css\font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\simpleboot\font-awesome\4.4.0\fonts\FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\simpleboot\font-awesome\4.4.0\fonts\fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\simpleboot\font-awesome\4.4.0\fonts\fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\simpleboot\font-awesome\4.4.0\fonts\fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\simpleboot\font-awesome\4.4.0\fonts\fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\simpleboot\font-awesome\4.4.0\fonts\fontawesome-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\simpleboot\themes\simplebootx\img\glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\simpleboot\themes\simplebootx\img\glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\simpleboot\themes\simplebootx\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\simpleboot\themes\simplebootx\loadingbg.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\simpleboot\themes\simplebootx\simplebootadminindex.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\simpleboot\themes\simplebootx\theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\Public\usernav.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\User\Profile\avatar.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\User\Profile\bang.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\User\Profile\edit.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\User\Profile\password.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\User\active.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\User\center.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\User\disable.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\User\favorite.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\User\forgot_password.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\User\index.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\User\login.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\User\password_reset.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\User\register.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\index-2.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\内容页.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\单页内容页.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\phpstudy\WWW\Equipment-department\themes\solo\图片列表.html" afterPath="" />
+    </list>
+    <ignored path="Equipment-department.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="Equipment-department" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="nav.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/solo-2/Public/nav.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-57.0">
+              <caret line="84" column="22" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/solo-2/Portal/list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.3323615">
+              <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#volist#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#volist#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#volist#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#volist#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#volist#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#volist#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#a#1;n#div#0;n#div#0;n#div#0;n#div#0;n#volist#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/solo-2/Portal/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.5">
+              <caret line="174" column="32" selection-start-line="174" selection-start-column="32" selection-end-line="174" selection-end-column="32" />
+              <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ul#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#0;n#foreach#0;n#ul#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#li#0;n#foreach#0;n#ul#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#if#0;n#a#0;n#div#0;n#li#0;n#foreach#0;n#ul#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#1;n#if#0;n#a#0;n#div#0;n#li#0;n#foreach#0;n#ul#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#1;n#ul#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#0;n#foreach#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#0;n#foreach#0;n#ul#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scripts.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/solo-2/Public/scripts.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.6785714">
+              <caret line="1" column="50" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Html5" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/application/User/Controller/LoginController.class.php" />
+        <option value="$PROJECT_DIR$/admin/themes/simplebootx/Admin/Storage/index.html" />
+        <option value="$PROJECT_DIR$/themes/simplebootx - 2/User/login2.html" />
+        <option value="$PROJECT_DIR$/application/Notice/Controller/IndexController.class.php" />
+        <option value="$PROJECT_DIR$/admin/themes/simplebootx/Department/Admin/list.html" />
+        <option value="$PROJECT_DIR$/admin/themes/simplebootx/Department/Admin/create.html" />
+        <option value="$PROJECT_DIR$/admin/themes/simplebootx/Department/Admin/add.html" />
+        <option value="$PROJECT_DIR$/application/Department/Controller/AdminController.class.php" />
+        <option value="$PROJECT_DIR$/admin/themes/simplebootx/Admin/User/add-2.html" />
+        <option value="$PROJECT_DIR$/application/User/Controller/regi.php" />
+        <option value="$PROJECT_DIR$/admin/themes/simplebootx/Admin/User/add.html" />
+        <option value="$PROJECT_DIR$/admin/themes/simplebootx/Admin/User/userinfo.html" />
+        <option value="$PROJECT_DIR$/themes/simplebootx - 2/User/login.html" />
+        <option value="$PROJECT_DIR$/admin/themes/simplebootx/User/index.html" />
+        <option value="$PROJECT_DIR$/admin/themes/simplebootx/Admin/User/index.html" />
+        <option value="$PROJECT_DIR$/application/Admin/Controller/UserController.class.php" />
+        <option value="$PROJECT_DIR$/themes/simplebootx - 2/User/user.html" />
+        <option value="$PROJECT_DIR$/themes/simplebootx - 2/Public/head.html" />
+        <option value="$PROJECT_DIR$/themes/simplebootx3/Public/nav.html" />
+        <option value="$PROJECT_DIR$/themes/simplebootx - 2/Public/footer.html" />
+        <option value="$PROJECT_DIR$/themes/simplebootx - 2/Portal/list.html" />
+        <option value="$PROJECT_DIR$/themes/simplebootx - 2/Portal/index.html" />
+        <option value="$USER_HOME$/Desktop/首页样式-1/左右分布样式/index.html" />
+        <option value="$PROJECT_DIR$/themes/simplebootx - 2/User/register.html" />
+        <option value="$PROJECT_DIR$/application/User/Controller/RegisterController.class.php" />
+        <option value="$PROJECT_DIR$/themes/solo/index-3.html" />
+        <option value="$PROJECT_DIR$/themes/solo/Public/head.html" />
+        <option value="$PROJECT_DIR$/themes/solo/index.html" />
+        <option value="$PROJECT_DIR$/themes/solo/Public/js.html" />
+        <option value="$PROJECT_DIR$/themes/solo/Public/nav.html" />
+        <option value="$PROJECT_DIR$/themes/solo/Public/footer.html" />
+        <option value="$PROJECT_DIR$/themes/solo/Portal/index.html" />
+        <option value="$PROJECT_DIR$/themes/solo/Portal/list.html" />
+        <option value="$PROJECT_DIR$/themes/solo-2/index.html" />
+        <option value="$PROJECT_DIR$/themes/solo-2/Public/footer-2.html" />
+        <option value="$PROJECT_DIR$/themes/solo-2/Portal/list_masonry.html" />
+        <option value="$PROJECT_DIR$/themes/simplebootx - 2/Public/nav.html" />
+        <option value="$PROJECT_DIR$/themes/solo-2/User/register.html" />
+        <option value="$PROJECT_DIR$/themes/solo-2/Public/css/index.css" />
+        <option value="$PROJECT_DIR$/themes/solo-2/Public/head-2.html" />
+        <option value="$PROJECT_DIR$/themes/solo-2/Public/nav-2.html" />
+        <option value="$PROJECT_DIR$/themes/solo-2/Portal/list-2.html" />
+        <option value="$PROJECT_DIR$/themes/solo-2/Portal/search.html" />
+        <option value="$PROJECT_DIR$/admin/themes/simplebootx/Admin/login.html" />
+        <option value="$PROJECT_DIR$/themes/solo-2/Public/head.html" />
+        <option value="$PROJECT_DIR$/themes/solo-2/Public/nav.html" />
+        <option value="$PROJECT_DIR$/themes/solo-2/Portal/article.html" />
+        <option value="$PROJECT_DIR$/themes/solo-2/Portal/index.html" />
+        <option value="$PROJECT_DIR$/themes/solo-2/Public/footer.html" />
+        <option value="$PROJECT_DIR$/themes/solo-2/Public/scripts.html" />
+        <option value="$PROJECT_DIR$/themes/solo-2/Portal/list.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="添加" />
+    <OptionsSetting value="true" id="移除" />
+    <OptionsSetting value="true" id="签出" />
+    <OptionsSetting value="true" id="更新" />
+    <OptionsSetting value="true" id="状态" />
+    <OptionsSetting value="true" id="编辑" />
+    <ConfirmationsSetting value="2" id="添加" />
+    <ConfirmationsSetting value="0" id="移除" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Equipment-department" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Equipment-department" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Equipment-department" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="FullScreen" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\phpstudy\WWW\Equipment-department\themes\solo-2\Portal" />
+      <recent name="E:\phpstudy\WWW\Equipment-department\themes\solo-2\Public" />
+      <recent name="E:\phpstudy\WWW\Equipment-department\themes\solo-2\Public\css" />
+      <recent name="E:\phpstudy\WWW\Equipment-department\themes\solo-2\Public\css\slippry" />
+      <recent name="E:\phpstudy\WWW\Equipment-department\themes\solo-2" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\phpstudy\WWW\Equipment-department\themes\solo-2\Public" />
+      <recent name="E:\phpstudy\WWW\Equipment-department\themes\solo-2\Public\images" />
+      <recent name="E:\phpstudy\WWW\Equipment-department\themes\solo-2\Public\css" />
+      <recent name="E:\phpstudy\WWW\Equipment-department\themes\solo-2\Public\js" />
+      <recent name="E:\phpstudy\WWW\Equipment-department\themes\solo" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a046f257-0f22-4f79-bfca-8d1cd8d7d3fe" name="默认的" comment="" />
+      <created>1467274717645</created>
+      <option name="number" value="Default" />
+      <updated>1467274717645</updated>
+    </task>
+    <task id="LOCAL-00001" summary="小改">
+      <created>1467343170919</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1467343170920</updated>
+    </task>
+    <task id="LOCAL-00002" summary="小改">
+      <created>1467346678764</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1467346678764</updated>
+    </task>
+    <task id="LOCAL-00003" summary="小改">
+      <created>1467616287606</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1467616287606</updated>
+    </task>
+    <task id="LOCAL-00004" summary="07、28">
+      <created>1468377542874</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1468377542874</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27382752" sideWeight="0.49172577" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20302014" sideWeight="0.48184568" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32885906" sideWeight="0.5030257" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.48789713" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32885906" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24155654" sideWeight="0.50827426" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283082" sideWeight="0.4969743" order="4" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20302014" sideWeight="0.5181543" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2632375" sideWeight="0.49172577" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20302014" sideWeight="0.48184568" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24155654" sideWeight="0.50827426" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.4969743" order="4" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="小改" />
+    <MESSAGE value="07、28" />
+    <option name="LAST_COMMIT_MESSAGE" value="07、28" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/Desktop/首页样式-1/左右分布样式/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.862069">
+          <caret line="735" column="62" selection-start-line="735" selection-start-column="62" selection-end-line="735" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/User/Controller/LoginController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22727273">
+          <caret line="208" column="15" selection-start-line="208" selection-start-column="15" selection-end-line="208" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/User/Controller/UserController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.090909">
+          <caret line="179" column="13" selection-start-line="179" selection-start-column="13" selection-end-line="179" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/simplebootx - 2/Gonggao/Index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3172542">
+          <caret line="27" column="70" selection-start-line="27" selection-start-column="70" selection-end-line="27" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/simplebootx - 2/User/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.518591">
+          <caret line="40" column="56" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/User/Controller/RegisterController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5518591">
+          <caret line="63" column="43" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/simplebootx - 2/Public/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8051948">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/solo-2/Public/js/CA210000000407005890001.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/solo-2/Public/images/2323.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/solo-2/Public/images/442.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/solo-2/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.7183406">
+          <caret line="788" column="11" selection-start-line="788" selection-start-column="11" selection-end-line="896" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/solo-2/Public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/simplebootx - 2/Public/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5640074">
+          <caret line="58" column="14" selection-start-line="53" selection-start-column="8" selection-end-line="58" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/simplebootx - 2/Portal/article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.528757">
+          <caret line="39" column="65" selection-start-line="39" selection-start-column="65" selection-end-line="39" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/simplebootx - 2/Portal/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.10018553">
+          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/simplebootx - 2/Portal/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.1205937">
+          <caret line="129" column="26" selection-start-line="115" selection-start-column="16" selection-end-line="129" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/simplebootx - 2/Public/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.5">
+          <caret line="14" column="22" selection-start-line="11" selection-start-column="12" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/solo-2/Public/head-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.214286">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/solo-2/Public/nav-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.9165121">
+          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/simplebootx/Portal/article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10555556">
+          <caret line="3" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="154" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/simplebootx/Portal/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5425926">
+          <caret line="37" column="126" selection-start-line="37" selection-start-column="126" selection-end-line="37" selection-end-column="126" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/solo-2/Portal/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5546875">
+          <caret line="29" column="91" selection-start-line="29" selection-start-column="91" selection-end-line="29" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/themes/simplebootx/Admin/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.037109375">
+          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#h2#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/themes/simplebootx/User/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/solo-2/Public/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/solo-2/Portal/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9294991">
+          <caret line="122" column="7" selection-start-line="122" selection-start-column="7" selection-end-line="122" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/simplebootx/Portal/list_masonry.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9294991">
+          <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/solo-2/Public/footer-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2462963">
+          <caret line="7" column="95" selection-start-line="7" selection-start-column="95" selection-end-line="7" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/solo-2/Portal/list-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/solo-2/Public/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.84444445">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/solo-2/Public/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.296875">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/solo-2/Portal/article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.40820312">
+          <caret line="13" column="52" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#if#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#if#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/solo-2/Portal/list_masonry.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.8148148">
+          <caret line="80" column="12" selection-start-line="80" selection-start-column="12" selection-end-line="80" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/solo-2/Portal/page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/solo-2/Public/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-57.0">
+          <caret line="84" column="22" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/solo-2/Public/scripts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6785714">
+          <caret line="1" column="50" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/solo-2/Portal/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.5">
+          <caret line="174" column="32" selection-start-line="174" selection-start-column="32" selection-end-line="174" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#foreach#0;n#ul#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#li#0;n#foreach#0;n#ul#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#if#0;n#a#0;n#div#0;n#li#0;n#foreach#0;n#ul#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#1;n#if#0;n#a#0;n#div#0;n#li#0;n#foreach#0;n#ul#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#1;n#ul#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#foreach#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#foreach#0;n#ul#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/solo-2/Portal/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3323615">
+          <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#volist#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#volist#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#volist#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#volist#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#volist#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#volist#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#a#1;n#div#0;n#div#0;n#div#0;n#div#0;n#volist#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

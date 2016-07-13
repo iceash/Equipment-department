@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{$post_title} {$site_name} </title>
+	<meta name="keywords" content="{$post_keywords}" />
+	<meta name="description" content="{$post_excerpt}">
+	<tc_include file="Public:head" />
+	<style>
+		#article_content img{height:auto !important}
+		#article_content {word-wrap: break-word;}
+		.btn {margin-top: 33px;}
+	</style>
+</head>
+<body style="background-color: white;height: 100%;">
+<tc_include file="Public:nav" />
+<div class="w" style="min-height: 100%;">
+	<br>
+<!--	<div style="margin: 30px;">
+		<div>
+			<h3>您当前的位置：{$post_title}</h3>
+		</div>
+	</div>-->
+			<div class="w">
+				<div style="text-align: center; border: solid 1px #f3f3f3;margin-right: 14px;margin-left: 18px;padding: 16px;">
+					<p style="text-align: center;font-size:30px;display: block;margin-bottom: 20px;">{$post_title}</p>
+					<span style="margin-right: 20px;">发布时间：{$post_date}</span>
+					<span style="margin-right: 20px;">作者：{$user_nicename}</span>
+		    		<span style="margin-right: 20px;">阅读次数：{$post_hits}</span>
+				</div>
+					<br>
+				<div id="article_content" style="padding: 28px;">
+					{$post_content}
+				</div>
+				<if condition="!empty($post_source)">
+					<div>
+						<b>注：本文转载自{$post_source}，转载目的在于传递更多信息，并不代表本网赞同其观点和对其真实性负责。如有侵权行为，请联系我们，我们会及时删除。</b>
+					</div>
+				</if>
+				<div style="text-align: center;margin-bottom:50px;margin-top: 20px;">
+					<if condition="!empty($prev)">
+						<a style="margin-right: 20px; padding:20px;border: solid 1px #f3f3f3;font-size:18px;" href="{:leuu('article/index',array('id'=>$prev['tid'],'cid'=>$prev['term_id']))}" class="btn btn-primary pull-left">上一篇</a>
+					</if>
+					<if condition="!empty($next)">
+						<a  style="padding:20px;border: solid 1px #f3f3f3;font-size:18px;" href="{:leuu('article/index',array('id'=>$next['tid'],'cid'=>$next['term_id']))}" class="btn btn-warning pull-right">下一篇</a>
+					</if>
+				</div>
+				{:hook('comment',array(
+				'post_id'=>$object_id,
+				'post_table'=>'posts',
+				'post_title'=>$post_title
+				))}
+			</div>
+		</div>
+	<tc_include file="Public:footer"/>
+<tc_include file="Public:scripts"/>
+</body>
+</html>

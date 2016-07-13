@@ -1,0 +1,250 @@
+{:hook('body_start')}
+
+	<div class="wrap">
+		<div class="topPlan"style="width: 1230px;margin: 0 auto;">
+			<div class="fr">
+				<div class="search">
+					<form method="post" action="{:U('portal/search/index')}" target="_blank">
+						<input type="text" class="box-ss" id="wd" placeholder="Search" name="keyword" value="{:I('get.keyword')}"/>
+						<input type="submit" value="Go" class="lanton">
+					</form>
+				</div>
+			</div>
+			<div class="fl">
+				<a href="admin">
+					登录
+				</a>
+				|
+				<a href="{:leuu('user/register/index')}">
+					注册
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="headerBox" style="background:url(__TMPL__Public/images/background.jpg) no-repeat center top;">
+	<div class="flashBox w">
+		<div class="logoBox">
+			<div class="logo">
+				<a href="#">
+					<img src="__TMPL__Public/images/logo.png">
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="w">
+		<div class="navBox">
+			<ul id="mainNav" class="mainNav">
+
+
+				<li class="li1 first1 on1">
+					<h4 class="h1">
+						<a class="a1" href="{:U('Index/index')}" target="_blank">网站首页</a>
+
+					</h4>
+				</li>
+
+				<li class="li1 hasUl1">
+					<h4 class="h1">
+						<a class="a1" href="{:leuu('list/index',array('id'=>3))}" target="_blank">
+							装备要闻
+						</a>
+					</h4>
+				</li>
+
+				<li class="li1 hasUl1" >
+					<h4 class="h1">
+						<a class="a1" href="{:leuu('list/index',array('id'=>5))}" target="_blank">
+							工作动态
+						</a>
+					</h4>
+				</li>
+
+				<li class="li1 hasUl1">
+					<h4 class="h1">
+						<a class="a1" href="{:leuu('list/index',array('id'=>12))}" target="_blank">
+							通知公告
+						</a>
+					</h4>
+				</li>
+				<li class="li1 hasUl1" id="liID68">
+					<h4 class="h1">
+						<a class="a1" href="{:U('Index/index')}" target="_blank">
+							人员考勤
+						</a>
+					</h4>
+				</li>
+
+
+				<li class="li1 hasUl1">
+					<h4 class="h1">
+						<a class="a1" href="{:leuu('list/index',array('id'=>4))}" target="_blank">
+							机关工作
+						</a>
+					</h4>
+					<ul class="ul1">
+						<li class="li2 first2">
+							<h4 class="h2">
+								<a class="a1" href="{:leuu('list/index',array('id'=>23))}" target="_blank">
+									战备值班
+								</a>
+							</h4>
+						</li>
+						<li class="li2">
+							<h4 class="h2">
+								<a class="a1" href="{:leuu('list/index',array('id'=>24))}" target="_blank">
+									职业大学
+								</a>
+							</h4>
+						</li>
+						<li class="li2">
+							<h4 class="h2">
+								<a class="a1" href="{:leuu('list/index',array('id'=>25))}" target="_blank">
+									考核训练
+								</a>
+							</h4>
+						</li>
+						<li class="li2 first2">
+							<h4 class="h2" >
+								<a class="a1" href="{:leuu('list/index',array('id'=>27))}" target="_blank">
+									首长批示落实情款
+								</a>
+							</h4>
+						</li>
+						<li class="li2">
+							<h4 class="h2">
+								<a class="a1" href="{:leuu('list/index',array('id'=>28))}" target="_blank">
+									规章制度
+								</a>
+							</h4>
+						</li>
+						<li class="li2">
+							<h4 class="h2">
+								<a class="a1" href="{:leuu('list/index',array('id'=>29))}" target="_blank">
+									机关工作问题抄告
+								</a>
+							</h4>
+						</li>
+						<li class="li2">
+							<h4 class="h2">
+								<a class="a1" href="{:leuu('list/index',array('id'=>30))}" target="_blank">
+									双学活动
+								</a>
+							</h4>
+						</li>
+						<li class="li2">
+							<h4 class="h2">
+								<a class="a1" href="{:leuu('list/index',array('id'=>31))}" target="_blank">
+									优秀理论文章赏析
+								</a>
+							</h4>
+						</li>
+					</ul>
+				</li>
+
+				<li class="li1 hasUl1">
+					<h4 class="h1">
+						<a class="a1" href="{:leuu('list/index',array('id'=>6))}" target="_blank">
+							部队工作
+						</a>
+					</h4>
+					<ul class="ul1">
+						<li class="li2 first2" >
+							<h4 class="h2" >
+								<a class="a1" href="{:leuu('list/index',array('id'=>32))}" target="_blank">
+									部队重点问题监控
+								</a>
+							</h4>
+						</li>
+						<li class="li2">
+							<h4 class="h2">
+								<a class="a1" href="{:leuu('list/index',array('id'=>33))}" target="_blank">
+									重点工作进展情款
+								</a>
+							</h4>
+						</li>
+						<li class="li2" >
+							<h4 class="h2">
+								<a class="a1" href="{:leuu('list/index',array('id'=>34))}" target="_blank">
+									飞行动态
+								</a>
+							</h4>
+						</li>
+						<li class="li2 last2">
+							<h4 class="h2">
+								<a class="a1" href="{:leuu('list/index',array('id'=>35))}" target="_blank">
+									飞机不完好情况
+								</a>
+							</h4>
+						</li>
+						<li class="li2">
+							<h4 class="h2">
+								<a class="a1" href="{:leuu('list/index',array('id'=>36))}" target="_blank">
+									规章制度
+								</a>
+							</h4>
+						</li>
+					</ul>
+				</li>
+			</ul>
+
+
+			<script type="text/javascript">
+				jQuery(function($) {
+					var navST;
+					var name = 'mainNav';
+					var t = 200;
+					var type = '1';
+					var removeOn = 'false';
+					var effect = 'slide';
+					var appendItem = '#';
+					var li = "#" + name + " li";
+
+					if (!$("#" + name + " .li1").hasClass("on1")) {
+						$("#" + name + " .li1").first().addClass("on1");
+					} //默认第一个加.on1类
+					if (type == '1') {
+						li = "#" + name + " .li1";
+					}
+					if (appendItem != '#') { //插入内容
+						var appendHtml = $(appendItem).html();
+						$(li).first().append(appendHtml);
+						$(appendItem).remove();
+					}
+
+					if (type == '3') {
+						$("#" + name + " .on1").find("ul").first().show();
+					}
+
+					$(li).hover(function() {
+								var curItem = $(this);
+								var onNum = (curItem.attr("class").split(" "))[0].replace("li", "");
+								$(li).removeClass("on" + onNum);
+								curItem.addClass("on" + onNum);
+								navST = setTimeout(function() { //延时触发
+											if ($("ul:first", curItem).css("display") != "block") {
+												$(li + " .ul" + onNum).hide();
+												if (effect == 'fade') $("ul:first", curItem).fadeIn(t);
+												else $("ul:first", curItem).slideDown(t);
+											};
+											navST = null;
+										},
+										t);
+							},
+							function() {
+								if (navST != null) clearTimeout(navST);
+								if (type == '1' || type == '2') {
+									if (effect == 'fade') $(this).find("ul").first().fadeOut(t);
+									else $(this).find("ul").first().slideUp(t);
+								}
+								if (removeOn == 'true') {
+									$(this).removeClass("on1");
+								}
+							},
+							t); //end hover
+				});
+			</script>
+		</div>
+	</div>
+</div>
