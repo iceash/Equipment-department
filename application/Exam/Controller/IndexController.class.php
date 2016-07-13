@@ -6,15 +6,19 @@ class IndexController extends HomebaseController{
 	function _initialize() {
 		//解析函数
 		// parent::_initialize();
-		$userid = $_SESSION["user"]["id"];
+		$userid = $_SESSION["ADMIN_ID"];
 		if(!$userid){
 			$this->error("您还没有登录！",U("User/login/index"));
+		}else{
+			$map["id"] = $userid;
+			$user = M("users")->where($map)->find();
+			$_SESSION["nicename"] = $user["user_nicename"];
 		}
 	}
 	function index(){
 		$exams = M("exams")->field("id,name")->select();
 		$this->assign("exams",$exams);
-		$map["userid"] = $_SESSION["user"]["id"];
+		$map["userid"] = $_SESSION["ADMIN_ID"];
 		$scores = M("scores")->where($map)->field("id,examname,time")->select();
 		$this->assign("scores",$scores);
         $this->display();
@@ -106,8 +110,8 @@ class IndexController extends HomebaseController{
 			}
 			$result[] = $tmp;
 		}
-		$data["userid"] = $_SESSION["user"]["id"];
-		$data["username"] = $_SESSION["user"]["user_nicename"];
+		$data["userid"] = $_SESSION["ADMIN_ID"];
+		$data["username"] = $_SESSION["nicename"];
 		$data["examid"] = $answers["examid"];
 		$data["examname"] = $exam["name"];
 		$data["score"] = $get_score;

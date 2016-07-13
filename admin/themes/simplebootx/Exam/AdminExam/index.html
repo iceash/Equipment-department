@@ -17,7 +17,7 @@ if (restore) selObj.selectedIndex=0;
     <div class="container-fluid">
         <div class="span10" id="datacontent">
             
-            <form action="index.php?exam-master-exams" method="post">
+            <form action="__URL__/index" method="post">
                 <table class="table">
                     <thead>
                         <tr>
@@ -33,17 +33,17 @@ if (restore) selObj.selectedIndex=0;
                             选择类型：
                         </td>
                         <td>
-                            <select name="search[examtype]">
+                            <select name="type">
                                 <option value="">不限</option>
-                                <option value="随机组卷">随机组卷</option>
-                                <option value="手工组卷">手工组卷</option>
+                                <option value="随机组卷" <if condition="$type eq '随机组卷'">selected="selected"</if> >随机组卷</option>
+                                <option value="手工组卷" <if condition="$type eq 手工组卷">selected="selected"</if> >手工组卷</option>
                             </select>
                         </td>
                         <td>
                             组卷时间：
                         </td>
                         <td>
-                            <input class="input-small datetimepicker" data-date="2016-06-16" data-date-format="yyyy-mm-dd" type="text" name="search[stime]" size="10" id="stime" value="" autocomplete="off"> - <input class="input-small datetimepicker" data-date="2016-06-16" data-date-format="yyyy-mm-dd" size="10" type="text" name="search[etime]" id="etime" value="" autocomplete="off">
+                            <input type="text" name="start_time" class="js-datetime" value="{$start_time}" style="width: 150px;" autocomplete="off"> - <input type="text" name="end_time" class="js-datetime" value="{$end_time}" style="width: 150px;" autocomplete="off">
                         </td>
                         <td>
                             <button class="btn btn-primary" type="submit">搜索</button>
@@ -68,7 +68,7 @@ if (restore) selObj.selectedIndex=0;
                             <td>{$one.id}</td>
                             <td>{$one.name}</td>
                             <td>{$one.type}</td>
-                            <td><?php echo date("Y-m-d h:i:s", $one["create_time"]); ?></td>
+                            <td><?php echo date("Y-m-d H:i:s", $one["create_time"]); ?></td>
                             <td>
                                 <div class="btn-group">
                                     <a class="btn" target="_blank" href="__URL__/paper/id/{$one.id}" title="查看试卷"><em class="icon-list-alt"></em></a>
@@ -88,6 +88,7 @@ if (restore) selObj.selectedIndex=0;
         </div>
     </div>
 </div>
+<script src="__PUBLIC__/js/common.js"></script>
 <script type="text/javascript">
     $(document).on("click","#exam-list .btn.confirm",function(){
         if (!confirm("是否确认删除此试卷")) {
@@ -101,7 +102,6 @@ if (restore) selObj.selectedIndex=0;
                 // alert("删除此试卷成功");
             }else{
                 alert(back.info);
-                console.log(back);
             };
         });
     });

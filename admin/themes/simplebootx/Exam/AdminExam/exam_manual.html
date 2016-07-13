@@ -76,7 +76,7 @@
                             <span class="info">&nbsp;分</span>
                             <span class="info">&nbsp;已选题数：<a id="ialreadyselectnumber_judge">0</a>&nbsp;&nbsp;题</span>
                             <span class="info">&nbsp;<a class="fancybox.ajax view_question selfmodal btn" href="__URL__/view_question/" data-target="3" url="#" valuefrom="iselectquestions_1|iselectrowsquestions_1">看题</a></span>
-                            <span class="info">&nbsp;<a class="fancybox.ajax select_question selfmodal btn" href="__URL__/select_question/type/3" data-target="#modal" url="#select_list" valuefrom="#">选题</a></span>
+                            <span class="info">&nbsp;<a class="fancybox.iframe select_question selfmodal btn" href="__URL__/select_question/type/3" data-target="#modal" url="#select_list" valuefrom="#">选题</a></span>
                             <input type="hidden" value="" id="iselectquestions_1" name="args[examquestions][1][questions]" />
                             <input type="hidden" value="" id="iselectrowsquestions_1" name="args[examquestions][1][rowsquestions]" />
                         </div>
@@ -117,7 +117,10 @@
             }
         })
     })
-    $(".select_question").fancybox();
+    $(".select_question").fancybox({
+        width:1000,
+        height:700,
+    });
     $(document).on("click",".checkall",function(){
         var checked = $(this).attr("checked");
         $(".checkone").each(function(){

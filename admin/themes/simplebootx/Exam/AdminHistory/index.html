@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div class="wrap">
-            <form action="index.php?exam-master-questions" method="post">
+            <form action="__URL__/index" method="post">
                 <table class="table">
                     <thead>
                         <tr>
@@ -24,19 +24,19 @@
                             考试名称：
                         </td>
                         <td>
-                            <input name="search[questionid]" class="input-small" size="25" type="text" value="" autocomplete="off">
+                            <input name="examname" class="input-small" size="25" type="text" value="{$examname}" autocomplete="off">
                         </td>
                         <td>
                             交卷时间：
                         </td>
                         <td>
-                            <input class="input-small datetimepicker" data-date="2016-06-16" data-date-format="yyyy-mm-dd" type="text" name="search[stime]" size="10" id="stime" value="" autocomplete="off"> - <input class="input-small datetimepicker" data-date="2016-06-16" data-date-format="yyyy-mm-dd" size="10" type="text" name="search[etime]" id="etime" value="" autocomplete="off">
+                            <input type="text" name="start_time" class="js-datetime" value="{$start_time}" style="width: 150px;" autocomplete="off"> - <input type="text" name="end_time" class="js-datetime" value="{$end_time}" style="width: 150px;" autocomplete="off">
                         </td>
                         <td>
                             考生姓名：
                         </td>
                         <td>
-                            <input class="input-small" name="search[keyword]" size="25" type="text" value="" autocomplete="off">
+                            <input class="input-small" name="username" size="25" type="text" value="{$username}" autocomplete="off">
                         </td>
                     </tr>
                     <tr>
@@ -44,18 +44,22 @@
                             所在部门：
                         </td>
                         <td>
-                            <select name="search[questiontype]" class="input-medium" autocomplete="off">
-                                <option value="0">不限</option>
-                                <option value="1">部门1</option>
-                                <option value="2">部门2</option>
-                                <option value="3">部门3</option>
+                            <select class="select_2 input-medium" name="department">
+                                <option value=''>不限</option>
+                                <volist name="dep_list" id="dp">
+                                <eq name="dp['department_name']" value="$department">
+                                <option value="{$dp.department_name}" selected="selected">{$dp.department_name}</option>
+                                <else/>
+                                <option value="{$dp.department_name}">{$dp.department_name}</option>
+                                </eq>
+                                </volist>
                             </select>
                         </td>
                         <td>
                             成绩：
                         </td>
                         <td>
-                            <input class="input-small datetimepicker" type="text" value=""> - <input class="input-small datetimepicker" type="text" value="">
+                            <input class="input-small datetimepicker" name="min_score" type="text" value="{$min_score}"> - <input class="input-small datetimepicker" type="text" name="max_score" value="{$max_score}">
                         </td>
                         <td></td>
                         <td></td>
@@ -78,6 +82,7 @@
 						<th>考生姓名</th>
 						<th>考试成绩</th>
 						<th>是否及格</th>
+                        <th>所在部门</th>
 						<th>交卷时间</th>
 						<th>操作</th>
 					</tr>
@@ -96,6 +101,7 @@
 								echo '<span class="not_pass">不及格</span>';
 							} ?>
 						</td>
+                        <td>{$vo.department_name}</td>
 						<td>{$vo.submit_time}</td>
 						<td align="center">
 							<a class="btn" target="_blank" href="__URL__/view_score/id/{$vo.id}" title="查看试卷"><em class="icon-list-alt"></em></a>
