@@ -1,0 +1,1 @@
+php C:\xampp\htdocs\Equipment-department\access2mysql.php

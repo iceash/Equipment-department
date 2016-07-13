@@ -29,18 +29,21 @@
 				<thead>
 					<tr>
 						<th>姓名</th>
+						<th>工号</th>
 						<th>考勤时间</th>
 					</tr>
 				</thead>
 				<foreach name="attend" item="vo">
 				<tr>
 					<td>{$vo.name}</td>
+					<td>{$vo.badge_number}</td>
 					<td>{$vo.checktime}</td>
 				</tr>
 				</foreach>
 				<tfoot>
 					<tr>
 						<th>姓名</th>
+						<th>工号</th>
 						<th>考勤时间</th>
 					</tr>
 				</tfoot>
