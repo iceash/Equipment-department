@@ -25,7 +25,7 @@ class ListController extends HomebaseController {
 		    }
 		    	
 		    return ;
-		
+		}
 		$tplname=$term["list_tpl"];
     	$tplname=sp_get_apphome_tpl($tplname, "list");
     	$this->assign($term);
