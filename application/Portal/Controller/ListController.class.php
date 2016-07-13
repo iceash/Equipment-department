@@ -16,7 +16,7 @@ class ListController extends HomebaseController {
 	//文章内页
 	public function index() {
 		$term=sp_get_term($_GET['id']);
-		
+
 		if(empty($term)){
 		    header('HTTP/1.1 404 Not Found');
 		    header('Status:404 Not Found');

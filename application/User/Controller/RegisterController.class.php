@@ -65,7 +65,7 @@ class RegisterController extends HomebaseController {
 
 
 
-				$this->success("添加成功！", U("user/login"));
+				$this->success("添加成功！", U("admin"));
 				/*if ($this->users_model->create()) {
 					$result=$this->users_model->add();
 					if ($result!==false) {
