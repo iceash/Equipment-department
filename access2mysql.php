@@ -10,7 +10,7 @@ mysql_query("SET NAMES 'UTF8'");
 mysql_select_db("{$db}");
 //连接access
 //配置环境时需要修改//配置环境时需要修改//配置环境时需要修改//配置环境时需要修改//配置环境时需要修改
-$datapath="att2000.mdb";
+$datapath="./ZKTeco/att2000.mdb";
 //配置环境时需要修改//配置环境时需要修改//配置环境时需要修改//配置环境时需要修改//配置环境时需要修改
 $conn = new com("ADODB.Connection");  
 $connstr = "DRIVER={Microsoft Access Driver (*.mdb)}; DBQ=". realpath($datapath);
@@ -27,7 +27,7 @@ $name = iconv ('gb2312','utf-8',$info->Fields(3));
 $checktime = $rs->Fields(1)->value;
 $unique=$userid.$checktime;
 //测试输出
-//echo($userid." ".$badge_number." ".$name." ".$checktime."<br>");
+// echo($userid." ".$badge_number." ".$name." ".$checktime."<br>");
 //开始写入
 $sql="INSERT IGNORE INTO `cmf_checkinout` (`USERID`,`badge_number`,`NAME`,`CHECKTIME`,`UNIQUE`) VALUES('{$userid}','{$badge_number}','{$name}','{$checktime}','{$unique}')";
 mysql_query($sql); //执行语句！！！ 
