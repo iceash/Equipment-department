@@ -16,10 +16,11 @@ class IndexController extends HomebaseController{
 		}
 	}
 	function index(){
-		$exams = M("exams")->field("id,name")->select();
+		$condition["userid"] = array("in",array(0,$_SESSION["ADMIN_ID"]));
+		$exams = M("exams")->field("id,name")->where($condition)->order("create_time desc")->select();
 		$this->assign("exams",$exams);
 		$map["userid"] = $_SESSION["ADMIN_ID"];
-		$scores = M("scores")->where($map)->field("id,examname,time")->select();
+		$scores = M("scores")->where($map)->field("id,examname,time")->order("time desc")->select();
 		$this->assign("scores",$scores);
         $this->display();
 	}
@@ -131,4 +132,84 @@ class IndexController extends HomebaseController{
 		}
 		$this->ajaxReturn($back);
     }
+    function exam_rand(){
+    	$questions = M("questions");
+    	$countSingle = $questions->where("type=1")->count();
+    	$countMulti = $questions->where("type=2")->count();
+    	$countJudge = $questions->where("type=3")->count();
+    	$this->assign("countSingle",$countSingle);
+    	$this->assign("countMulti",$countMulti);
+    	$this->assign("countJudge",$countJudge);
+		$this->display();
+	}
+	function ajaxAddRandExam(){
+		$data = $_POST["data"];
+		$map["name"] = $data["name"];
+		$count = M("exams")->where($map)->count();
+		if ($count > 0) {
+			$return["status"] = 0;
+			$return["info"] = "试卷名称重复";
+		}
+		$settings = json_decode($data["settings"]);
+		$allquestion = M("questions")->field("id,type")->select();
+		foreach ($allquestion as $key => $va) {
+			$forRand[$va["type"]][] = $va["id"];
+		}
+		$return["info"] = "";
+		$return["status"] = 1;
+		if (count($forRand["1"]) < $settings->single->number) {
+			$return["info"] .= "单选题题库数量不足  ";
+			$return["status"] = 0;
+		}
+		if (count($forRand["2"]) < $settings->multi->number) {
+			$return["info"] .= "多选题题库数量不足  ";
+			$return["status"] = 0;
+		}
+		if (count($forRand["3"]) < $settings->judge->number) {
+			$return["info"] .= "判断题题库数量不足  ";
+			$return["status"] = 0;
+		}
+		if ($return["status"] == 0) {
+			$return["info"] .= "请在题库增加题量或减少所需题量";
+			$this->ajaxReturn($return);
+		}
+		$count = 0;
+		while ($count < $settings->single->number) {
+			$i = rand(0,count($forRand["1"])-1);
+			$tmp = $forRand["1"][$i];
+			if (!in_array($tmp, $exam_questions["single"])) {
+				$exam_questions["single"][] = (int)$tmp;
+			}
+			$count = count($exam_questions["single"]);
+		}
+		$count = 0;
+		while ($count < $settings->multi->number) {
+			$i = rand(0,count($forRand["2"])-1);
+			$tmp = $forRand["2"][$i];
+			if (!in_array($tmp, $exam_questions["multi"])) {
+				$exam_questions["multi"][] = (int)$tmp;
+			}
+			$count = count($exam_questions["multi"]);
+		}
+		$count = 0;
+		while ($count < $settings->judge->number) {
+			$i = rand(0,count($forRand["3"])-1);
+			$tmp = $forRand["3"][$i];
+			if (!in_array($tmp, $exam_questions["judge"])) {
+				$exam_questions["judge"][] = (int)$tmp;
+			}
+			$count = count($exam_questions["judge"]);
+		}
+		$data["create_time"] = time();
+		$data["type"] = "随机组卷";
+		$data["userid"] = $_SESSION["ADMIN_ID"];
+		$data["exam_questions"] = json_encode($exam_questions);
+		if (M("exams")->add($data)) {
+			$return["status"] = 1;
+		}else{
+			$return["status"] = 0;
+			$return["info"] = "新增出错";
+		}
+		$this->ajaxReturn($return);
+	}
 }
