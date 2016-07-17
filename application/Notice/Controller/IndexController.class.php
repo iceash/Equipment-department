@@ -8,16 +8,24 @@ class IndexController extends AdminbaseController{
 	//protected $slidecat_model;
 	
 	function _initialize() {
-		parent::_initialize();
+		// parent::_initialize();
 		$this->screen_model = D("Common/NoticeScreen");
 		$this->notice_model = D("Common/Notice");
 		//$this->slidecat_model = D("Common/SlideCat");
+		$userid = $_SESSION["ADMIN_ID"];
+		if(!$userid){
+			$this->error("您还没有登录！",U("User/login/index"));
+		}else{
+			$map["id"] = $userid;
+			$user = M("users")->where($map)->find();
+			$_SESSION["nicename"] = $user["user_nicename"];
+		}
 		
 	}
 	function index(){
 		$status=1;
-		$department="'".$_SESSION['name']."'";
-		$where['department']=$_SESSION['name'];
+		$department="'".$_SESSION['nicename']."'";
+		$where['department']=$_SESSION['nicename'];
 		if(isset($_POST['status']) && $_POST['status']!=""){
 			$status=$_POST['status'];
 		}
@@ -30,10 +38,10 @@ class IndexController extends AdminbaseController{
 		$this->display();
 	}
 	function changeInterval(){
-		$department="'".$_SESSION['name']."'";
+		$department="'".$_SESSION['nicename']."'";
 		$check=$this->notice_model->where("department=".$department)->select();
 		if(!$check)
-		{$data['department']=$_SESSION['name'];
+		{$data['department']=$_SESSION['nicename'];
 		$this->notice_model->add($data);}
 		if(IS_POST){
 			if($this->notice_model->create()){
@@ -49,7 +57,7 @@ class IndexController extends AdminbaseController{
 	}
 	
 	function add(){
-		$department=$_SESSION['name'];
+		$department=$_SESSION['nicename'];
 		$this->assign('department',$department);
 		$this->display();
 	}
