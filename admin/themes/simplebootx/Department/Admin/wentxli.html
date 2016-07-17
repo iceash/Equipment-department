@@ -1,0 +1,30 @@
+<admintpl file="header"/>
+</head>
+<style>
+    li{margin-top: 10px;margin-bottom: 10px;}
+</style>
+<body>
+<div class="wrap js-check-wrap">
+
+    <div class="row-fluid">
+        <div class="span12">
+            <table class="table table-bordered">
+                <th>飞行安全性质列表</th>
+                <php>
+                    $wentixz
+                </php>
+                <foreach name="wentixz"  item="vo">
+                    <tr>
+                        <td><p>{$vo.name}</p></td>
+                    </tr>
+                </foreach>
+            </table>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+<script type="text/javascript">
+</script>
+</body>
+</html>

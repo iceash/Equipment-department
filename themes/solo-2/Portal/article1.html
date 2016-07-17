@@ -15,11 +15,6 @@
 <tc_include file="Public:nav" />
 <div class="w" style="min-height: 100%;">
 	<br>
-<!--<div style="margin: 30px;">
-		<div>
-			<h3>您当前的位置：{$post_title}</h3>
-		</div>
-	</div>-->
 			<div class="w">
 				<div style="text-align: center; border: solid 1px #f3f3f3;margin-right: 14px;margin-left: 18px;padding: 16px;">
 					<p style="text-align: center;font-size:30px;display: block;margin-bottom: 20px;">{$post_title}</p>
@@ -28,9 +23,28 @@
 		    		<span style="margin-right: 20px;">阅读次数：{$post_hits}</span>
 				</div>
 					<br>
-				<div id="article_content" style="padding: 28px;">
-					{$post_content}
+			<!--	<div id="article_content" style="padding: 28px;">-->
+				<!--	{$post_content}-->
 				</div>
+				<table  border= "1"  style="width: 97%;border:solid 1px #f1f1f1;margin: 28px;line-height: 50px;text-align: center;font-size: 18px;word-break:break-all ">
+					<p style="font-size: 22px;margin: 28px;">编号{$bh}</p>
+					<tr>
+						<td width= "16% " >文件名</td><td colspan="5" >{$wjm}</td>
+					</tr>
+					<tr>
+						<td width= "16% ">承办单位</td><td width= "16% ">{$cbdw}</td><td>承办人</td><td>{$cbr}</td><td>军衔/职位</td><td>{$jb}</td>
+					</tr>
+					<tr>
+						<td width= "16% ">办公室主任</td><td>{$zrzr}</td><td>签发领导</td><td>{$qfld}</td><td>抄告时间</td><td>{$sj}</td>
+					</tr>
+					<tr>
+						<td width= "16% ">首长批示</td><td colspan="5">{$ldps}</td>
+					</tr>
+					<tr>
+						<td width= "16% ">具体违规情况</td><td colspan="5">{$wtnr}</td>
+					</tr>
+				</table>
+	<br>
 				<div style="text-align: center;margin-bottom:50px;margin-top: 20px;">
 					<if condition="!empty($prev)">
 						<a style="margin-right: 20px; padding:20px;border: solid 1px #f3f3f3;font-size:18px;" href="{:leuu('article/index',array('id'=>$prev['tid'],'cid'=>$prev['term_id']))}" class="btn btn-primary pull-left">上一篇</a>
@@ -39,11 +53,7 @@
 						<a  style="padding:20px;border: solid 1px #f3f3f3;font-size:18px;" href="{:leuu('article/index',array('id'=>$next['tid'],'cid'=>$next['term_id']))}" class="btn btn-warning pull-right">下一篇</a>
 					</if>
 				</div>
-				{:hook('comment',array(
-				'post_id'=>$object_id,
-				'post_table'=>'posts',
-				'post_title'=>$post_title
-				))}
+
 			</div>
 		</div>
 	<tc_include file="Public:footer"/>

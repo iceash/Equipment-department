@@ -1,0 +1,45 @@
+<admintpl file="header"/>
+</head>
+
+<body>
+<div class="wrap js-check-wrap">
+    <form action="{:U('admin/add')}" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
+        <div class="row-fluid">
+            <div class="span11">
+                <table class="table table-bordered" style="text-align: center;">
+                    <tr>
+                        <th>休假登记</th>
+                    </tr>
+                    <tr>
+                        <td >单位 </td><td> <textarea name="danwei" ></textarea></td>
+                    </tr>
+                    <tr>
+                        <td >休假人</td><td>  <textarea name="ren" ></textarea></td>
+                    </tr>
+                    <tr>
+                        <td >休假地点</td><td>  <textarea name="didian" ></textarea></td>
+                    </tr>
+                    <tr>
+                        <td >休假时间</td><td> <textarea name="time"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td >准假人</td><td>  <textarea name="psren" ></textarea></td>
+                    </tr>
+                    <tr>
+                        <td >销假时间 </td><td> <textarea name="endtime" ></textarea></td>
+                    </tr>
+                    <tr>
+                        <td >备注</td><td> <textarea name="note" ></textarea></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="form-actions">
+            <button class="btn btn-primary js-ajax-submit" type="submit">{:L("ADD")}</button>
+        </div>
+    </form>
+</div>
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+</body>
+</html>

@@ -58,7 +58,9 @@ class ArticleController extends HomebaseController {
     	
     	$tplname=$term["one_tpl"];
     	$tplname=sp_get_apphome_tpl($tplname, "article");
-    	$this->display(":$tplname");
+
+		$this->display(":$tplname");
+
     }
     
     public function do_like(){

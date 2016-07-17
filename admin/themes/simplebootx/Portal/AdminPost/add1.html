@@ -8,15 +8,14 @@
 <body>
 <div class="wrap js-check-wrap">
 	<ul class="nav nav-tabs">
-		<li><a href="javascript:;">{:L('PORTAL_ADMINPOST_INDEX')}</a></li>
-		<li  class="active"><a href="{:U('AdminPost/add',array('term'=>empty($term['term_id'])?'':$term['term_id']))}" target="_self">+通用文章</a></li>
-		<li><a href="{:U('AdminPost/add1',array('term'=>empty($term['term_id'])?'':$term['term_id']))}" target="_self">+问题抄告</a></li>
+		<li><a href="{:U('AdminPost/index')}">{:L('PORTAL_ADMINPOST_INDEX')}</a></li>
+		<li><a href="{:U('AdminPost/add',array('term'=>empty($term['term_id'])?'':$term['term_id']))}" target="_self">+通用文章</a></li>
+		<li class="active"><a href="{:U('AdminPost/add1',array('term'=>empty($term['term_id'])?'':$term['term_id']))}" target="_self">+问题抄告</a></li>
 		<li><a href="{:U('AdminPost/add2',array('term'=>empty($term['term_id'])?'':$term['term_id']))}" target="_self">+加问题整改</a></li>
 		<li><a href="{:U('AdminPost/add3',array('term'=>empty($term['term_id'])?'':$term['term_id']))}" target="_self">+领导批示</a></li>
 		<li><a href="{:U('AdminPost/add4',array('term'=>empty($term['term_id'])?'':$term['term_id']))}" target="_self">+装备保障问题</a></li>
 		<li><a href="{:U('AdminPost/add5',array('term'=>empty($term['term_id'])?'':$term['term_id']))}" target="_self">+重点工作进展</a></li>
-		<li><a href="{:U('AdminPost/add6',array('term'=>empty($term['term_id'])?'':$term['term_id']))}" target="_self">+重点飞行安全问题</a></li>
-	</ul>
+		<li><a href="{:U('AdminPost/add6',array('term'=>empty($term['term_id'])?'':$term['term_id']))}" target="_self">+重点飞行安全问题</a></li>	</ul>
 	<form action="{:U('AdminPost/add_post')}" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
 		<div class="row-fluid">
 			<div class="span9">
@@ -36,35 +35,93 @@
 						</td>
 					</tr>
 					<tr>
-						<th>关键词</th>
-						<td><input type="text" name="post[post_keywords]" id="keywords" value="" style="width: 400px" placeholder="请输入关键字"> 多关键词之间用空格或者英文逗号隔开</td>
-					</tr>
-					<tr>
-						<th>文章来源</th>
-						<td><input type="text" name="post[post_source]" id="source" value="" style="width: 400px" placeholder="请输入文章来源"></td>
-					</tr>
-					<tr>
 						<th>摘要</th>
 						<td>
 							<textarea name="post[post_excerpt]" id="description" required style="width: 98%; height: 50px;" placeholder="请填写摘要"></textarea>
 						</td>
 					</tr>
 					<tr>
-						<th>内容</th>
+						<th>编号</th>
+						<td><input type="text" name="post[bh]" value="" style="width: 400px" placeholder="请输入文件编号"> 多关键词之间用空格或者英文逗号隔开</td>
+					</tr>
+					<tr>
+						<th>时间</th>
+						<td><input type="text" name="post[sj]"  value="" style="width: 400px" placeholder="请输入时间"> 格式如2015-07-22</td>
+					</tr>
+					<tr>
+						<th>文件名</th>
+						<td><input type="text" name="post[wjm]"  value="" style="width: 400px" placeholder="文件名"> 多关键词之间用空格或者英文逗号隔开</td>
+					</tr>
+					<tr>
+						<th>抄告问题</th>
 						<td>
-							<script type="text/plain" id="content" name="post[post_content]"></script>
+							<textarea type="text/plain" name="post[wtnr]" required style="width: 400px;" placeholder="请简述抄告问题"></textarea>
 						</td>
 					</tr>
 					<tr>
-						<th>相册图集</th>
+						<th>问题单位/个人</th>
+						<td><input type="text" name="post[wtzt]"  value="" style="width: 400px" placeholder="请输入问题单位/个人"> 多问题主体之间用空格或者英文逗号隔开</td>
+					</tr>
+					<tr>
+						<th>承办单位</th>
+						<td><input type="text" name="post[cbdw]"  value="" style="width: 400px" placeholder="输入承办单位名"></td>
+					</tr>
+					<tr>
+						<th>承办人</th>
+						<td><input type="text" name="post[cbr]"  value="" style="width: 400px" placeholder="输入承办人姓名"> 多承办人之间用空格或者英文逗号隔开</td>
+					</tr>
+					<tr>
+						<th>军衔/职务</th>
+						<td><input type="text" name="post[jb]"  value="" style="width: 400px" placeholder="输入承办人职务级别"> </td>
+					</tr>
+					<tr>
+						<th>是否帮助工作</th>
+						<td><input type="text" name="post[sfbzgz]"  value="" style="width: 400px" placeholder="输入承办人的帮助情况"></td>
+					</tr>
+					<tr>
+						<th>责任办公室</th>
+						<td><input type="text" name="post[zrbgs]"  value="" style="width: 400px" placeholder="输入责任办公室"> </td>
+					</tr>
+					<tr>
+						<th>办公室主任</th>
+						<td><input type="text" name="post[zrzr]"  value="" style="width: 400px" placeholder="输入办公室主任"> </td>
+					</tr>
+					<tr>
+						<th>签发领导</th>
+						<td><input type="text" name="post[qfld]"  value="" style="width: 400px" placeholder="输入签发领导"></td>
+					</tr>
+					<tr>
+						<th>分管领导</th>
+						<td><input type="text" name="post[fgld]"  value="" style="width: 400px" placeholder="输入分管领导"> </td>
+					</tr>
+					<tr>
+						<th>首长批示</th>
+						<td><textarea type="text" name="post[ldps]"  value="" style="width: 400px" placeholder="请输入批示内容"></textarea>
+					</tr>
+					<tr>
+						<th>具体违规情况</th>
+						<td><textarea type="text" name="post[wtnr]"  value="" style="width: 400px" placeholder="输入具体的违规情况"> 多关键词之间用空格或者英文逗号隔开</textarea>
+					</tr>
+					<tr>
+						<th>图片上传</th>
 						<td>
 							<fieldset>
-								<legend>图片列表</legend>
+								<legend>图片列表a</legend>
 								<ul id="photos" class="pic-list unstyled"></ul>
 							</fieldset>
 							<a href="javascript:;" onclick="javascript:flashupload('albums_images', '图片上传','photos',change_images,'10,gif|jpg|jpeg|png|bmp,0','','','')" class="btn btn-small">选择图片</a>
 						</td>
 					</tr>
+					<!--<tr>
+                        <th>附件上传</th>
+                        <td>
+                            <fieldset>
+                                <legend>附件列表</legend>
+                                <ul id="photos2" class="pic-list unstyled"></ul>
+                            </fieldset>
+                            <a href="javascript:;" onclick="javascript:flashupload('albums_images', '图片上传','photos',change_images,'10,gif|jpg|jpeg|png|bmp,0','','','')" class="btn btn-small">选择附件</a>
+                        </td>
+                    </tr>-->
 				</table>
 			</div>
 			<div class="span3">
@@ -96,18 +153,6 @@
 						<td>
 							<label class="radio"><input type="radio" name="post[post_status]" value="1" checked>审核通过</label>
 							<label class="radio"><input type="radio" name="post[post_status]" value="0">待审核</label>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<label class="radio"><input type="radio" name="post[istop]" value="1">置顶</label>
-							<label class="radio"><input type="radio" name="post[istop]" value="0" checked>未置顶</label>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<label class="radio"><input type="radio" name="post[recommended]" value="1">推荐</label>
-							<label class="radio"><input type="radio" name="post[recommended]" value="0" checked>未推荐</label>
 						</td>
 					</tr>
 				</table>

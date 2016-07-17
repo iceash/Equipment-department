@@ -3,8 +3,14 @@
 <body>
 	<div class="wrap js-check-wrap">
 		<ul class="nav nav-tabs">
-			<li class="active"><a href="javascript:;">{:L('PORTAL_ADMINPOST_INDEX')}</a></li>
-			<li><a href="{:U('AdminPost/add',array('term'=>empty($term['term_id'])?'':$term['term_id']))}" target="_self">{:L('PORTAL_ADMINPOST_ADD')}</a></li>
+			<li><a href="{:U('AdminPost/index')}">{:L('PORTAL_ADMINPOST_INDEX')}</a></li>
+			<li><a href="{:U('AdminPost/add',array('term'=>empty($term['term_id'])?'':$term['term_id']))}" target="_self">+通用文章</a></li>
+			<li><a href="{:U('AdminPost/add1',array('term'=>empty($term['term_id'])?'':$term['term_id']))}" target="_self">+问题抄告</a></li>
+			<li><a href="{:U('AdminPost/add2',array('term'=>empty($term['term_id'])?'':$term['term_id']))}" target="_self">+加问题整改</a></li>
+			<li><a href="{:U('AdminPost/add3',array('term'=>empty($term['term_id'])?'':$term['term_id']))}" target="_self">+领导批示</a></li>
+			<li><a href="{:U('AdminPost/add4',array('term'=>empty($term['term_id'])?'':$term['term_id']))}" target="_self">+装备保障问题</a></li>
+			<li><a href="{:U('AdminPost/add5',array('term'=>empty($term['term_id'])?'':$term['term_id']))}" target="_self">+重点工作进展</a></li>
+			<li><a href="{:U('AdminPost/add6',array('term'=>empty($term['term_id'])?'':$term['term_id']))}" target="_self">+重点飞行安全问题</a></li>
 		</ul>
 		<form class="well form-search" method="post" action="{:U('AdminPost/index')}">
 			分类： 
@@ -23,10 +29,6 @@
 				<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="{:U('AdminPost/listorders')}">{:L('SORT')}</button>
 				<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="{:U('AdminPost/check',array('check'=>1))}" data-subcheck="true">审核</button>
 				<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="{:U('AdminPost/check',array('uncheck'=>1))}" data-subcheck="true">取消审核</button>
-				<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="{:U('AdminPost/top',array('top'=>1))}" data-subcheck="true">置顶</button>
-				<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="{:U('AdminPost/top',array('untop'=>1))}" data-subcheck="true">取消置顶</button>
-				<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="{:U('AdminPost/recommend',array('recommend'=>1))}" data-subcheck="true">推荐</button>
-				<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="{:U('AdminPost/recommend',array('unrecommend'=>1))}" data-subcheck="true">取消推荐</button>
 				<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="{:U('AdminPost/delete')}" data-subcheck="true" data-msg="你确定删除吗？">{:L('DELETE')}</button>
 				<button class="btn btn-primary btn-small js-articles-move" type="button">批量移动</button>
 			</div>
@@ -43,7 +45,7 @@
 						<th width="50">{:L('SOURCE')}</th>
 						<th width="50">{:L('ABSTRACT')}</th>
 						<th width="50">{:L('THUMBNAIL')}</th>
-						<th width="80">{:L('AUTHOR')}</th>
+						<th width="80">作者</th>
 						<th width="70">{:L('PUBLISH_DATE')}</th>
 						<th width="50">{:L('STATUS')}</th>
 						<th width="70">{:L('ACTIONS')}</th>
@@ -73,7 +75,7 @@
 					</td>
 					<td>{$users[$vo['post_author']]['user_login']}</td>
 					<td>{$vo.post_date}</td>
-					<td>{$status[$vo['post_status']]}<br>{$top_status[$vo['istop']]}<br>{$recommend_status[$vo['recommended']]}
+					<td>{$status[$vo['post_status']]}
 					</td>
 					<td>
 						<a href="{:U('AdminPost/edit',array('term'=>empty($term['term_id'])?'':$term['term_id'],'id'=>$vo['id']))}">{:L('EDIT')}</a> | 
@@ -103,10 +105,6 @@
 				<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="{:U('AdminPost/listorders')}">{:L('SORT')}</button>
 				<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="{:U('AdminPost/check',array('check'=>1))}" data-subcheck="true">审核</button>
 				<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="{:U('AdminPost/check',array('uncheck'=>1))}" data-subcheck="true">取消审核</button>
-				<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="{:U('AdminPost/top',array('top'=>1))}" data-subcheck="true">置顶</button>
-				<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="{:U('AdminPost/top',array('untop'=>1))}" data-subcheck="true">取消置顶</button>
-				<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="{:U('AdminPost/recommend',array('recommend'=>1))}" data-subcheck="true">推荐</button>
-				<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="{:U('AdminPost/recommend',array('unrecommend'=>1))}" data-subcheck="true">取消推荐</button>
 				<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="{:U('AdminPost/delete')}" data-subcheck="true" data-msg="你确定删除吗？">{:L('DELETE')}</button>
 				<button class="btn btn-primary btn-small js-articles-move" type="button">批量移动</button>
 			</div>

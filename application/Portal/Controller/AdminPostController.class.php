@@ -24,7 +24,7 @@ class AdminPostController extends AdminbaseController {
 		$this->_getTree();
 		$this->display();
 	}
-	
+	//通用文章开始
 	function add(){
 		$terms = $this->terms_model->order(array("listorder"=>"asc"))->select();
 		$term_id = intval(I("get.term"));
@@ -35,7 +35,7 @@ class AdminPostController extends AdminbaseController {
 		$this->assign("terms",$terms);
 		$this->display();
 	}
-	
+
 	function add_post(){
 		if (IS_POST) {
 			if(empty($_POST['term'])){
@@ -48,7 +48,6 @@ class AdminPostController extends AdminbaseController {
 				}
 			}
 			$_POST['smeta']['thumb'] = sp_asset_relative_url($_POST['smeta']['thumb']);
-			 
 			$_POST['post']['post_date']=date("Y-m-d H:i:s",time());
 			$_POST['post']['post_author']=get_current_admin_id();
 			$article=I("post.post");
@@ -60,15 +59,331 @@ class AdminPostController extends AdminbaseController {
 				foreach ($_POST['term'] as $mterm_id){
 					$this->term_relationships_model->add(array("term_id"=>intval($mterm_id),"object_id"=>$result));
 				}
-				
+
 				$this->success("添加成功！");
 			} else {
 				$this->error("添加失败！");
 			}
-			 
+
 		}
 	}
-	
+
+	//add1文章开始
+	function add1(){
+		$terms = $this->terms_model->order(array("listorder"=>"asc"))->select();
+		$term_id = intval(I("get.term"));
+		$this->_getTermTree();
+		$term=$this->terms_model->where("term_id=$term_id")->find();
+		$this->assign("author","1");
+		$this->assign("term",$term);
+		$this->assign("terms",$terms);
+		$this->display();
+	}
+
+	function add1_post(){
+		if (IS_POST) {
+			if(empty($_POST['term'])){
+				$this->error("请至少选择一个分类栏目！");
+			}
+			if(!empty($_POST['photos_alt']) && !empty($_POST['photos_url'])){
+				foreach ($_POST['photos_url'] as $key=>$url){
+					$photourl=sp_asset_relative_url($url);
+					$_POST['smeta']['photo'][]=array("url"=>$photourl,"alt"=>$_POST['photos_alt'][$key]);
+				}
+			}
+			$_POST['smeta']['thumb'] = sp_asset_relative_url($_POST['smeta']['thumb']);
+			$_POST['post']['post_date']=date("Y-m-d H:i:s",time());
+			$_POST['post']['post_author']=get_current_admin_id();
+			$article=I("post.post");
+			$article['smeta']=json_encode($_POST['smeta']);
+			$article['post_content']=htmlspecialchars_decode($article['post_content']);
+			$result=$this->posts_model->add($article);
+			if ($result) {
+				//
+				foreach ($_POST['term'] as $mterm_id){
+					$this->term_relationships_model->add(array("term_id"=>intval($mterm_id),"object_id"=>$result));
+				}
+
+				$this->success("添加成功！");
+			} else {
+				$this->error("添加失败！");
+			}
+
+		}
+	}
+
+
+	//通用文章开始
+	function add2(){
+		$terms = $this->terms_model->order(array("listorder"=>"asc"))->select();
+		$term_id = intval(I("get.term"));
+		$this->_getTermTree();
+		$term=$this->terms_model->where("term_id=$term_id")->find();
+		$this->assign("author","1");
+		$this->assign("term",$term);
+		$this->assign("terms",$terms);
+		$this->display();
+	}
+
+	function add2_post(){
+		if (IS_POST) {
+			if(empty($_POST['term'])){
+				$this->error("请至少选择一个分类栏目！");
+			}
+			if(!empty($_POST['photos_alt']) && !empty($_POST['photos_url'])){
+				foreach ($_POST['photos_url'] as $key=>$url){
+					$photourl=sp_asset_relative_url($url);
+					$_POST['smeta']['photo'][]=array("url"=>$photourl,"alt"=>$_POST['photos_alt'][$key]);
+				}
+			}
+			$_POST['smeta']['thumb'] = sp_asset_relative_url($_POST['smeta']['thumb']);
+			$_POST['post']['post_date']=date("Y-m-d H:i:s",time());
+			$_POST['post']['post_author']=get_current_admin_id();
+			$article=I("post.post");
+			$article['smeta']=json_encode($_POST['smeta']);
+			$article['post_content']=htmlspecialchars_decode($article['post_content']);
+			$result=$this->posts_model->add($article);
+			if ($result) {
+				//
+				foreach ($_POST['term'] as $mterm_id){
+					$this->term_relationships_model->add(array("term_id"=>intval($mterm_id),"object_id"=>$result));
+				}
+
+				$this->success("添加成功！");
+			} else {
+				$this->error("添加失败！");
+			}
+
+		}
+	}
+
+
+	//通用文章开始
+	function add3(){
+		$terms = $this->terms_model->order(array("listorder"=>"asc"))->select();
+		$term_id = intval(I("get.term"));
+		$this->_getTermTree();
+		$term=$this->terms_model->where("term_id=$term_id")->find();
+		$this->assign("author","1");
+		$this->assign("term",$term);
+		$this->assign("terms",$terms);
+		$this->display();
+	}
+
+	function add3_post(){
+		if (IS_POST) {
+			if(empty($_POST['term'])){
+				$this->error("请至少选择一个分类栏目！");
+			}
+			if(!empty($_POST['photos_alt']) && !empty($_POST['photos_url'])){
+				foreach ($_POST['photos_url'] as $key=>$url){
+					$photourl=sp_asset_relative_url($url);
+					$_POST['smeta']['photo'][]=array("url"=>$photourl,"alt"=>$_POST['photos_alt'][$key]);
+				}
+			}
+			$_POST['smeta']['thumb'] = sp_asset_relative_url($_POST['smeta']['thumb']);
+			$_POST['post']['post_date']=date("Y-m-d H:i:s",time());
+			$_POST['post']['post_author']=get_current_admin_id();
+			$article=I("post.post");
+			$article['smeta']=json_encode($_POST['smeta']);
+			$article['post_content']=htmlspecialchars_decode($article['post_content']);
+			$result=$this->posts_model->add($article);
+			if ($result) {
+				//
+				foreach ($_POST['term'] as $mterm_id){
+					$this->term_relationships_model->add(array("term_id"=>intval($mterm_id),"object_id"=>$result));
+				}
+
+				$this->success("添加成功！");
+			} else {
+				$this->error("添加失败！");
+			}
+
+		}
+	}
+
+
+	//通用文章开始
+	function add4(){
+		$terms = $this->terms_model->order(array("listorder"=>"asc"))->select();
+		$term_id = intval(I("get.term"));
+		$this->_getTermTree();
+		$term=$this->terms_model->where("term_id=$term_id")->find();
+		$this->assign("author","1");
+		$this->assign("term",$term);
+		$this->assign("terms",$terms);
+		$this->display();
+	}
+
+	function add4_post(){
+		if (IS_POST) {
+			if(empty($_POST['term'])){
+				$this->error("请至少选择一个分类栏目！");
+			}
+			if(!empty($_POST['photos_alt']) && !empty($_POST['photos_url'])){
+				foreach ($_POST['photos_url'] as $key=>$url){
+					$photourl=sp_asset_relative_url($url);
+					$_POST['smeta']['photo'][]=array("url"=>$photourl,"alt"=>$_POST['photos_alt'][$key]);
+				}
+			}
+			$_POST['smeta']['thumb'] = sp_asset_relative_url($_POST['smeta']['thumb']);
+			$_POST['post']['post_date']=date("Y-m-d H:i:s",time());
+			$_POST['post']['post_author']=get_current_admin_id();
+			$article=I("post.post");
+			$article['smeta']=json_encode($_POST['smeta']);
+			$article['post_content']=htmlspecialchars_decode($article['post_content']);
+			$result=$this->posts_model->add($article);
+			if ($result) {
+				//
+				foreach ($_POST['term'] as $mterm_id){
+					$this->term_relationships_model->add(array("term_id"=>intval($mterm_id),"object_id"=>$result));
+				}
+
+				$this->success("添加成功！");
+			} else {
+				$this->error("添加失败！");
+			}
+
+		}
+	}
+
+
+	//通用文章开始
+	function add5(){
+		$terms = $this->terms_model->order(array("listorder"=>"asc"))->select();
+		$term_id = intval(I("get.term"));
+		$this->_getTermTree();
+		$term=$this->terms_model->where("term_id=$term_id")->find();
+		$this->assign("author","1");
+		$this->assign("term",$term);
+		$this->assign("terms",$terms);
+		$this->display();
+	}
+
+	function add5_post(){
+		if (IS_POST) {
+			if(empty($_POST['term'])){
+				$this->error("请至少选择一个分类栏目！");
+			}
+			if(!empty($_POST['photos_alt']) && !empty($_POST['photos_url'])){
+				foreach ($_POST['photos_url'] as $key=>$url){
+					$photourl=sp_asset_relative_url($url);
+					$_POST['smeta']['photo'][]=array("url"=>$photourl,"alt"=>$_POST['photos_alt'][$key]);
+				}
+			}
+			$_POST['smeta']['thumb'] = sp_asset_relative_url($_POST['smeta']['thumb']);
+			$_POST['post']['post_date']=date("Y-m-d H:i:s",time());
+			$_POST['post']['post_author']=get_current_admin_id();
+			$article=I("post.post");
+			$article['smeta']=json_encode($_POST['smeta']);
+			$article['post_content']=htmlspecialchars_decode($article['post_content']);
+			$result=$this->posts_model->add($article);
+			if ($result) {
+				//
+				foreach ($_POST['term'] as $mterm_id){
+					$this->term_relationships_model->add(array("term_id"=>intval($mterm_id),"object_id"=>$result));
+				}
+
+				$this->success("添加成功！");
+			} else {
+				$this->error("添加失败！");
+			}
+
+		}
+	}
+
+
+	//通用文章开始
+	function add6(){
+		$terms = $this->terms_model->order(array("listorder"=>"asc"))->select();
+		$term_id = intval(I("get.term"));
+		$this->_getTermTree();
+		$term=$this->terms_model->where("term_id=$term_id")->find();
+		$this->assign("author","1");
+		$this->assign("term",$term);
+		$this->assign("terms",$terms);
+		$this->display();
+	}
+
+	function add6_post(){
+		if (IS_POST) {
+			if(empty($_POST['term'])){
+				$this->error("请至少选择一个分类栏目！");
+			}
+			if(!empty($_POST['photos_alt']) && !empty($_POST['photos_url'])){
+				foreach ($_POST['photos_url'] as $key=>$url){
+					$photourl=sp_asset_relative_url($url);
+					$_POST['smeta']['photo'][]=array("url"=>$photourl,"alt"=>$_POST['photos_alt'][$key]);
+				}
+			}
+			$_POST['smeta']['thumb'] = sp_asset_relative_url($_POST['smeta']['thumb']);
+			$_POST['post']['post_date']=date("Y-m-d H:i:s",time());
+			$_POST['post']['post_author']=get_current_admin_id();
+			$article=I("post.post");
+			$article['smeta']=json_encode($_POST['smeta']);
+			$article['post_content']=htmlspecialchars_decode($article['post_content']);
+			$result=$this->posts_model->add($article);
+			if ($result) {
+				//
+				foreach ($_POST['term'] as $mterm_id){
+					$this->term_relationships_model->add(array("term_id"=>intval($mterm_id),"object_id"=>$result));
+				}
+
+				$this->success("添加成功！");
+			} else {
+				$this->error("添加失败！");
+			}
+
+		}
+	}
+
+
+	//通用文章开始
+	function add7(){
+		$terms = $this->terms_model->order(array("listorder"=>"asc"))->select();
+		$term_id = intval(I("get.term"));
+		$this->_getTermTree();
+		$term=$this->terms_model->where("term_id=$term_id")->find();
+		$this->assign("author","1");
+		$this->assign("term",$term);
+		$this->assign("terms",$terms);
+		$this->display();
+	}
+
+	function add7_post(){
+		if (IS_POST) {
+			if(empty($_POST['term'])){
+				$this->error("请至少选择一个分类栏目！");
+			}
+			if(!empty($_POST['photos_alt']) && !empty($_POST['photos_url'])){
+				foreach ($_POST['photos_url'] as $key=>$url){
+					$photourl=sp_asset_relative_url($url);
+					$_POST['smeta']['photo'][]=array("url"=>$photourl,"alt"=>$_POST['photos_alt'][$key]);
+				}
+			}
+			$_POST['smeta']['thumb'] = sp_asset_relative_url($_POST['smeta']['thumb']);
+			$_POST['post']['post_date']=date("Y-m-d H:i:s",time());
+			$_POST['post']['post_author']=get_current_admin_id();
+			$article=I("post.post");
+			$article['smeta']=json_encode($_POST['smeta']);
+			$article['post_content']=htmlspecialchars_decode($article['post_content']);
+			$result=$this->posts_model->add($article);
+			if ($result) {
+				//
+				foreach ($_POST['term'] as $mterm_id){
+					$this->term_relationships_model->add(array("term_id"=>intval($mterm_id),"object_id"=>$result));
+				}
+
+				$this->success("添加成功！");
+			} else {
+				$this->error("添加失败！");
+			}
+
+		}
+	}
+
+
+
 	public function edit(){
 		$id=  intval(I("get.id"));
 		

@@ -6,9 +6,7 @@
     <div class="row-fluid">
         <div class="span12">
             <table class="table table-bordered">
-                <tr>
                     <th>部门列表</th>
-                </tr>
                 <php>
                     $department
                 </php>
@@ -19,6 +17,7 @@
                             <!--<button class="btn btn-primary"  style="margin-left: 500px;" type="submit">删除</button>-->
                             <input type="hidden" name="id" value="{$vo.id}"/></td>
                     </tr>
+
                 </foreach>
             </table>
         </div>
@@ -32,7 +31,7 @@
                     </tr>
                     <tr>
                         <td>部门名称<h1></h1></td>
-                       <td > <textarea name="department_name" id="description" style="width: 80%;"></textarea></td>
+                       <td > <textarea name="department_name" id="description" ></textarea></td>
                     </tr>
                 </table>
             </div>

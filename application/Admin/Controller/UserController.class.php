@@ -127,16 +127,26 @@ class UserController extends AdminbaseController{
 	
 	
 	function userinfo(){
-		$id=get_current_admin_id();
+	/*	$id=get_current_admin_id();
 		$user=$this->users_model->where(array("id"=>$id))->find();
 		$this->assign($user);
 
 		$department=M('department')->where($map)->order("id DESC")->select();
 		$this->assign("department",$department);
-		$this->display();
+		$this->display();*/
+		$id=get_current_admin_id();
+		$user=$this->users_model->where(array("id"=>$id))->find();
+		$this->assign($user);
+
+		$dep_list = M("department")->group("department_name")->select();
+		$this->assign("dep_list",$dep_list);
+		if(isset($_POST['department']) && $_POST['department']!=""){
+			$map['department_name']=$_POST['danwei'];
+			$this->assign("department",$_POST['department']);
+		}
 		$this->display();
 	}
-	
+
 	function userinfo_post(){
 		if (IS_POST) {
 			$_POST['id']=get_current_admin_id();

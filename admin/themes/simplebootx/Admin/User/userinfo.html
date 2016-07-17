@@ -36,7 +36,17 @@
 				<div class="control-group">
 					<label class="control-label" for="input-department_name">部门</label>
 					<div class="controls">
-						<input type="text" id="input-department_name" placeholder="你的部门" name="department_name" value="{$department_name}">
+						<!--<input type="text"  placeholder="你的部门" name="department_name" value="{$department_name}">-->
+						<select id="input-department_name" name="department_name">
+							<option value=''>不限</option>
+							<volist name="dep_list" id="dp">
+								<eq name="dp['department_name']" value="$department">
+									<option value="{$dp.department_name}" selected="selected">{$dp.department_name}</option>
+									<else/>
+									<option value="{$dp.department_name}">{$dp.department_name}</option>
+								</eq>
+							</volist>
+						</select>
 					</div>
 				</div>
 				<div class="control-group">

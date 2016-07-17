@@ -1,0 +1,29 @@
+<admintpl file="header"/>
+</head>
+
+<body>
+<div class="wrap js-check-wrap">
+
+    <div class="row-fluid">
+        <div class="span12">
+            <table class="table table-bordered">
+                <h2>首长信息</h2>
+                <tr>
+                    <td>姓名</td><td>级别</td><td>部门</td>
+                </tr>
+                <php>
+                    $boss
+                </php>
+                <foreach name="boss"  item="vo">
+                    <tr>
+                        <td>{$vo.name}</td><td>{$vo.jibie}</td><td>{$vo.bumen}</td>
+                    </tr>
+                </foreach>
+            </table>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+</body>
+</html>

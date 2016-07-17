@@ -6,16 +6,14 @@
     <div class="row-fluid">
         <div class="span12">
             <table class="table table-bordered">
-                <tr>
-                    <th>部门列表</th>
-                </tr>
+                    <th>飞行安全性质列表</th>
                 <php>
-                    $department
+                    $wentixz
                 </php>
-                <foreach name="department"  item="vo">
+                <foreach name="wentixz"  item="vo">
                     <tr>
-                        <td><p>{$vo.department_name}</p></td>
-                        <td><a href="{:U('admin/delete',array('id'=>$vo['id']))}" class="js-ajax-delete">删除</a>
+                        <td><p>{$vo.name}</p></td>
+                        <td><a href="{:U('admin/wentxzdelete',array('id'=>$vo['id']))}" class="js-ajax-delete">删除</a>
                             <!--<button class="btn btn-primary"  style="margin-left: 500px;" type="submit">删除</button>-->
                             <input type="hidden" name="id" value="{$vo.id}"/></td>
                     </tr>
@@ -23,16 +21,16 @@
             </table>
         </div>
     </div>
-    <form action="{:U('admin/add')}" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
+    <form action="{:U('admin/wentxadd')}" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
         <div class="row-fluid">
             <div class="span11">
                 <table class="table table-bordered" style="text-align: center;">
                     <tr>
-                        <th>新建部门</th>
+                        <th>新建飞行安全性质</th>
                     </tr>
                     <tr>
-                        <td>部门名称<h1></h1></td>
-                       <td > <textarea name="department_name" id="description" style="width: 80%;"></textarea></td>
+                        <td>性质名称<h1></h1></td>
+                       <td > <textarea name="name" id="description" ></textarea></td>
                     </tr>
                 </table>
             </div>

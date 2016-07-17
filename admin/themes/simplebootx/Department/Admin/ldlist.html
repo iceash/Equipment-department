@@ -1,38 +1,40 @@
 <admintpl file="header"/>
 </head>
-
+<style>
+    li{margin-top: 10px;margin-bottom: 10px;}
+</style>
 <body>
 <div class="wrap js-check-wrap">
+
     <div class="row-fluid">
         <div class="span12">
             <table class="table table-bordered">
+                <h2>首长信息</h2>
                 <tr>
-                    <th>部门列表</th>
+                    <td>姓名</td><td>级别</td><td>部门</td><td>操作</td>
                 </tr>
                 <php>
-                    $department
+                    $boss
                 </php>
-                <foreach name="department"  item="vo">
-                    <tr>
-                        <td><p>{$vo.department_name}</p></td>
-                        <td><a href="{:U('admin/delete',array('id'=>$vo['id']))}" class="js-ajax-delete">删除</a>
-                            <!--<button class="btn btn-primary"  style="margin-left: 500px;" type="submit">删除</button>-->
-                            <input type="hidden" name="id" value="{$vo.id}"/></td>
-                    </tr>
+                <foreach name="boss"  item="vo">
+                <tr>
+                    <td>{$vo.name}</td><td>{$vo.jibie}</td><td>{$vo.bumen}</td><td> <a href="{:U('admin/lddelete',array('id'=>$vo['id']))}" class="js-ajax-delete">删除</a></td>
+                </tr>
                 </foreach>
             </table>
         </div>
     </div>
-    <form action="{:U('admin/add')}" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
+    <form action="{:U('admin/ldadd')}" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
         <div class="row-fluid">
             <div class="span11">
                 <table class="table table-bordered" style="text-align: center;">
                     <tr>
-                        <th>新建部门</th>
+                        <th>添加首长信息</th>
                     </tr>
                     <tr>
-                        <td>部门名称<h1></h1></td>
-                       <td > <textarea name="department_name" id="description" style="width: 80%;"></textarea></td>
+                        <td >姓名 <textarea name="name" ></textarea></td>
+                        <td >级别 <textarea name="jibie" ></textarea></td>
+                        <td >部门<textarea name="bumen"></textarea></td>
                     </tr>
                 </table>
             </div>
@@ -44,5 +46,7 @@
 </div>
 <script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
 <script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+<script type="text/javascript">
+</script>
 </body>
 </html>
