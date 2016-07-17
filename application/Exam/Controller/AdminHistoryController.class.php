@@ -9,6 +9,12 @@
 namespace Exam\Controller;
 use Common\Controller\AdminbaseController;
 class AdminHistoryController extends AdminbaseController {
+	function _initialize() {
+		if ($_SESSION["ADMIN_ID"] != 1) {
+			$this->error("您没有访问权限！");
+    			exit();
+		}
+	}
 	function index(){
 		$scores = new \Exam\Model\UserDepartmentViewModel();
 		//起始结束时间

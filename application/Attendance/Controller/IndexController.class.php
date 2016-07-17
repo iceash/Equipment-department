@@ -135,9 +135,9 @@ class IndexController extends AdminbaseController{
 			$map['NAME']=$users[$i]['user_nicename'];
 			$map['CHECKTIME']=array(array('gt',$today." 00:00"),array('lt',$today." 23:59"));
 			$check_time=M('checkinout')->where($map)->Field('CHECKTIME')->order('CHECKTIME')->select();
-			if(count($check_time)==2){
+			if(count($check_time)>=2){
 				$data2['on_time']=date('H:i:s', strtotime($check_time[0]['checktime']));
-				$data2['off_time']=date('H:i:s', strtotime($check_time[1]['checktime']));
+				$data2['off_time']=date('H:i:s', strtotime($check_time[count($check_time)-1]['checktime']));
 			}elseif (count($check_time)==1) {
 				$data2['on_time']=date('H:i:s', strtotime($check_time[0]['checktime']));
 			}
@@ -153,7 +153,7 @@ class IndexController extends AdminbaseController{
 					$data2['content']='记录缺失';
 				}else{
 					$on_cha=strtotime($check_time[0]['checktime'])-strtotime($today." ".$on);
-					$off_cha=strtotime($check_time[1]['checktime'])-strtotime($today." ".$off);
+					$off_cha=strtotime($check_time[count($check_time)-1]['checktime'])-strtotime($today." ".$off);
 					$data2['status']='正常';
 					$data2['content']="";
 					if($on_cha>0){
